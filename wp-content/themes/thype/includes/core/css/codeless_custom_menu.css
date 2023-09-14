@@ -1,0 +1,60 @@
+.codeless_custom_menu_options .codeless_checkbox input{
+display: block;
+float: left;
+margin-bottom: 11px;
+margin-right: 7px;
+}
+
+.codeless_background_image{
+	display:none !important;
+}
+
+.codeless_custom_active.menu-item-depth-0 .codeless_background_image{
+	display:block !important;
+}
+.codeless_background_image input{
+	display:block;
+}
+
+.codeless_custom_mega_menu, .mega_label, .item-type-column, .item-type-megalabel, .codeless_custom_active.menu-item-depth-2 .description-title, .codeless_custom_active.menu-item-depth-3 .description-title{
+display:none;
+}
+
+.menu-item-depth-0 .codeless_custom_mega_menu_d0, .codeless_custom_active.menu-item-depth-1 .codeless_custom_mega_menu_d1, .codeless_custom_active.menu-item-depth-2 .codeless_custom_mega_menu_d2, .codeless_custom_active.menu-item-depth-3 .codeless_custom_mega_menu_d2, .codeless_custom_active.menu-item-depth-4 .codeless_custom_mega_menu_d2, .codeless_custom_active.menu-item-depth-5 .codeless_custom_mega_menu_d2, .codeless_custom_active.menu-item-depth-6 .codeless_custom_mega_menu_d2, .codeless_custom_active.menu-item-depth-7 .codeless_custom_mega_menu_d2, .codeless_custom_active.menu-item-depth-8 .codeless_custom_mega_menu_d2{
+display:block;
+}
+
+/*depth 0 Specials*/
+.codeless_custom_active.menu-item-depth-0 .item-type-megalabel{
+display:inline;
+font-size: 11px;
+color:#222;
+
+}
+
+
+/*depth1 specials*/
+.codeless_custom_active.menu-item-depth-1 .field-description, .codeless_custom_active.menu-item-depth-1 .link-to-original, .codeless_custom_active.menu-item-depth-1 .description-title, .codeless_custom_active.menu-item-depth-1 .default_label, .codeless_custom_active.menu-item-depth-1 .field-url, .codeless_custom_active.menu-item-depth-1 .item-type-default{
+display:none;
+}
+
+.codeless_custom_active.menu-item-depth-1 .mega_label{
+display:inline;
+}
+
+.codeless_custom_active.menu-item-depth-1 .item-type-column{
+display:block;
+color: #222;
+}
+
+.codeless_custom_active.menu-item-depth-2 .field-description, .codeless_custom_active.menu-item-depth-3 .field-description, .codeless_custom_active.menu-item-depth-4 .field-description, .codeless_custom_active.menu-item-depth-5 .field-description, .codeless_custom_active.menu-item-depth-6 .field-description, .codeless_custom_active.menu-item-depth-7 .field-description, .codeless_custom_active.menu-item-depth-8 .field-description{
+display:block;
+}
+
+
+.codeless_custom_active.menu-item-depth-1 .label_desc_on_active{
+height:auto;
+width:auto;
+float:none;
+}
+

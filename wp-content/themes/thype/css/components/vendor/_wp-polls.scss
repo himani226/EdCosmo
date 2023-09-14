@@ -1,0 +1,101 @@
+.widget_polls-widget{
+
+    .widget-title{
+        margin-bottom: 0 !important;
+        padding-bottom: 10px;
+        border-bottom-width: 1px;
+        border-bottom-style: solid;
+    }
+
+    .wp-polls{
+        margin-top:20px;
+
+        form{
+            >p{
+                text-align:left!important;
+                line-height:1.5;
+            }
+        }
+    }
+
+    .wp-polls-ul{
+        li{
+            display:flex;
+            align-items:flex-start;
+            padding:5px 0;
+
+            input{
+                height:25px;
+            }
+            label{
+                padding-left:10px;
+            }
+
+            &:first-child{
+                padding-top:20px;
+            }
+            &:last-child{
+                padding-bottom:5px !important;
+            }
+
+            &.wp-poll-result{
+                flex-wrap:wrap;
+                font-size:14px !important;
+                position:relative;
+                padding:10px 0 !important;
+                > *{
+                    width:100%;
+                    
+                }
+                small{
+                    text-align: right;
+                    position: absolute;
+                    width: auto;
+                    right: 0;
+                    bottom: 5px;
+                    background: #fff;
+                    padding-left: 20px;
+                    font-weight:500;
+                }
+                .pollbar{
+                    position:relative;
+                    background:#6c7781;
+                    height:6px;
+                    border:0;
+                    margin-top:5px;
+                    margin-right: 240px;
+                    &:after{
+                        content: "";
+                        position: absolute;
+                        width: 240px;
+                        height: 100%;
+                        left: 0;
+                        top: 0;
+                        background:#e4e9ed;
+                        z-index:-1;
+
+                    }
+                }
+            }
+
+            &.voted{
+                .pollbar{
+                    background:#e94828;
+                    &:after{
+                        background:#ffd7cf;
+                    }
+                }
+            }
+        }
+    }
+
+    .Buttons{
+        
+        color:#fff;
+        
+        padding:10px 14px;
+        margin-top:20px;
+    }
+
+    
+}

@@ -1,0 +1,125 @@
+/* MailChimp for WP styles
+----------------------------------------------------------------- */
+form.mc4wp-form {
+	position:relative;
+}
+form.mc4wp-form .mc4wp-form-fields input[type="email"] {
+	width: 100%;
+	vertical-align:top;
+	@include border-box;
+	text-align: center;
+	margin-top: 1.8em;
+	margin-bottom: 0.7em;
+}
+form.mc4wp-form .mc4wp-form-fields button[type="submit"] {
+	width: 100%;
+	.sc_button_icon{
+		margin-left: 9px;
+	}
+	.icon-paper-plane-light:before {
+		margin-top: -5px;
+	}
+}
+.elementor-widget-sidebar form.mc4wp-form .mc4wp-form-fields button[type="submit"],
+.sidebar form.mc4wp-form .mc4wp-form-fields button[type="submit"]{
+	margin-bottom: 8px;
+}
+
+.check_form{
+	margin-top: 20px;
+	margin-bottom: 10px;
+
+}
+
+.mc4wp-form-fields{
+	text-align: center;
+	h4{
+		margin-top: 1.5em;
+		margin-bottom: 0.3em;
+		+ p{
+			font-size: 15px;
+		}
+	}
+}
+
+form.mc4wp-form .mc4wp-alert {
+	margin: 1.5em 0;
+	padding: 1em;
+	line-height:1.5em;
+}
+
+form.mc4wp-form p {
+	margin: 0;
+}
+
+form.mc4wp-form p + p,
+form.mc4wp-form input + p {
+	margin-top: 1em;
+}
+
+#before {
+	vertical-align: middle;
+}
+#before + label {
+	position: relative;
+	display: inline-block;
+	vertical-align: middle;
+}
+#before+ label:before {
+	font-family:$theme_icons;
+	content: '\e959';
+	position: absolute;
+	left: -2em;
+	font-size: 17px;
+	top: -13px;
+}
+
+#before:not(:focus):valid + label:before {
+	content: '\e959';
+}
+
+.elementor-widget-wp-widget-mc4wp_form_widget{
+	.mc4wp-form-fields{
+		position: relative;
+		text-align: left;
+	}
+
+	.mc4wp-form-fields input[type="email"] {
+		margin: 0 !important;
+		text-align: left !important;
+		width: 73% !important;
+		@media (max-width: 767px) {
+			width: 100% !important;
+		}
+	}
+	.mc4wp-form-fields input[type="submit"]{
+		position: absolute;
+		right: 0;
+	}
+	form.mc4wp-form .mc4wp-form-fields button {
+		position: absolute;
+		right: 0;
+		padding: 1.1em 2.3em;
+		width: 40%;
+		@media (max-width: 1279px) {
+			padding: 1.2em 2.3em;
+		}
+		@media (max-width: 1023px) {
+			padding: 1.1em 2.3em;
+		}
+		@media (max-width: 767px) {
+			position: relative;
+			width: 100%;
+			margin-top: 10px;
+		}
+	}
+	.check_form{
+		@include flex-short(1 0 100%);
+	}
+
+
+}
+
+form.mc4wp-form .mc4wp-alert{
+	font-size: 12px;
+}

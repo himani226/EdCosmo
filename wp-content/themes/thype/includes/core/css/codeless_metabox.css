@@ -1,0 +1,187 @@
+.rwmb-field.required{
+    display:none;
+}
+
+.rwmb-field.required.show_required{
+    display:block;
+}
+
+.rwmb-label > label {
+    font-weight: 500;
+    font-size: 12px;
+}
+
+.vc_properties-list select{
+    height:36px !important;
+}
+
+.vc_image_select__wrapper{
+    display:flex;
+    align-items:center;
+
+}
+.vc_image_select__button{
+    width:60px;
+    height:60px;
+    margin:5px;
+    background-color:#f1f1f1;
+    background-size:cover;
+    background-position:center;
+}
+
+.vc_image_select__button.selected{
+    outline:1px solid #222;
+}
+
+.vc_edit-form-tab[data-tab="default_templates"]{
+    display:flex;
+}
+.vc_edit-form-tab[data-tab="default_templates"] .library_categories{
+    flex:1;
+    position:relative;
+}
+
+.vc_edit-form-tab[data-tab="default_templates"] .library_categories ul{
+    position:sticky;
+    top:20px;
+    margin:0;
+}
+
+.vc_edit-form-tab[data-tab="default_templates"] .library_categories ul li{
+    padding: 5px 20px;
+    color: #999;
+    border-bottom: 1px solid #efefef;
+    margin: 0;
+    background: #fff;
+    cursor:pointer;
+}
+
+.vc_edit-form-tab[data-tab="default_templates"] .library_categories ul li.active{
+    background:#f1f1f1;
+    color:#222;
+}
+
+.vc_edit-form-tab[data-tab="default_templates"] .library_categories ul li:hover{
+    background:#fcfcfc;
+    color:#666;
+}
+
+.vc_edit-form-tab[data-tab="default_templates"] .cl-templates-wrap{
+    flex:6;
+    background:#f1f1f1;
+    padding:30px;
+}
+
+.vc_edit-form-tab[data-tab="default_templates"] .vc_ui-template-list{
+    display:flex;
+    flex-wrap:wrap;
+}
+
+.vc_edit-form-tab[data-tab="default_templates"] .vc_ui-template{
+    width: 23%;
+    padding: 10px;
+}
+
+.vc_edit-form-tab[data-tab="default_templates"] .cl-template-wrap{
+    position:relative;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    box-shadow:0px 1px 2px rgba(0,0,0,0.05);
+    transition:all 0.3s ease-in-out;
+    position:relative;
+    transform:translateY(0);
+}
+.vc_edit-form-tab[data-tab="default_templates"] .cl-template-wrap:hover{
+    box-shadow:0px 10px 20px rgba(0,0,0,0.1);
+    transform:translateY(-5px);
+}
+.vc_edit-form-tab[data-tab="default_templates"] .cl-template-wrap a{
+    position:absolute;
+    left:0;
+    top:0;
+    width:100%;
+    height:100%;
+}
+.vc_edit-form-tab[data-tab="default_templates"] .cl-template-wrap .img-wrap{
+    display:block;
+    background:#fff;
+    height: 300px;
+    position: relative;
+    overflow:hidden;
+}
+.vc_edit-form-tab[data-tab="default_templates"] .cl-template-wrap .img-wrap img{
+    margin:0 auto;
+    text-align:center;
+    display:block;
+    height:auto;
+    width:100%;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.vc_edit-form-tab[data-tab="default_templates"] .vc_ui-list-bar-item{
+    border:none !important;
+    box-shadow:none !important;
+    background-color:transparent !important;
+    
+}
+.vc_edit-form-tab[data-tab="default_templates"] .title-wrap{
+    background: #fff;
+    border-top: 1px solid #e1e1e1;
+    flex: 1;
+    flex-wrap: wrap;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #222;
+    padding-bottom: 20px;
+    flex-direction: column;
+}
+
+
+.vc_edit-form-tab[data-tab="default_templates"] .title-wrap .display_cat{
+    color:#b1b1b1;
+    font-size:14px;
+    font-weight:normal;
+    margin-bottom:10px;
+    margin-top:20px;
+    width:100%;
+}
+#vc_templates-editor-button{
+    width:240px;
+}
+#vc_templates-editor-button i{
+    left:40px;
+}
+
+#vc_templates-editor-button span{
+    font-size: 12px;
+    line-height: 20px;
+    text-transform: uppercase;
+    text-decoration: none !important;
+    position: absolute;
+    left: 68px;
+    top: 50%;
+    color: #fff;
+    margin-top: -8px;
+}
+.wpb_cl_posts .title{
+    margin-bottom:10px;
+}
+.wpb_cl_posts .title p{
+    font-size: 18px !important;
+    padding-left: 40px;
+    margin-bottom:10px;
+}
+.wpb_cl_posts .vc_admin_label{
+    display: block;
+    padding-left: 40px;
+    margin-bottom:5px;
+}
+.wpb_cl_posts .vc_admin_label label{
+    color:#222 !important;
+}

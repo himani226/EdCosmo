@@ -1,0 +1,71 @@
+.widget_apsc_widget{
+    .apsc-icons-wrapper{
+        display:flex;
+        flex-wrap:wrap;
+        
+        .apsc-each-profile{
+            width:33.333%;
+            text-align:center;
+            padding:17px 0;
+            .social-icon{
+                display:block
+            }
+            .media-name{
+                display:none;
+            }
+            .apsc-media-type{
+                display:none;
+            }
+
+            i{
+                font-size:22px;
+            }
+
+            border-bottom-width:1px;
+            border-bottom-style:solid;
+
+            border-right-width:1px;
+            border-right-style:solid;
+
+            &:nth-child(3){
+                border-right:0;
+            }
+       
+            &:nth-child(4){
+                border-bottom:0;
+            }
+            &:nth-child(5){
+                border-bottom:0;
+            }
+            &:nth-child(6){
+                border-bottom:0;
+                border-right:0;
+            }
+
+            .apsc-facebook{
+                color:#3b5998
+            }
+            .apsc-instagram{
+                color:#c120be
+            }
+            .apsc-twitter{
+                color:#55acee
+            }
+            .apsc-dribbble{
+                color:#222
+            }
+            .apsc-googlePlus{
+                color:#b31217
+            }
+            .apsc-youtube{
+                color:#b31217
+            }
+
+            .apsc-count{
+                font-size:11px;
+                font-weight:500;
+                display:block;
+            }
+        }
+    }
+}

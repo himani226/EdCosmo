@@ -1,0 +1,98 @@
+/* Blog layout: Excerpt 
+------------------------- */
+.post_layout_excerpt {
+	position:relative;
+	margin-bottom:0;
+}
+.post_layout_excerpt + .post_layout_excerpt {
+	margin-top: 1.8rem;
+}
+.post_layout_excerpt:not(.sticky) + .post_layout_excerpt:not(.sticky) {
+	padding-top: 0;
+}
+.post_layout_excerpt.sticky {
+	padding: 0 !important;
+}
+.post_layout_excerpt .post_featured {
+	display: inline-block;
+}
+
+.post_layout_excerpt.post_format_audio .post_featured.without_thumb,
+.post_layout_excerpt.post_format_gallery .post_featured.without_thumb {
+	display:block;
+}
+.post_layout_excerpt .post_header {
+	position:relative;
+}
+.post_layout_excerpt .post_header .post_price {
+	width: auto;
+	@include abs-rt;
+	@include font(2.5em, 1.5em);
+}
+.post_layout_excerpt .post_title {
+	margin: 0;
+}
+.post_layout_excerpt .post_meta {
+	margin-top: 0.2rem;
+	margin-bottom: 1.35em;
+	@include flex();
+	@include flex-align-items(center);
+	flex-wrap: wrap;
+}
+.post_layout_excerpt .post_header + .post_content {
+	margin-top: 1.2rem;
+}
+
+// First post large in the Classic and Masonry
+body[class*="blog_style_classic"] .post_layout_excerpt,
+body[class*="blog_style_masonry"] .post_layout_excerpt {
+	margin-bottom: 3em;
+}
+body .posts_container .post_item,
+body .posts_container .related_item{
+	background-color: #fff;
+	overflow: hidden;
+
+	&.post_layout_excerpt{
+		border-radius: 10px;
+	}
+
+	.post_header,
+	.post_content{
+		padding: 0 1.8em;
+	}
+
+	.post_counters_label{
+		display: none;
+	}
+
+	.more-link{
+		padding: 1.45em 2.2em;
+		display: block;
+		border-radius: 0 !important;
+		text-align: left;
+		box-shadow: none !important;
+		background: transparent !important;
+		border-top: 1px solid !important;
+		&:after{
+			content: '\e93a';
+			font-family: $theme_icons;
+			position: absolute;
+			right: 27px;
+			font-size: 19px;
+		}
+		&:hover{
+			box-shadow: none;
+		}
+	}
+}
+
+.more-link{
+	padding: 1.45em 2.2em;
+	display: block;
+	border-radius: 0 !important;
+	text-align: left;
+	box-shadow: none !important;
+	background: transparent !important;
+	border-top: 1px solid !important;
+}

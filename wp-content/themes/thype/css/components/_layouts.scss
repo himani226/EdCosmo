@@ -1,0 +1,267 @@
+// _layouts.scss
+
+// Wrappped page layout option
+.cl-wrapper-layout{
+    width:$container_width + 100;
+    max-width:100%;
+    margin: 0 auto;
+    background: #fff;
+    z-index: 3;
+    position: relative;
+
+    @include lg{
+        margin-top: -90px;
+    }
+    @include lg{
+        &:before{
+            content:"";
+            width:100%;
+            position:absolute;
+            z-index:-1;
+            box-shadow: 0px -33px 106px 0px rgba(25, 30, 35, 0.02);
+            height:700px;
+            max-height:100%;
+        }
+    }
+    
+
+    .inner-content-row{
+        padding-top:70px !important;
+        padding-bottom:70px !important;
+    }
+
+    .content-col{
+        padding-top:0px;
+        padding-bottom:70px;
+        &.col-md-8{
+            @include rmax(767){
+                padding-bottom:0;
+            }
+        }
+        @include md{
+            padding-top:0;
+            padding-bottom:0
+        }
+    }
+}
+
+.cl-page-with-builder{
+    #content.cl-layout-fullwidth
+    .inner-content-row{
+        padding-top:0 !important;
+        padding-bottom:0 !important;
+    }
+}
+
+
+.content-col{
+    &.col-md-8{
+        > .vc_row{
+            &:first-child{
+                padding-top:0;
+            }
+            &:last-child{
+                padding-bottom:0;
+            }
+        }
+    }
+}
+
+
+.cl-page-header{
+    $self: &;
+    position:relative;
+
+    &__overlay{
+        @extend %position_absolute;
+        z-index:2;
+    }
+    &__image{
+        @extend %position_absolute;
+        z-index:1;
+        background-size:cover;
+        background-repeat: no-repeat;
+        background-position:center;
+    }
+    &__content{
+        z-index:3;
+        position:relative
+    }
+
+    &__desc{
+        margin:0;
+        font-size: $description_font_size;
+        line-height: $description_line_height;
+        margin-top:15px;
+    }
+    
+    &__breadcrumbs{
+        padding-top:20px;
+    }
+
+    &__breadcrumbs-link{
+        padding:0 12px;
+        position:relative;
+
+        &:after{
+            content:"/";
+            position: absolute;
+            right:-4px;
+            top:0;
+            line-height:22px;
+        }
+        &:last-child:after{
+            display:none;
+        }
+    }
+
+    &--light #{ $self }__title{
+        color: $light_primary_color;
+    }
+
+    &--light #{ $self }__desc{
+        color: $light_secondary_color;
+    }
+
+    &--light #{ $self }__breadcrumbs-link{
+        color: $light_secondary_color;
+    }
+}
+
+
+
+// Sidenav
+.cl-sidenav{
+    max-width:100%;
+    box-shadow: 0px 0px 20px 0px rgba(6, 19, 34, 0.11);
+    position:fixed;
+    background:#fff;
+    z-index:9999999;
+    width:430px;
+    height:100%;
+    right:0;
+    top:0;
+    @include transform( translateX(100%) );
+    @include transition( all 300ms )
+
+    &--open{
+        @include transform( translateX(0) );
+    }
+
+
+    &__padding{
+        padding:30px 40px;
+        position:relative;
+        height:100%;
+        .admin-bar &{
+            padding-top:67px;
+        }
+    }
+
+    &__wrapper{
+        position:relative;
+    }
+
+    &__close{            
+        position:absolute;
+        width: 20px;
+        right:0;
+        top:10px;
+        background:#fff;
+        height: 15px;
+        cursor: pointer;
+        @include transform( rotate(0deg) );
+        -webkit-transition: .5s ease-in-out;
+        -moz-transition: .5s ease-in-out;
+        -o-transition: .5s ease-in-out;
+        transition: .5s ease-in-out;
+            
+        span {
+            display: block;
+            position: absolute;
+            height: 3px;
+            width: 100%;
+            border-radius: 4px;
+            opacity: 1;
+            left: 0;
+            @include transform( rotate(0deg) );
+            -webkit-transition: .25s ease-in-out;
+            -moz-transition: .25s ease-in-out;
+            -o-transition: .25s ease-in-out;
+            transition: .25s ease-in-out;
+        }
+        span:nth-child(1) {
+                @include transform( rotate(45deg) )
+                top: -1px;
+                left: 2px;
+                -webkit-transform-origin: left center;
+                -moz-transform-origin: left center;
+                -o-transform-origin: left center;
+                transform-origin: left center;
+        }
+        span:nth-child(2) {
+                -webkit-transform-origin: left center;
+                -moz-transform-origin: left center;
+                -o-transform-origin: left center;
+                transform-origin: left center;
+                width: 0%;
+                opacity: 0;
+        }
+        span:nth-child(3) {
+                @include transform( rotate(-45deg) );
+                top: 13px;
+                left: 2px;
+                -webkit-transform-origin: left center;
+                -moz-transform-origin: left center;
+                -o-transform-origin: left center;
+                transform-origin: left center;
+        }
+        
+    }
+}
+
+
+#wrapper{
+    &.cl-boxed-layout{
+        max-width:100%;
+        box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+        -webkit-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+        -moz-box-shadow: 0 5px 8px rgba(0, 0, 0, 0.2);
+        margin:0 auto;
+    }
+}
+
+body.cl-layout-boxed{
+    background-position:center;
+    background-size:cover;
+    background-attachment: fixed;
+    
+}
+
+@media (min-width: 768px) {
+    aside.cl-sticky.cl-sticky-active .cl-sticky-wrapper {
+        position: fixed;
+        top: 80px;
+    }
+}
+@media (max-width: 767px) {
+    aside.cl-sticky .cl-sticky-wrapper {
+        width: 100% !important;
+    }
+    aside#secondary {
+        margin-top: 60px;
+    }
+}
+
+
+aside#secondary{
+    @include xl{
+        .cl-layout-right_sidebar &{
+            padding-left:35px;
+        }
+    
+        .cl-layout-left_sidebar &{
+            padding-right:35px;
+        }
+    }
+}

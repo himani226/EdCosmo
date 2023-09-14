@@ -1,0 +1,56 @@
+.cl-btn{
+    cursor:pointer;
+    border-width:2px;
+    border-style:solid;
+    @include transition(all 200ms);
+
+    p{
+        margin:0;
+    }
+    
+    span{
+        z-index:999;
+        position:relative;
+    }
+
+    &-container{
+        display:flex;
+    }
+
+    &--size-small{
+        font-size:12px;
+        padding:4px 18px;
+    }
+
+    &--size-medium{
+        font-size:14px;
+        font-weight:500;
+        padding:10px 24px;
+    }
+
+    &--size-large{
+        font-size: 18px;
+        font-weight: 500;
+        padding: 12px 32px;
+    }
+
+    &--style-square{
+        border-radius:0;
+    }
+
+    &--style-small-radius{
+        border-radius:5px;
+
+        &:after{
+            border-radius:5px;
+        }
+    }
+
+    &--style-rounded{
+        border-radius: 20%/50%;
+
+        &:after{
+            border-radius: 20%/50%;
+        }
+    }
+}

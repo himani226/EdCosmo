@@ -1,0 +1,25 @@
+/* Blog layout: Portfolio
+------------------------- */
+.post_layout_portfolio{
+	border-radius: 7px;
+}
+
+.post_layout_portfolio .post_title {
+	margin: 1em 0 0.4em;
+}
+.post_layout_portfolio .post_featured {
+	margin-bottom:0;
+}
+.post_layout_portfolio .post_featured img {
+	width: 100%;
+}
+.post_layout_portfolio .label_sticky {
+	top: -34px;
+	left: -34px;
+	right:auto;
+	@include rotate(135deg);
+}
+
+.post_layout_portfolio.format-gallery .icons{
+	display: none;
+}

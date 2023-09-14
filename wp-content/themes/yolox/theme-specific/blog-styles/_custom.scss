@@ -1,0 +1,11 @@
+/* Blog layout: Custom
+------------------------- */
+.post_layout_custom {
+	position:relative;
+}
+.post_layout_custom .post_featured img {
+	width: 100%;
+}
+.post_layout_custom .post_header {
+	padding-top:0.01px;	  // Incapsulate margins inside the block without 'overflow: hidden'
+}

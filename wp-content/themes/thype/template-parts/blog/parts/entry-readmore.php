@@ -1,0 +1,1 @@
+<a href="<?php echo esc_url( get_permalink() ) ?>" class="cl-entry__readmore"><?php esc_html_e( 'Read More', 'thype' ); ?></a>
