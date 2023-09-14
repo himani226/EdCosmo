@@ -13,8 +13,6 @@
 @import "../front-page/_front-page-responsive.scss";
 @import "../theme-specific/theme-hovers/_theme-hovers-responsive.scss";
 @import "../plugins/trx_addons/_trx_addons-responsive.scss";
-@import "../plugins/elementor/_elementor-responsive.scss";
-@import "../plugins/the-events-calendar/_the-events-calendar-responsive.scss";
 
 
 /* SASS Suffix: --xxl */
@@ -35,8 +33,6 @@
 	@include blog_styles_custom--xl();
 	@include front_page--xl();
 	@include trx_addons--xl();
-	@include elementor--xl();
-	@include tribe_events--xl();
 }
 
 
@@ -49,8 +45,6 @@
 	@include blog_styles_chess--lg();
 	@include front_page--lg();
 	@include trx_addons--lg();
-	@include elementor--lg();
-	@include tribe_events--lg();
 }
 
 
@@ -64,8 +58,6 @@
 	@include blog_styles_chess--md();
 	@include front_page--md();
 	@include trx_addons--md();
-	@include elementor--md();
-	@include tribe_events--md();
 }
 
 
@@ -78,8 +70,6 @@
 	@include blog_styles_chess--sm();
 	@include front_page--sm();
 	@include trx_addons--sm();
-	@include elementor--sm();
-	@include tribe_events--sm();
 }
 
 
@@ -91,6 +81,4 @@
 	@include front_page--xs();
 	@include theme-hovers--xs();
 	@include trx_addons--xs();
-	@include elementor--xs();
-	@include tribe_events--xs();
 }

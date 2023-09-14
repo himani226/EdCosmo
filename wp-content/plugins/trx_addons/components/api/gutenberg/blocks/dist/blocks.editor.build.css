@@ -1,0 +1,297 @@
+/* Editor */
+/***************************************/
+.post-type-cpt_layouts .edit-post-visual-editor .editor-block-list__block,
+.post-type-cpt_layouts .edit-post-visual-editor .editor-post-title__block,
+.post-type-cpt_layouts .edit-post-visual-editor .editor-default-block-appender {
+	max-width: none;
+}
+.post-type-cpt_layouts .edit-post-visual-editor .editor-block-list__layout {
+	position: relative;
+	padding-left: 0;
+	padding-right: 0;
+	margin-left: 80px;
+	margin-right: 80px;
+}
+
+div:not(.editor-inner-blocks) > .editor-block-list__layout {
+	padding-bottom: 3em;
+}
+
+.editor-block-list__layout .editor-block-list__block {
+	padding-left: 0;
+	padding-right: 0;
+}
+.editor-inner-blocks .editor-block-list__layout .editor-block-list__block {
+	padding-left: 1em;
+	padding-right: 1em;
+}
+.editor-block-list__layout .editor-block-list__block .editor-block-drop-zone,
+.editor-block-list__layout .editor-block-list__block .editor-block-list__block-edit {
+	margin-left: 0;
+	margin-right: 0;
+}
+.editor-block-list__block > .editor-block-mover {
+	left: -60px;
+}
+.editor-block-list__block > .editor-block-settings-menu {
+	right: -60px;
+}
+
+
+h6.editor-block-title {
+	font-size: 13px;
+	padding: 15px 0;
+	margin: 0;
+}
+.editor-block-params {
+	font-size: 12px;
+	line-height: 18px;
+	margin-top: -10px;
+}
+.editor-block-params span{
+	margin-right: 10px;
+}
+.editor-block-params span:empty{
+	display: none;
+}
+
+.editor-block-list__layout input[type="text"][role="button"] {
+	background-color: transparent !important;
+}
+
+
+/* Button 'Reload' */
+.editor-block-list__block .trx_addons_gb_reload {
+	display: none;
+}
+.editor-block-list__block.is-hovered .trx_addons_gb_reload,
+.editor-block-list__block.is-selected .trx_addons_gb_reload,
+.editor-block-list__block.is-selected-parent .trx_addons_gb_reload {
+	display: block;
+}
+.components-button.components-button.trx_addons_gb_reload {
+	position: absolute;
+	right: 0;
+	top: 0;
+	z-index: 10;
+	height: 32px;
+	padding: 1px 8px;
+	color: #333;
+	background-color: #f7f7f7;
+}
+.components-button.components-button.trx_addons_gb_reload:focus,
+.components-button.components-button.trx_addons_gb_reload:hover {
+	color: #fff !important;
+	background-color: #007cba !important;
+}
+.components-button.components-button.trx_addons_gb_reload:before {
+	content:  '\e800';
+	font-family: trx_addons_icons;
+}
+
+
+/* Hide 'Content area' placeholder */
+.editor-block-list__block[data-type="trx-addons/content"] .editor-block-list__block-edit > .components-placeholder {
+	display: none;
+}
+
+
+/* Inner blocks
+--------------------------------------------- */
+
+/* Inner blocks - all (common rules) */
+.trx_addons_gb_inner_blocks .components-panel__body {
+	border: none;
+}
+.trx_addons_gb_inner_blocks .components-panel__body-toggle:focus,
+.trx_addons_gb_inner_blocks .components-panel__body-toggle:hover {
+	color: #fff !important;
+	background-color: #007cba !important;
+}
+.trx_addons_gb_inner_blocks .components-panel__body-toggle:before {
+	content:  '\e8d7';
+	font-family: trx_addons_icons;
+	margin-right: 0.55em;
+}
+.trx_addons_gb_inner_blocks .editor-block-list__block .editor-block-contextual-toolbar {
+	margin-left: 0;
+	margin-right: 0;
+}
+
+/* Inner blocks - all, except "Content area" */
+
+/* Hide to the button */
+.editor-block-list__block:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks {
+	display: none;
+}
+/* Display on hover, select or typing */
+.editor-block-list__block.is-hovered:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks,
+.editor-block-list__block.is-typing:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks,
+.editor-block-list__block.is-selected:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks,
+.editor-block-list__block.is-selected-parent:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks {
+	display: block;
+}
+/* Put to the top right corner (near the "Reload" button) */
+.editor-block-list__block:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks {
+	position: absolute;
+	right: 40px;
+	top: 0;
+	z-index: 10;
+	min-width: 33%;
+	border: none !important;
+}
+.editor-block-list__block:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks.components-panel__body.is-opened {
+	padding: 0;
+}
+.editor-block-list__block:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks .components-panel__body-title {
+	margin: 0 0 1em !important;
+	background: none !important;
+	text-align: right;
+}
+.editor-block-list__block:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks .components-panel__body-toggle .components-panel__arrow {
+	display: none;
+}
+.editor-block-list__block:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks .components-panel__body-toggle {
+	width: 32px;
+	height: 32px;
+	padding: 1px 8px !important;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	box-shadow: 0 1px 0 #cccccc;
+	color: #333;
+	background-color: #f7f7f7;
+	overflow: hidden;
+}
+.editor-block-list__block:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks.components-panel__body.is-opened .components-panel__body-toggle {
+	width: auto;
+}
+.editor-block-list__block:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks.components-panel__body:not(.is-opened) .components-panel__body-toggle:before {
+	margin-top: 5px;
+}
+.editor-block-list__block:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks.components-panel__body.is-opened .components-panel__body-toggle:before {
+	margin-top: 0;
+}
+
+.editor-block-list__block:not([data-type="trx-addons/content"]) .trx_addons_gb_inner_blocks .editor-block-list__layout {
+	background-color: #fff;
+	color: #333;
+	border: 1px solid #ccc;
+}
+
+
+.editor-block-list__block-edit .sc_layouts .wp-block-columns {
+	display: flex;
+}
+.wp-block-columns > .editor-inner-blocks > .editor-block-list__layout > [data-type="core/column"] {
+	width: auto;
+	flex-direction: row;
+}
+.trx_addons_gb_inner_blocks .editor-block-list__block .editor-block-list__layout {
+	margin: 0;
+}
+.editor-block-list__block[data-type^="trx-addons/"] .wp-block-columns > .editor-inner-blocks > .editor-block-list__layout {
+	display: block;
+}
+.trx_addons_gb_inner_blocks .editor-block-list__block-edit .wp-block-columns > .editor-inner-blocks > .editor-block-list__layout {
+	display: flex;
+}
+.trx_addons_gb_inner_blocks .wp-block-columns .editor-block-list__layout:first-child {
+	margin-left: 0;
+}
+
+[data-type^="trx-addons/"] .slider_container {
+	display: block;
+}
+
+.editor-block-list__block-edit.reload_mask > div:nth-child(2) {
+	position: relative;
+}
+.editor-block-list__block-edit.reload_mask > div:nth-child(2):before {
+	content:  '';
+	position:  absolute;
+	top: 0;
+	left: 0;
+	right:  0;
+	bottom:  0;
+	z-index: 11;
+	background-color: #edeff0;
+}
+.editor-block-list__block-edit.reload_mask > div:nth-child(2):after {
+	content:  '\e801';
+	font-family: trx_addons_icons;
+	position:  absolute;
+	color: #000;
+	top: 50%;
+	left:  50%;
+	z-index: 12;
+	font-size: 26px;
+	line-height: 26px;
+	margin: -13px 0 0  -13px;
+	-moz-animation: spin 2s infinite linear;
+	-o-animation: spin 2s infinite linear;
+	-webkit-animation: spin 2s infinite linear;
+	animation: spin 2s infinite linear;
+}
+
+[data-type="trx-addons/blogger"] a {
+    pointer-events: none;
+}
+
+/* Panel */
+/***************************************/
+.components-panel__body > .components-panel__body-title {
+	background-color: #edeff0;
+}
+.components-panel__body.is-opened > .components-panel__body-title {
+	margin-bottom: 15px !important;
+}
+.edit-post-sidebar h3 {
+	margin-bottom: 10px;
+	margin-top: 20px;
+}
+.components-color-palette-preview {
+	border: 1px solid #8d96a0;
+	border-radius: 5px;
+	height: 25px;
+	width: 80px;
+	position: absolute;
+	bottom: 15px;
+	left: 50px;
+}
+.components-toolbar .components-icon-button.editor-block-switcher__toggle {
+	overflow: hidden
+}
+
+/* Blocks */
+/***************************************/
+/* Anchor */
+[data-type="trx-addons/anchor"] .editor-block-list__block-edit {
+    height: 25px;
+    position:  relative;
+    background-color: #e7eaed;
+}
+
+[data-type="trx-addons/anchor"] .editor-block-list__block-edit:after{
+    content: '\e868';
+    font-family: trx_addons_icons;
+    color: #9aa1a9;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+}
+
+
+/* Content Area */
+.sc_content_container {
+	display: none;
+}
+
+/* Layouts */
+[data-type="trx-addons/layouts-login"] .sc_layouts_menu,
+[data-type="trx-addons/layouts-menu"] .sc_layouts_menu {
+	visibility: visible;
+	max-height: 4em;
+}
