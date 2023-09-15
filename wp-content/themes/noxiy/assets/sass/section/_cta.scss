@@ -1,0 +1,259 @@
+/*==========================================================================
+* Cta One CSS
+==========================================================================*/
+.cta__area {
+    background: var(--primary-color-3);
+    padding: 80px 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    &-title {
+        h2 {
+            color: var(--text-white);
+        }
+    }
+    &-btn {
+        .btn-two {
+            background: var(--bg-white);
+            color: var(--text-heading-color);
+            &:hover {
+                color: var(--text-white);
+            }
+        }
+    }
+}
+/*==========================================================================
+* Cta Two CSS
+==========================================================================*/
+.cta__two {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    &-item {
+        padding: 40px;
+        box-shadow: 0px -10px 50px rgba(0, 0, 0, 0.06);
+        background: var(--bg-white);
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        &-info {
+            display: flex;
+            gap: 50px;
+            align-items: center;
+            &-icon {
+                position: relative;
+                z-index: 1;
+                margin-bottom: 10px;
+                i {
+                    color: var(--primary-color-3);
+                    font-size: 70px;
+                    line-height: 0;
+                    &:last-child {
+                        opacity: 0.1;
+                        position: absolute;
+                        left: 15px;
+                        top: 20px;
+                        z-index: -1;
+                    }
+                }
+            }
+            h4 {
+                max-width: 245px;
+                a {
+                    transition: 0.4s;
+                    &:hover {
+                        color: var(--primary-color-3);
+                    }                
+                }
+            }
+        }
+        > a i {
+            color: var(--text-white);
+            background: var(--primary-color-3);
+            font-size: 22px;
+            width: 60px;
+            height: 60px;
+            line-height: 60px;
+            display: inline-block;
+            text-align: center;
+            border-radius: 50%;
+        }
+        &:first-child {            
+            border-radius: 5px 0 0 5px;
+        }
+        &:last-child {            
+            border-radius: 0 5px 5px 0;
+        }
+    }
+    &-area.services {
+        .cta__two-item {
+            > a i {
+                background: var(--primary-color-1);
+            }
+            &-info {
+                &-icon i {
+                    color: var(--primary-color-1);
+                }
+                h4 a:hover {
+                    color: var(--primary-color-1);
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+* Cta Three CSS
+==========================================================================*/
+.cta__three {
+    position: relative;
+    z-index: 1;
+	background-position: center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    &::after {
+        position: absolute;
+        content: '';
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-heading-color);
+        opacity: 0.85;
+        z-index: -2;        
+    }
+    &-shape {
+        position: absolute;
+        right: 200px;
+        top: 0;
+        z-index: -1;
+        mix-blend-mode: soft-light;     
+        height: 100%;
+    }
+    &-title {
+        h2 {
+            color: var(--text-white);
+            max-width: 600px;
+        }
+    }
+    &-info {
+        display: flex;
+        gap: 20px;
+        justify-content: end;
+        &-item {
+            display: inline-block;
+            background: var(--bg-white);
+            padding: 35px 50px;
+            border-radius: 6px;
+            &-icon {
+                margin-bottom: 15px;
+                i {
+                    color: var(--primary-color-1);
+                    font-size: 25px;                    
+                    background: var(--color-5);
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    border-radius: 50%;
+                    transition: 0.4s;
+                }
+            }
+            h6 {
+                text-transform: lowercase;
+                a {
+					background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 2px no-repeat;
+					transition: all 400ms ease;
+                    &:hover {
+						background-size: 100% 2px;
+                        color: var(--primary-color-1);
+                    }
+                }
+            }
+            span {
+                font-size: 14px;
+                font-weight: 500;
+                    
+            }
+            &:hover {
+                .cta__three-info-item-icon i {
+                    background: var(--primary-color-1);
+                    color: var(--text-white);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .cta__two-item {
+        padding: 40px 30px;
+        &-info {
+            gap: 35px;
+            &-icon i {
+                font-size: 60px;
+            }
+        }
+        > a i {
+            font-size: 20px;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+        }
+    }
+}
+@media (max-width: 1199px) {  
+    .cta__three-info-item {
+        padding: 30px 40px;
+    }
+}
+@media (max-width: 991px) {
+    .cta__area.one,
+    .cta__area {
+        padding: 60px 30px;
+    }
+    .cta__three {
+        &-title {
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+    .cta__two {
+        display: block;
+        &-item {
+            &:first-child {
+                border-radius: 5px 5px 0 0;              
+            }
+            &:last-child {
+                border-radius: 0 0 5px 5px;
+            }
+        }
+    }    
+    .cta__three {
+        &-title {
+            text-align: center;
+        }
+        &-info {
+            justify-content: center;
+        } 
+    }
+}
+@media (max-width: 767px) {
+    .cta__three-info-item {
+        padding: 30px;
+    }
+}
+@media (max-width: 575px) {
+    .cta__two.one {
+        padding: 60px 20px;
+    }    
+}
+@media (max-width: 540px) {  
+    .cta__three-info {
+        display: block;
+        &-item {
+            display: block;
+            margin-bottom: 30px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    } 
+}

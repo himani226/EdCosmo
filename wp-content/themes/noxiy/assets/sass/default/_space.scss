@@ -1,0 +1,223 @@
+/*==========================================================================
+* Space And Container CSS
+==========================================================================*/
+.custom__container {
+	max-width: 1560px;
+	margin: 0 auto;
+    padding: 0 12px;
+}
+@media (max-width: 1399px) {
+    .container {
+        max-width: 1220px;
+    }
+}
+@media (max-width: 1199px) {
+    .container {
+        max-width: 980px;
+    }
+}
+@media (max-width: 991px) {
+    .container {
+        max-width: 720px;
+    }
+}
+@media (max-width: 767px) {
+    .container {
+        max-width: 560px;
+    }
+}
+.p-relative {
+    position: relative;
+}
+$list: left, center, right;
+@each $i in $list {
+    .t-#{$i} {
+        text-align: $i;
+    }
+}
+$list: center, end;
+@each $i in $list {
+    .jc-#{$i} {
+        justify-content: $i;
+    }
+}
+@for $i from 0 to 25 {
+    .mt-#{5 * $i}{
+        margin-top: 5px * $i;
+    }
+    .mb-#{5 * $i}{
+        margin-bottom: 5px * $i;
+    }
+    .ml-#{5 * $i}{
+        margin-left: 5px * $i;
+    }
+    .mr-#{5 * $i}{
+        margin-right: 5px * $i;
+    }
+    .pt-#{5 * $i}{
+        padding-top: 5px * $i;
+    }
+    .pb-#{5 * $i}{
+        padding-bottom: 5px * $i;
+    }
+    .pl-#{5 * $i}{
+        padding-left: 5px * $i;
+    }
+    .pr-#{5 * $i}{
+        padding-right: 5px * $i;
+    }
+}
+@media (max-width: 1199px) {
+    @for $i from 0 to 20 {
+        .xl-pb-#{5 * $i}{
+            padding-bottom: 5px * $i;
+        }
+        .xl-pl-#{5 * $i}{
+            padding-left: 5px * $i;
+        }
+        .xl-pr-#{5 * $i}{
+            padding-right: 5px * $i;
+        }
+        .xl-mb-#{5 * $i}{
+            margin-bottom: 5px * $i;
+        }
+        .xl-ml-#{5 * $i}{
+            margin-left: 5px * $i;
+        }
+        .xl-mr-#{5 * $i}{
+            margin-right: 5px * $i;
+        }
+    }
+    $list: left, center, right;
+    @each $i in $list {
+        .xl-t-#{$i} {
+            text-align: $i !important;
+        }
+    }
+    .xl-display-n {
+        display: none !important;
+    }
+    .xl-display-b {
+        display: block !important;
+    }
+}
+@media (max-width: 991px) {
+    @for $i from 0 to 15 {
+        .lg-mb-#{5 * $i}{
+            margin-bottom: 5px * $i;
+        }
+        .lg-mt-#{5 * $i}{
+            margin-top: 5px * $i;
+        }
+        .lg-ml-#{5 * $i}{
+            margin-left: 5px * $i;
+        }
+        .lg-pt-#{5 * $i}{
+            padding-top: 5px * $i;
+        }
+        .lg-pb-#{5 * $i}{
+            padding-bottom: 5px * $i;
+        }
+        .lg-pl-#{5 * $i}{
+            padding-left: 5px * $i;
+        }
+        .lg-pr-#{5 * $i}{
+            padding-right: 5px * $i;
+        }
+    }
+    $list: left, center, right;
+    @each $i in $list {
+        .lg-t-#{$i} {
+            text-align: $i !important;
+        }
+    }
+    $list: center, end;
+    @each $i in $list {
+        .lg-jc-#{$i} {
+            justify-content: $i;
+        }
+    }
+    .lg-display-n {
+        display: none !important;
+    }
+    .lg-display-b {
+        display: block !important;
+    }
+}
+@media (max-width: 767px) {
+    @for $i from 0 to 10 {
+        .md-mb-#{5 * $i}{
+            margin-bottom: 5px * $i;
+        }
+        .md-mt-#{5 * $i}{
+            margin-top: 5px * $i;
+        }
+        .md-pt-#{5 * $i}{
+            padding-top: 5px * $i;
+        }
+        .md-pb-#{5 * $i}{
+            padding-bottom: 5px * $i;
+        }
+        .md-pl-#{5 * $i}{
+            padding-left: 5px * $i;
+        }
+        .md-pr-#{5 * $i}{
+            padding-right: 5px * $i;
+        }
+    }
+    $list: left, center, right;
+    @each $i in $list {
+        .md-t-#{$i} {
+            text-align: $i !important;
+        }
+    }
+    $list: center, end;
+    @each $i in $list {
+        .md-jc-#{$i} {
+            justify-content: $i;
+        }
+    }
+    .md-display-n {
+        display: none !important;
+    }
+    .md-display-b {
+        display: block !important;
+    }
+}
+@media (max-width: 575px) {
+    @for $i from 0 to 12 {
+        .sm-mb-#{5 * $i}{
+            margin-bottom: 5px * $i;
+        }
+        .sm-mt-#{5 * $i}{
+            margin-top: 5px * $i;
+        }
+        .sm-ml-#{5 * $i}{
+            margin-left: 5px * $i;
+        }
+        .sm-pt-#{5 * $i}{
+            padding-top: 5px * $i;
+        }
+        .sm-pb-#{5 * $i}{
+            padding-bottom: 5px * $i;
+        }
+        .sm-pl-#{5 * $i}{
+            padding-left: 5px * $i;
+        }
+        .sm-pr-#{5 * $i}{
+            padding-right: 5px * $i;
+        }
+    }
+    $list: left, center, right;
+    @each $i in $list {
+        .sm-t-#{$i} {
+            text-align: $i !important;
+        }
+    }
+    .sm-display-n {
+        display: none !important;
+    }
+    .sm-display-b {
+        display: block !important;
+    }
+}

@@ -1,0 +1,311 @@
+/*==========================================================================
+* Top Bar CSS
+==========================================================================*/
+.top__bar,
+.top__bar-three,
+.top__bar-four,
+.top__bar-two {
+    background: var(--color-16);
+    padding: 9px 20px;
+    &-left {
+        ul {
+            padding: 0;
+            margin: 0;
+            li {
+                display: inline-block;
+                list-style: none;
+                margin-right: 25px;
+                padding-right: 25px;
+                border-right: 1px solid var(--body-color);
+                &:last-child {
+                    margin: 0;
+                    padding: 0;
+                    border: 0;
+                }
+                a {
+                    color: var(--color-8);
+                    font-weight: 500;
+                    font-size: 14px;
+                    line-height: 24px;
+                    transition: 0.4s;
+                    &:hover {
+                        color: var(--primary-color-1);
+                    }
+                    i {
+                        margin-right: 10px;
+                        color: var(--primary-color-1);
+                    }
+                }
+            }
+        }
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        gap: 30px;
+        justify-content: end;
+        h6 {
+            color: var(--text-white);
+            font-weight: 500;
+            font-size: 14px;
+            line-height: 24px;
+            font-family: var(--body-font);            
+        }
+        &-social {
+            overflow: hidden;
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    a {
+                        position: relative;
+                        padding-right: 10px;
+                        font-size: 14px;
+                        line-height: 24px;
+                        margin-right: 10px;
+                        color: var(--text-white);
+                        display: flex;
+                        align-items: center;
+                        transition: 0.4s;
+                        font-family: var(--heading-font);
+                        span {
+                            display: inline-block;
+                            width: 0;
+                            opacity: 0;
+                            margin-left: 0;
+                            transition: all 400ms linear;
+                            position: relative;
+                            &::after {
+                                content: '';
+                                position: absolute;
+                                width: 4px;
+                                height: 4px;
+                                background: var(--body-color);
+                                border-radius: 50%;
+                                top: 50%;
+                                transform: translateY(-50%);
+                                right: 0;    
+                                transition: 0.4s;             
+                            }
+                        }
+                        &:hover {
+                            color: var(--primary-color-1);
+                            span {
+                                padding-left: 10px;
+                                width: 95px;
+                                opacity: 1;
+                                &::after {
+                                    background: var(--primary-color-1);
+                                }
+                            }
+                        }
+                    }
+                    &:nth-child(2) a {
+                        &:hover span {
+                            width: 100px;
+                        }
+                    }
+                    &:nth-child(3) a {
+                        &:hover span {
+                            width: 78px;
+                        }
+                    }
+                    &:nth-child(4) a {
+                        &:hover span {
+                            width: 88px;
+                        }
+                    }
+                    &:last-child a {
+                        padding: 0;
+                        margin: 0;
+                        &::after {
+                            display: none;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+* Top Bar Two CSS
+==========================================================================*/
+.top__bar-two {
+    background: var(--primary-color-2);
+    &-left {     
+        ul {
+            li {
+                border-color: var(--color-20);
+                a {
+                    color: var(--text-white);
+                    &:hover {
+                        color: var(--text-white);
+                    }
+                    i {
+                        color: var(--text-white);
+                    }
+                }
+            }
+        }
+    }
+    &-right {
+        &-social {
+            ul {
+                li {
+                    a {
+                        color: var(--text-white);
+                        &:hover {
+                            color: var(--text-white); 
+                            span::after {
+                                background: var(--text-white);
+                            }                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+* Top Bar Three CSS
+==========================================================================*/
+.top__bar-three {
+    background: var(--color-21);
+    padding: 0;
+    margin: 0;
+    padding-left: 12px;
+    &-left ul {
+        li {
+            border-color: var(--color-23);
+            a {
+                color: var(--text-white);
+                &:hover {
+                    color: var(--primary-color-3);
+                }
+                i {
+                    color: var(--primary-color-3);
+                }
+            }
+        }
+    }
+    &-right {
+        margin-right: -12px;
+        &-social {
+            background: var(--color-22);
+            padding: 6px 25px;
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: var(--primary-color-3); 
+                            span::after {
+                                background: var(--primary-color-3);
+                            }                        
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+.top__header {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: 999;
+    &-bg {
+        background: var(--bg-white);
+    }    
+}
+/*==========================================================================
+* Top Bar Four CSS
+==========================================================================*/
+.top__bar-four {
+    background: var(--color-10);
+    &-left {     
+        ul {
+            li {
+                a {
+                    &:hover {
+                        color: var(--primary-color-4);
+                    }
+                    i {
+                        color: var(--primary-color-4);
+                    }
+                }
+            }
+        }
+    }
+    &-right {
+        &-social {
+            ul {
+                li {
+                    a {
+                        &:hover {
+                            color: var(--primary-color-4);
+                            span::after {
+                                background: var(--primary-color-4);
+                            }   
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .top__bar-right, .top__bar-three-right, .top__bar-four-right, .top__bar-two-right {
+        justify-content: center;
+        margin-top: 4px;
+    }
+    .top__bar-three {
+        padding: 0;
+        &-right {
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 614px) {
+    .top__bar-left ul li, .top__bar-three-left ul li, .top__bar-four-left ul li, .top__bar-two-left ul li {
+        margin-right: 0;
+        border: 0;
+        padding-right: 0;
+        display: block;
+    }
+}
+@media (max-width: 614px) {
+    .top__bar, .top__bar-three, .top__bar-two {
+        padding: 9px 0;
+    }
+}
+@media (max-width: 350px) {
+    .top__bar, .top__bar-three, .top__bar-two {
+        &-right-social {
+            ul {
+                li {
+                    a {
+                        padding-right: 7px;
+                        margin-right: 7px;
+                        &:hover {
+                            span {
+                                padding-left: 7px;
+                                width: 90px;
+                            }
+                        }
+                    }
+                    &:nth-child(2) a {
+                        &:hover span {
+                            width: 90px;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    .top__bar-three-left ul li a i {
+        margin-right: 7px;
+    }
+}

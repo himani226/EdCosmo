@@ -1,0 +1,221 @@
+/*==========================================================================
+* Dark CSS
+==========================================================================*/
+.light-n {
+    display: none;
+}
+.light {
+	display: none;
+}
+.dark-mode {
+    color: #909090;
+    background: var(--dark-one);
+    --bg-white: #181818;
+    --text-heading-color: #ededed;
+    --text-white: #ededed;
+    --color-1: #ededed;
+    --color-4: #0E0E0E;
+    --color-5: #202123;
+    --border-color-1: #2c2c2c;
+    --border-color-2: #2c2c2c;
+    --border-color-3: #2c2c2c;
+    --border-color-4: #2c2c2c;
+    --box-shadow-1: 0px 10px 50px rgba(0, 0, 0, 0.4);
+    .services__one-item-content-icon::after,
+    .request__quote-page-right,
+    .testimonial__page-item,
+    .services__details-left-content-box,
+    .services__four-item:before,
+    .request__quote-page-right-item,
+    .request__quote-page-services label {
+        background: #1c1c1c;
+    }
+    .team__two-item-content {
+        background: #0E0E0E;
+        box-shadow: none;
+    }
+    .btn-one {
+        &::after,
+        &::before {
+            background: #202123;
+        }
+        &:hover {
+            border-color: #202123;
+        }
+    }
+    .banner__two-bg {
+        background: #161819;
+    }
+    .testimonial__one.page {
+        background: #121212;
+    }
+    .services__one-item,
+    .portfolio__four-item-inner-content-btn,
+    .faq__area-item,
+    .faq__one-left-image-question,
+    .services__two-item::after {
+        background: #202123;
+    }
+    .pricing__area-item-top::before {
+        background: #ededed;
+    }
+    .work__area-item-icon::after {
+        border-color: #ededed;
+    }
+    .work__area-item::after {
+        background-image: url("https://html.themeori.com/noxiy/assets/img/shape/work-dark.png");
+    }
+    .footer__four {
+        background: #0b0b0b;
+    }
+    .services__one,
+    .footer__two {
+        background: #181818;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+    .quote__area {
+        background: #0d0d0d;
+    }
+    .footer__three-widget-company form input {
+        border-color: var(--color-10);
+        &:focus {
+            border-color: var(--primary-color-3);
+        }
+    }
+    .header__area.one {
+        background: #181818;
+        border-bottom: 1px solid rgb(255 255 255 / 18%);
+    }
+    .cta__two-item,
+    .faq__one-left-image-question,
+    .features__two-left-bottom-item,
+    .services__three-items {
+        box-shadow: 0px 10px 50px rgba(0 0 0 / 40%);
+    }
+    .about__two-right-bottom-founder,
+    .features-area-item {
+        box-shadow: 0px 10px 60px rgb(47 47 47 / 40%);
+    }
+    .blog__three-item:hover .blog__three-item-btn::before {
+        background: rgb(255 255 255 / 15%);
+        opacity: 1;
+    }    
+    .light-n {
+        display: inline-block;
+    }
+    .dark-n {
+        display: none;
+    }
+    //========== Services ==========\\
+    .solution__area::after,
+    .video__area::after,
+    .banner__four-image::before,
+    .cta__three::before,
+    .banner__two-image::after,
+    .all__sidebar-item-help::after,
+    .portfolio__four-item-image::after,
+    .request__quote::after,
+    .banner__three-image::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: -1;
+        background: var(--text-white);
+        mix-blend-mode: color;
+    }
+    .banner__four-image::before {
+        z-index: 0;
+    }
+    .about__three-shape {
+        opacity: 0.02;
+    }
+    .offer__area-shape,
+    .about__two-shape-one,
+    .testimonial__one-shape {
+        filter: invert(0.6);
+    }
+    //========== Team ==========\\
+    .team__one-item-image-info-icon::after {
+        background-image: url("https://html.themeori.com/noxiy/assets/img/icon/union-dark.png");
+    }
+    .banner__four::after {
+        background-image: url("https://html.themeori.com/noxiy/assets/img/shape/banner-four-dark.png");
+    }
+    .text__slider ul li h2 a {
+        color: #fff;
+    }
+    .text__slider.two ul li h2 a {
+        color: #fff;
+    }
+    .features-area-item::before {
+        opacity: .10;
+        transition: .5s;
+    }   
+    .features-area-item.features-area-item-hover::before {
+        opacity: 1;
+    } 
+    .footer__one-widget-about-social,
+    .footer__one-widget-about-social ul li a i,
+    .footer__one-widget-location-item-icon i,
+    .footer__one-widget-location-item,
+    .subscribe__area-form form input {
+        border-color: #333334;
+    }   
+    .solution__area::before {
+        opacity: 0.77;
+    }
+    .testimonial__one-pagination-item img,
+    .portfolio__one-item img,
+    .portfolio__two-item-image img,
+    .services__one-item-image > img,
+    .blog__one-item-image img,
+    img.mfp-img,
+    .team__six-item-image img,
+    .team__one-item-image img,
+    .blog__standard-left-item-image img,
+    .request__quote-page-right-item-bottom img,
+    .team__five-item-image img,
+    .about__five-left-image img,
+    .footer__one-widget-gallery-area-item img,
+    .blog__three-item-author img,
+    .about__five-right-author img,
+    .dark__image > img,
+    .banner__two-right img,
+    .faq__one-left-image img,
+    .team__three-item-image img,
+    .team__four-item-image img,
+    .project__one-item img,
+    .blog__four-item-image img,
+    .blog__two-item-content-author-post-image img,
+    .blog__two-item-image img,
+    .testimonial__page-item-bottom img,
+    .post__item-image img,
+    .blog__details-left-comment-item-comment-image img,
+    .portfolio__three-item img,
+    .team__two-item-image > img {
+        filter: grayscale(1);
+    }
+    .who__area-shape
+    .about__five-shape {
+        filter: invert(1);
+    }    
+    .about__three-left-image-experience p,
+    input[type="text"], input[type="email"], input[type="url"], input[type="password"], input[type="search"], input[type="number"], input[type="tel"], input[type="range"], input[type="date"], input[type="month"], input[type="week"], input[type="time"], input[type="datetime"], input[type="datetime-local"], input[type="color"], textarea {
+        color: var(--text-white);
+    }
+    .switch__tab-area {
+        border-color: var(--border-color-1);
+        box-shadow: 0px 10px 60px rgb(47 47 47 / 40%);
+        &-item-button button {
+            opacity: 0.55;
+            &:last-child {
+                opacity: 1;
+            }
+        }        
+    }
+}

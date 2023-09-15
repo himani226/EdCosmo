@@ -1,0 +1,974 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: \n"
+"POT-Creation-Date: 2023-07-31 11:18+0600\n"
+"PO-Revision-Date: 2023-07-22 19:32+0600\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"Language: en\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 3.3.2\n"
+"X-Poedit-Basepath: ../..\n"
+"X-Poedit-KeywordsList: __;_e;esc_html;esc_html__;esc_attr;esc_attr__\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPath-1: noxiy\n"
+
+#: noxiy/comments.php:34
+msgid " Comment"
+msgstr ""
+
+#: noxiy/comments.php:36
+msgid " Comments"
+msgstr ""
+
+#: noxiy/inc/admin/theme-page.php:34 noxiy/inc/admin/theme-page.php:35
+msgid "Noxiy"
+msgstr ""
+
+#: noxiy/inc/admin/theme-page.php:48 noxiy/inc/admin/theme-page.php:49
+msgid "Welcome"
+msgstr ""
+
+#: noxiy/inc/core/comment-form.php:10
+msgid "Full Name*"
+msgstr ""
+
+#: noxiy/inc/core/comment-form.php:19
+msgid "Email Address*"
+msgstr ""
+
+#: noxiy/inc/core/comment-form.php:28
+msgid "https://"
+msgstr ""
+
+#: noxiy/inc/core/comment-form.php:47
+msgid "Your Comment*"
+msgstr ""
+
+#: noxiy/inc/core/comment-form.php:53
+msgid "Submit Comment"
+msgstr ""
+
+#: noxiy/inc/core/comment-form.php:57
+msgid "Fields (*) Mark are Required"
+msgstr ""
+
+#: noxiy/inc/core/comment-form.php:58
+msgid "Leave A Comment"
+msgstr ""
+
+#: noxiy/inc/core/register-sidebar.php:13
+msgid "Right Sidebar"
+msgstr ""
+
+#: noxiy/inc/core/register-sidebar.php:15
+#: noxiy/inc/core/register-sidebar.php:30
+#: noxiy/inc/core/register-sidebar.php:43
+#: noxiy/inc/core/register-sidebar.php:57
+#: noxiy/inc/core/register-sidebar.php:70
+#: noxiy/inc/core/register-sidebar.php:83
+#: noxiy/inc/core/register-sidebar.php:96
+#: noxiy/inc/core/register-sidebar.php:109
+msgid "Add widgets here."
+msgstr ""
+
+#: noxiy/inc/core/register-sidebar.php:28
+msgid "Left Sidebar"
+msgstr ""
+
+#: noxiy/inc/core/register-sidebar.php:41
+msgid "Service Sidebar"
+msgstr ""
+
+#: noxiy/inc/core/register-sidebar.php:55
+#: noxiy/inc/theme-options/customization.php:87
+msgid "Default Footer"
+msgstr ""
+
+#: noxiy/inc/core/register-sidebar.php:68
+msgid "Footer Style 01"
+msgstr ""
+
+#: noxiy/inc/core/register-sidebar.php:81
+msgid "Footer Style 02"
+msgstr ""
+
+#: noxiy/inc/core/register-sidebar.php:94
+msgid "Footer Style 03"
+msgstr ""
+
+#: noxiy/inc/core/register-sidebar.php:107
+msgid "Hamburger Menu"
+msgstr ""
+
+#: noxiy/inc/core/theme-install.php:54
+msgid "Main Menu"
+msgstr ""
+
+#: noxiy/inc/demo-content/demo-import.php:143
+msgid "Menu 1"
+msgstr ""
+
+#: noxiy/inc/demo-content/demo-import.php:152
+msgid "Home 01 - Light"
+msgstr ""
+
+#: noxiy/inc/demo-content/demo-import.php:161
+#: noxiy/inc/theme-options/options-default.php:26
+#: noxiy/template-parts/theme-default/breadcrumb.php:30
+#: noxiy/template-parts/theme-default/breadcrumb.php:38
+msgid "Blog"
+msgstr ""
+
+#: noxiy/inc/demo-content/demo-import.php:177
+msgid "Demo Import"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:8
+msgid "Settings"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:13
+msgid "Global Options"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:20
+#: noxiy/inc/theme-options/global-options.php:11
+msgid "Dark Mode"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:22
+#: noxiy/inc/metabox/theme-metabox.php:34
+#: noxiy/inc/metabox/theme-metabox.php:45
+#: noxiy/inc/metabox/theme-metabox.php:56
+#: noxiy/inc/metabox/theme-metabox.php:100
+#: noxiy/inc/metabox/theme-metabox.php:134
+#: noxiy/inc/metabox/theme-metabox.php:145
+#: noxiy/inc/metabox/theme-metabox.php:188
+#: noxiy/inc/theme-options/customization.php:60
+#: noxiy/inc/theme-options/customization.php:72
+#: noxiy/inc/theme-options/customization.php:140
+#: noxiy/inc/theme-options/default-blog.php:23
+#: noxiy/inc/theme-options/default-blog.php:34
+#: noxiy/inc/theme-options/default-blog.php:45
+#: noxiy/inc/theme-options/default-blog.php:68
+#: noxiy/inc/theme-options/default-blog.php:79
+#: noxiy/inc/theme-options/default-blog.php:90
+#: noxiy/inc/theme-options/error-page-options.php:36
+#: noxiy/inc/theme-options/global-options.php:13
+#: noxiy/inc/theme-options/global-options.php:24
+#: noxiy/inc/theme-options/global-options.php:35
+#: noxiy/inc/theme-options/global-options.php:55
+#: noxiy/inc/theme-options/theme-builder.php:23
+#: noxiy/inc/theme-options/theme-builder.php:59
+#: noxiy/inc/theme-options/theme-builder.php:97
+#: noxiy/inc/theme-options/theme-builder.php:136
+msgid "Yes"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:23
+#: noxiy/inc/metabox/theme-metabox.php:35
+#: noxiy/inc/metabox/theme-metabox.php:46
+#: noxiy/inc/metabox/theme-metabox.php:57
+#: noxiy/inc/metabox/theme-metabox.php:101
+#: noxiy/inc/metabox/theme-metabox.php:135
+#: noxiy/inc/metabox/theme-metabox.php:146
+#: noxiy/inc/metabox/theme-metabox.php:189
+#: noxiy/inc/theme-options/customization.php:61
+#: noxiy/inc/theme-options/customization.php:73
+#: noxiy/inc/theme-options/customization.php:141
+#: noxiy/inc/theme-options/default-blog.php:24
+#: noxiy/inc/theme-options/default-blog.php:35
+#: noxiy/inc/theme-options/default-blog.php:46
+#: noxiy/inc/theme-options/default-blog.php:69
+#: noxiy/inc/theme-options/default-blog.php:80
+#: noxiy/inc/theme-options/default-blog.php:91
+#: noxiy/inc/theme-options/error-page-options.php:37
+#: noxiy/inc/theme-options/global-options.php:14
+#: noxiy/inc/theme-options/global-options.php:25
+#: noxiy/inc/theme-options/global-options.php:36
+#: noxiy/inc/theme-options/global-options.php:56
+#: noxiy/inc/theme-options/theme-builder.php:24
+#: noxiy/inc/theme-options/theme-builder.php:60
+#: noxiy/inc/theme-options/theme-builder.php:98
+#: noxiy/inc/theme-options/theme-builder.php:137
+msgid "No"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:32
+#: noxiy/inc/theme-options/global-options.php:22
+msgid "RTL Mode"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:43
+msgid "Content Padding"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:54
+msgid "Custom Layout"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:65
+msgid "Select Layout"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:78
+msgid "Sidebars"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:79
+#: noxiy/inc/theme-options/site-layout.php:31
+#: noxiy/inc/theme-options/site-layout.php:57
+#: noxiy/inc/theme-options/site-layout.php:80
+#: noxiy/inc/theme-options/site-layout.php:104
+msgid "Select a Sidebar"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:91
+msgid "Header Options"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:98
+msgid "Custom Header"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:110
+#: noxiy/inc/metabox/theme-metabox.php:198
+#: noxiy/inc/theme-options/theme-builder.php:34
+#: noxiy/inc/theme-options/theme-builder.php:70
+#: noxiy/inc/theme-options/theme-builder.php:108
+#: noxiy/inc/theme-options/theme-builder.php:147
+msgid "Select a Template"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:125
+msgid "Breadcrumb Settings"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:132
+#: noxiy/inc/theme-options/customization.php:138
+msgid "Enable Banner"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:143
+#: noxiy/inc/metabox/theme-metabox.php:155
+msgid "Custom Title"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:154
+msgid "Banner Title"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:165
+msgid "Custom Background"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:179
+msgid "Footer Options"
+msgstr ""
+
+#: noxiy/inc/metabox/theme-metabox.php:186
+msgid "Custom Footer"
+msgstr ""
+
+#: noxiy/inc/template-functions.php:73
+msgid "Reply"
+msgstr ""
+
+#: noxiy/inc/template-functions.php:77
+msgid "Edit"
+msgstr ""
+
+#: noxiy/inc/template-tags.php:19
+msgid "1 "
+msgstr ""
+
+#: noxiy/inc/template-tags.php:19
+msgid "Comment"
+msgstr ""
+
+#: noxiy/inc/template-tags.php:19
+msgid "Comments"
+msgstr ""
+
+#: noxiy/inc/template-tags.php:39
+msgid "Tags:"
+msgstr ""
+
+#: noxiy/inc/template-tags.php:39
+#, php-format
+msgid " %1$s"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:393
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:920
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2626
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3673
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:394
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3252
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:395
+msgid "The following plugin was activated successfully:"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:725
+msgid "Set the parent_slug config variable instead."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:1027
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:1027
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:1030
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:1030
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2075
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2366
+msgid "Required"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2369
+msgid "Recommended"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2385
+msgid "WordPress Repository"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2388
+msgid "External Source"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2391
+msgid "Pre-Packaged"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2408
+msgid "Not Installed"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2412
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2414
+msgid "Active"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2420
+msgid "Required Update not Available"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2423
+msgid "Requires Update"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2426
+msgid "Update recommended"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2583
+msgid "Installed version:"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2591
+msgid "Minimum required version:"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2603
+msgid "Available version:"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2626
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2640
+msgid "Plugin"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2641
+msgid "Source"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2642
+msgid "Type"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2646
+msgid "Version"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2647
+msgid "Status"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2696
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2701
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2707
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2777
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2810
+msgid "Install"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2816
+msgid "Update"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2819
+msgid "Activate"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2850
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2852
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2893
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:2895
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3001
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3027
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3251
+msgid "Plugin activation failed."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3591
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3596
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3602
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3610
+#, php-format
+msgid "%1$s done."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3603
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3608
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3611
+msgid "All installations have been completed."
+msgstr ""
+
+#: noxiy/inc/tgm/class-tgm-plugin-activation.php:3613
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: noxiy/inc/tgm/install.php:26
+msgid "Noxiy Toolkit"
+msgstr ""
+
+#: noxiy/inc/tgm/install.php:38
+msgid "One Click Demo Import"
+msgstr ""
+
+#: noxiy/inc/tgm/install.php:65
+msgid "Elementor Website Builder"
+msgstr ""
+
+#: noxiy/inc/tgm/install.php:71
+msgid "HTML Forms"
+msgstr ""
+
+#: noxiy/inc/theme-options/color-options.php:4
+msgid "Theme Colors"
+msgstr ""
+
+#: noxiy/inc/theme-options/color-options.php:11
+msgid "Primary Color 1"
+msgstr ""
+
+#: noxiy/inc/theme-options/color-options.php:20
+msgid "Primary Color 2"
+msgstr ""
+
+#: noxiy/inc/theme-options/color-options.php:29
+msgid "Primary Color 3"
+msgstr ""
+
+#: noxiy/inc/theme-options/color-options.php:38
+msgid "Primary Color 4"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:6
+msgid "Customization"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:18
+msgid "Default Header"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:27
+msgid "Logo - Light"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:28
+msgid "Light Mode Logo"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:31
+#: noxiy/inc/theme-options/customization.php:41
+#: noxiy/inc/theme-options/customization.php:51
+msgid "Upload"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:37
+msgid "Logo - Dark"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:38
+msgid "Dark Mode Logo"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:47
+msgid "Mobile Logo"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:48
+msgid "Responsive Mobile Logo"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:58
+msgid "Search Icon"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:64
+#: noxiy/inc/theme-options/customization.php:76
+#: noxiy/inc/theme-options/error-page-options.php:40
+#: noxiy/inc/theme-options/global-options.php:17
+#: noxiy/inc/theme-options/global-options.php:28
+#: noxiy/inc/theme-options/global-options.php:39
+#: noxiy/inc/theme-options/global-options.php:59
+#: noxiy/inc/theme-options/theme-builder.php:27
+#: noxiy/inc/theme-options/theme-builder.php:63
+#: noxiy/inc/theme-options/theme-builder.php:101
+#: noxiy/inc/theme-options/theme-builder.php:140
+msgid "Enable or Disable"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:70
+msgid "Sticky Menu"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:95
+msgid "Copyright Text"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:105
+msgid "Copyright Color"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:113
+msgid "Copyright Background"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:129
+#: noxiy/inc/theme-options/theme-builder.php:86
+msgid "Breadcrumb"
+msgstr ""
+
+#: noxiy/inc/theme-options/customization.php:149
+msgid "Background"
+msgstr ""
+
+#: noxiy/inc/theme-options/default-blog.php:6
+msgid "Default Blog"
+msgstr ""
+
+#: noxiy/inc/theme-options/default-blog.php:15
+msgid "Blog/Archive"
+msgstr ""
+
+#: noxiy/inc/theme-options/default-blog.php:21
+#: noxiy/inc/theme-options/default-blog.php:66
+msgid "Show Date"
+msgstr ""
+
+#: noxiy/inc/theme-options/default-blog.php:32
+#: noxiy/inc/theme-options/default-blog.php:77
+msgid "Show Author"
+msgstr ""
+
+#: noxiy/inc/theme-options/default-blog.php:43
+#: noxiy/inc/theme-options/default-blog.php:88
+msgid "Show Comment"
+msgstr ""
+
+#: noxiy/inc/theme-options/default-blog.php:54
+#: noxiy/inc/theme-options/error-page-options.php:46
+msgid "Button Text"
+msgstr ""
+
+#: noxiy/inc/theme-options/default-blog.php:59
+msgid "Single Blog"
+msgstr ""
+
+#: noxiy/inc/theme-options/error-page-options.php:6
+msgid "404 Error Page"
+msgstr ""
+
+#: noxiy/inc/theme-options/error-page-options.php:15
+msgid "404 Main"
+msgstr ""
+
+#: noxiy/inc/theme-options/error-page-options.php:22
+msgid "404 Title"
+msgstr ""
+
+#: noxiy/inc/theme-options/error-page-options.php:28
+msgid "404 Content"
+msgstr ""
+
+#: noxiy/inc/theme-options/error-page-options.php:34
+msgid "Home Button"
+msgstr ""
+
+#: noxiy/inc/theme-options/global-options.php:4
+msgid "Global Settings"
+msgstr ""
+
+#: noxiy/inc/theme-options/global-options.php:33
+msgid "Preloader"
+msgstr ""
+
+#: noxiy/inc/theme-options/global-options.php:44
+msgid "Preloader Background"
+msgstr ""
+
+#: noxiy/inc/theme-options/global-options.php:45
+msgid "Select a Background"
+msgstr ""
+
+#: noxiy/inc/theme-options/global-options.php:53
+msgid "Scroll Up"
+msgstr ""
+
+#: noxiy/inc/theme-options/options-default.php:21
+msgid ""
+"<p>Copyright 2023 - All Rights Reserved By <a href=\"http://themeforest.net/"
+"user/themeori\">ThemeOri</a></p>"
+msgstr ""
+
+#: noxiy/inc/theme-options/options-default.php:22
+msgid "4<span>0</span>4"
+msgstr ""
+
+#: noxiy/inc/theme-options/options-default.php:23
+msgid "Oops! Page not found."
+msgstr ""
+
+#: noxiy/inc/theme-options/options-default.php:24
+msgid ""
+"The page you are looking for is not available or doesn’t belong to this "
+"website!"
+msgstr ""
+
+#: noxiy/inc/theme-options/options-default.php:25
+msgid "Back to Home"
+msgstr ""
+
+#: noxiy/inc/theme-options/options-default.php:27
+msgid "Read More"
+msgstr ""
+
+#: noxiy/inc/theme-options/options-default.php:64
+msgid "Font Awesome 5 Pro"
+msgstr ""
+
+#: noxiy/inc/theme-options/site-layout.php:4
+msgid "Site Layout"
+msgstr ""
+
+#: noxiy/inc/theme-options/site-layout.php:12
+msgid "Page Layout"
+msgstr ""
+
+#: noxiy/inc/theme-options/site-layout.php:18
+#: noxiy/inc/theme-options/site-layout.php:44
+#: noxiy/inc/theme-options/site-layout.php:68
+#: noxiy/inc/theme-options/site-layout.php:91
+msgid "Layout"
+msgstr ""
+
+#: noxiy/inc/theme-options/site-layout.php:30
+#: noxiy/inc/theme-options/site-layout.php:56
+#: noxiy/inc/theme-options/site-layout.php:79
+#: noxiy/inc/theme-options/site-layout.php:103
+msgid "Select Sidebar"
+msgstr ""
+
+#: noxiy/inc/theme-options/site-layout.php:38
+msgid "Blog/Archive Layout"
+msgstr ""
+
+#: noxiy/inc/theme-options/site-layout.php:63
+msgid "Single Post Layout"
+msgstr ""
+
+#: noxiy/inc/theme-options/site-layout.php:86
+msgid "Service Layout"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-builder.php:4
+msgid "Theme Builder"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-builder.php:12
+msgid "Header"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-builder.php:21
+msgid "Overwrite Theme Header"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-builder.php:48
+msgid "Footer"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-builder.php:57
+msgid "Overwrite Theme Footer"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-builder.php:95
+msgid "Overwrite Theme Breadcrumb"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-builder.php:125
+msgid "404 Page"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-builder.php:134
+msgid "Overwrite Theme 404 Page"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-options.php:13
+msgid "Theme Options"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-options.php:15
+msgid "Theme Options <small>By ThemeOri</small>"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-options.php:24
+msgid ""
+"Developed by: <a target=\"_blank\" href=\"https://themeforest.net/user/"
+"themeori/portfolio\">ThemeOri</a>"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-options.php:32
+msgid "ThemeOri Core Framework"
+msgstr ""
+
+#: noxiy/inc/theme-options/theme-options.php:83
+msgid "Backup"
+msgstr ""
+
+#: noxiy/inc/theme-options/typography-options.php:5
+msgid "Typography"
+msgstr ""
+
+#: noxiy/inc/theme-options/typography-options.php:14
+msgid "Body Typography"
+msgstr ""
+
+#: noxiy/inc/theme-options/typography-options.php:31
+msgid "H1 Typography"
+msgstr ""
+
+#: noxiy/inc/theme-options/typography-options.php:48
+msgid "h2-h6 Typography"
+msgstr ""
+
+#: noxiy/template-parts/content-none.php:24
+#, php-format
+msgid ""
+"Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: noxiy/template-parts/content-page.php:23
+#: noxiy/template-parts/content-single.php:38
+msgid "Pages:"
+msgstr ""
+
+#: noxiy/template-parts/theme-default/breadcrumb.php:34
+#: noxiy/template-parts/theme-default/breadcrumb.php:66
+#: noxiy/template-parts/theme-default/breadcrumb.php:93
+#: noxiy/template-parts/theme-default/breadcrumb.php:113
+msgid "Home"
+msgstr ""
+
+#: noxiy/template-parts/theme-default/breadcrumb.php:35
+#: noxiy/template-parts/theme-default/breadcrumb.php:67
+#: noxiy/template-parts/theme-default/breadcrumb.php:94
+#: noxiy/template-parts/theme-default/breadcrumb.php:114
+msgid "|"
+msgstr ""
+
+#: noxiy/template-parts/theme-default/breadcrumb.php:51
+msgid "Shop"
+msgstr ""
+
+#: noxiy/template-parts/theme-default/breadcrumb.php:89
+msgid "Not Found"
+msgstr ""
+
+#: noxiy/template-parts/theme-default/breadcrumb.php:97
+msgid "404"
+msgstr ""
+
+#: noxiy/template-parts/theme-default/breadcrumb.php:105
+msgid "Search Results.."
+msgstr ""
+
+#: noxiy/template-parts/theme-default/header-default.php:70
+#: noxiy/template-parts/theme-default/header-default.php:105
+msgid "Search Here....."
+msgstr ""

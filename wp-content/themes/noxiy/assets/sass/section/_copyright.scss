@@ -1,0 +1,45 @@
+
+/*==========================================================================
+* Copyright One CSS
+==========================================================================*/
+.copyright__one,
+.copyright__two,
+.copyright__three,
+.copyright__four {
+    margin-top: 100px;
+    padding: 35px 0;
+    text-align: center;
+    border-top: 1px solid var(--color-10);
+    p {
+        margin: 0;
+        color: var(--text-white);
+        font-size: 15px;
+        line-height: 26px;
+        a {
+            color: var(--primary-color-4);
+            text-decoration: underline;
+            margin: 0 2px;
+        }
+    }
+}
+/*==========================================================================
+* Copyright Two CSS
+==========================================================================*/
+.copyright__two p a {
+    color: var(--primary-color-2);
+}
+/*==========================================================================
+* Copyright Three CSS
+==========================================================================*/
+.copyright__three p a {
+    color: var(--primary-color-3);
+}
+/*==========================================================================
+* Copyright Four CSS
+==========================================================================*/
+.copyright__four {
+    border-color: var(--border-color-3);
+    p a {
+        color: var(--primary-color-1);
+    }
+}

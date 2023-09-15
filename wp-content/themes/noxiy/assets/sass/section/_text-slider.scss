@@ -1,0 +1,59 @@
+/*==========================================================================
+* Text Slider CSS
+==========================================================================*/
+.text__slider {
+	position: relative;
+	overflow: hidden;
+	width: 100%;
+	background: var(--primary-color-2);
+	padding: 80px 0;
+	direction: ltr;
+	.text-slide {
+		--gap: 0.1px;
+		display: flex;
+		gap: var(--gap);
+	}
+	ul {
+		padding: 0;
+		margin: 0;
+		li {
+			display: inline-block;
+			span {
+				margin: 0 40px;
+				color: var(--text-white);
+				opacity: 0.5;
+			}
+			h2 {
+				color: var(--text-white);
+				font-family: var(--body-font);
+				font-weight: 400;
+				font-size: 40px;
+				a {
+					transition: 0.4s;
+				}
+			}
+		}
+	}
+	&.two {
+		background: var(--primary-color-1);
+		padding: 30px 0;
+		ul li {
+			h2 {
+				color: var(--text-white);
+				a {
+					color: #FFFFFF;
+					transition: 0.4s;
+				}
+			}
+			span {
+				color: var(--text-heading-color);
+				opacity: 0.6;
+			}
+		}
+	}
+}
+@media (max-width: 575px) {
+	.text__slider ul li h2 {
+		font-size: 28px;
+	}
+}

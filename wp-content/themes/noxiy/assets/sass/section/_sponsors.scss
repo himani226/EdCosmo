@@ -1,0 +1,78 @@
+/*==========================================================================
+* Solution CSS
+==========================================================================*/
+.solution__area {
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-heading-color);
+        z-index: -1;
+        opacity: 0.55;
+    }  
+    &-title {
+        h2 {
+            color: var(--text-white);
+            max-width: 500px;
+            margin-bottom: 40px;
+        }
+        .btn-one {
+            background: var(--primary-color-1);
+        }
+    }  
+    &-right {
+        position: relative;
+        h6 {
+            color: var(--text-white);
+            margin-top: 30px;
+        }
+        &-video {
+            max-width: 160px;
+            text-align: center;
+            margin: 0 0 0 auto;   
+            a {
+                color: var(--primary-color-1);
+            }         
+        }
+    }
+    &-shape {
+        &-one {
+            position: absolute;
+            left: -80px;
+            bottom: -100px;
+            animation: rollIn 30s infinite linear;
+        }
+        &-two {
+            position: absolute;
+            right: -90px;
+            top: -50px;
+        }
+    }
+}
+@media (max-width: 767px) {
+    .solution__area-right-video {
+        margin: 0 auto;
+        margin-top: 50px;
+    }
+    .solution__area-title h2 {
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+    .solution__area-shape {
+        &-one {
+            max-width: 200px;
+        }
+        &-two {
+            max-width: 300px;
+        }
+    }
+}

@@ -1,0 +1,726 @@
+
+/*==========================================================================
+* Banner One CSS
+==========================================================================*/
+.banner__four,
+.banner__three,
+.banner__two,
+.banner__one {
+    position: relative;
+    z-index: 1;
+    &-content {
+        position: relative;
+        z-index: 1;
+        > span {
+            color: var(--primary-color-4);
+            font-weight: 500;
+            margin-bottom: 15px;     
+            display: inline-block;
+            padding: 3px 15px;
+            padding-left: 30px;
+            position: relative;
+            z-index: 1;
+            font-family: var(--heading-font);
+            &::before {
+                position: absolute;
+                content: '';
+                left: 15px;
+                top: 14px;
+                background: var(--primary-color-4);
+                width: 7px;
+                height: 7px;
+                border-radius: 50%;
+            }
+            &::after {
+                content: '';
+                position: absolute;
+                background: var(--primary-color-4);
+                width: 100%;
+                height: 100%;
+                left: 0;
+                top: 0;
+                opacity: 0.15;
+                z-index: -1;
+                border-radius: 20px;   
+            }
+        }
+        &-button {
+            display: flex;
+            gap: 35px;
+            &-video {
+                position: relative;
+                &::after,
+                &::before {
+                    background: var(--primary-color-4);
+                }
+                a {
+                    position: relative;
+                    z-index: 9;
+                }
+                i {
+                    background: var(--primary-color-4);
+                    width: 60px;
+                    height: 60px;
+                    line-height: 60px;
+                    text-align: center;
+                    border-radius: 50%;
+                    color: var(--text-white);
+                }
+            }
+        }
+    }
+}
+.banner__one {
+    &-content {
+        padding: 190px 0 270px 0;
+        h1 {
+            font-size: 90px;
+            line-height: 105px;
+            text-transform: capitalize;
+            font-weight: 600;
+            max-width: 600px;
+            margin-bottom: 50px;
+            color: var(--text-white);
+        }
+        &-button .btn-one {
+            background: var(--primary-color-4);
+        }
+    }
+    &-shape {
+        &-one {
+            position: absolute;
+            left: 3%;
+            top: 15%;
+            z-index: 1;
+            animation: rollIn 10s infinite linear;   
+        }
+        &-two {
+            position: absolute;
+            left: 0;
+            bottom: 0;            
+        }
+        &-three {
+            position: absolute;
+            top: 0;
+            right: 0;            
+        }
+        &-four {
+            position: absolute;
+            top: 60%;
+            left: 45%;     
+            animation: upDown 6s linear infinite;        
+        }
+    }
+    &-arrow {
+        top: 46%;
+        &-next,
+		&-prev {
+			i {
+                opacity: 0.4;
+                &:hover {
+                    background: var(--primary-color-4);
+                }  
+			} 
+		}
+    }
+}
+.banner__two,
+.banner__one {
+    &-arrow {
+        position: absolute;
+        max-width: 1560px;
+        margin: 0 auto;
+        padding: 0 10px;
+        top: 50%;
+        transform: translateY(-50%);
+        left: 0;
+        right: 0;
+        z-index: 99;
+        display: grid;
+        justify-content: end;
+        width: 100%;
+        .swiper-button-next, .swiper-button-prev {
+            position: static;
+        }        
+        &-next,
+        &-prev {		
+            display: inline-block;
+            i {
+                font-size: 22px;
+                width: 60px;
+                height: 60px;
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                background: var(--bg-white);
+                color: var(--text-heading-color);
+                transition: 0.4s;	
+                opacity: 0.3;
+                &:hover {
+                    opacity: 1;
+                    background: var(--primary-color-4);
+                    color: var(--text-white);
+                }  
+            } 
+        }       
+        &-next {
+            margin: 30px 35px 0 0;
+        } 
+    }
+    &-image {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 0;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+    }
+}
+/*==========================================================================
+* Banner Two CSS
+==========================================================================*/
+.banner__two {
+    overflow: hidden;
+    &-bg {
+        background: #f9fbff;
+    }
+    &-content {
+        padding: 190px 0;
+        z-index: 99;
+        > span {
+            color: var(--primary-color-2);
+            &::before,
+            &::after {
+                background: var(--primary-color-2);
+            }
+        }
+        h1 {
+            font-size: 90px;
+            line-height: 100px;
+            font-weight: 700;
+            margin-bottom: 15px;
+            text-transform: capitalize;
+        }
+        p {
+            font-weight: 500;
+            max-width: 500px;
+            margin-bottom: 45px;
+        }
+        &-button {
+            &-video {
+                &::after,
+                &::before {
+                    background: var(--primary-color-2);
+                    border-color: var(--primary-color-2);
+                }
+                i {
+                    background: var(--primary-color-2);
+                }
+            }
+        }
+    }
+    &-right {
+        position: absolute;
+        bottom: 0;
+    }
+    &-shape {
+        &-one {
+            position: absolute;
+            left: 50px;
+            bottom: 60px;    
+            animation: rollIn 5s infinite linear;
+            z-index: 2;        
+        }
+        &-two {
+            position: absolute;
+            top: 70px;
+            right: 50px;     
+            z-index: 2;       
+        }
+        &-three {
+            position: absolute;
+            bottom: 80px;
+            right: 70px;     
+            z-index: 2;
+            animation: upDown 7s linear infinite;    
+        }
+        &-four {
+            position: absolute;
+            top: -40px;
+            left: 0;     
+            z-index: 2;
+            animation: upDown 10s linear infinite;    
+        }
+    }
+    &-arrow {       
+        &-next,
+        &-prev {		
+            i {
+                background: var(--bg-white);
+                transition: 0.4s;	
+                opacity: 1;
+                box-shadow: var(--box-shadow-1);
+                &:hover {
+                    background: var(--primary-color-2);
+                }  
+            } 
+        }
+    }
+}
+/*==========================================================================
+* Banner Three CSS
+==========================================================================*/
+.banner__three {
+    &-image {
+        background-position: right;
+        background-size: initial;
+        background-repeat: no-repeat;
+        position: relative;
+        z-index: 1;
+    }
+    &-shape {
+        position: absolute;
+        left: 0;
+        height: 100% !important;
+        top: 0;
+        max-width: 50% !important
+    }
+    &-content {
+        padding: 326px 0 175px 0;
+        > span {
+            color: var(--text-white);
+            &::before,
+            &::after {
+                background: var(--primary-color-3);
+            }
+            &::after {
+                opacity: 0.4;
+            }
+        }
+        h1 {
+            font-size: 80px;
+            line-height: 90px;
+            max-width: 600px;
+            margin-bottom: 35px;
+            color: var(--text-white);
+        }
+        p {
+            color: var(--text-white);
+            font-weight: 500;
+            max-width: 560px;
+            margin-bottom: 50px;
+        }
+        &-button {
+            margin-bottom: 40px;
+            &-video {
+                &::after,
+                &::before {
+                    background: var(--primary-color-3);
+                    border-color: var(--primary-color-3);
+                }
+                i {
+                    background: var(--primary-color-3);
+                }
+            }
+            .btn-one {
+                background: var(--primary-color-3);
+                &::before,
+                &::after {
+                    background: var(--bg-white);
+                }   
+                &:hover {
+                    color: var(--text-heading-color);
+                }         
+            }
+        }
+        .banner-pagination {
+            font-size: 40px;
+            .swiper-pagination-current {
+                color: var(--primary-color-3);
+                font-size: 30px;
+                position: relative;
+                top: -10px;
+            }
+            span {
+                font-size: 20px;
+                line-height: 30px;
+                font-family: var(--heading-font);
+            }
+        }
+    }
+}
+/*==========================================================================
+* Banner Four CSS
+==========================================================================*/
+.banner__four {
+    overflow: hidden;
+    &::after {
+        content: "";
+        position: absolute;
+        background-image: url("https://html.themeori.com/noxiy/assets/img/shape/banner-four.png");
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: 0;
+    }
+    &-image {
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: initial;
+    }
+    &-content {
+        padding: 200px 0;
+        > span {
+            color: var(--primary-color-1);
+            &::before {
+                background: var(--primary-color-1);
+            }
+            &::after {
+                background: var(--primary-color-1);      
+            }
+        }
+        h1 {
+            max-width: 480px;
+        }
+        &-button {
+            margin-top: 50px;
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            .btn-one {
+                background: var(--primary-color-1);
+            }
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    display: inline-block;
+                    margin-left: -35px;
+                    img {
+                        max-width: 60px;
+                        border-radius: 50%;
+                        border: 5px solid var(--bg-white);
+                    }
+                    &:first-child {
+                        margin: 0;
+                        img {
+                            border-color: var(--primary-color-1);
+                        }
+                    }
+                }
+            }
+            &-customer {
+                display: flex;
+                align-items: center;
+                gap: 15px;
+                h6 {
+                    font-weight: 500;
+                    font-family: var(--body-font);
+                    i {
+                        color: #ffc600;
+                    }
+                }
+            }
+        }
+    }
+    &-shape {
+        &-three,
+        &-one {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: 1;
+        }
+        &-two {
+            position: absolute;
+            left: 90px;
+            bottom: 70px;
+            animation: rollIn 10s infinite linear;   
+            z-index: 1;
+        }
+        &-three {
+            left: 40%;
+            top: 50%;
+        }
+    }
+}
+@media (max-width: 1599px) {
+    .banner__one-shape {
+        &-one {
+            top: 7%;
+        }
+        &-four {
+            left: 40%;     
+        }
+    }
+    .banner__two {
+        &-arrow {
+            &-prev {		
+                left: 35px;
+            }       
+            &-next {			
+                right: 65px;
+            } 
+        }
+    }   
+    .banner__four::after {
+        left: -270px;
+    } 
+}
+@media (max-width: 1399px) {
+    .banner__two {
+        &-content {
+            padding: 160px 0;
+            h1 {
+                font-size: 80px;
+                line-height: 90px;
+            }            
+        }
+        &-right {
+            right: 30px;
+            max-width: 43%;
+        }
+    } 
+    .banner__four::after {
+        left: -270px;
+        width: 110%;
+    }    
+}
+@media (max-width: 1199px) {
+    .banner__three-shape {
+        max-width: 65% !important;
+    }
+    .banner__two-arrow-prev {
+        left: 12px;
+    }
+    .banner__two-arrow-next {
+        right: 55px;
+    }
+    .banner__four {
+        &::after {
+            left: -350px;
+            width: 130%;
+        } 
+        &-content {
+            padding: 180px 0;
+        }
+        &-shape {
+            &-one {
+                max-width: 150px;
+            }
+            &-three {
+                left: 50%;
+            }
+        }
+    }
+}
+@media (max-width: 1050px) {
+    .banner__three-shape {
+        width: 100% !important;
+        max-width: 100% !important;
+    }
+    .banner__one-shape-four {
+        left: 60%;
+        top: 70%;
+    }
+}
+@media (max-width: 991px) {
+    .banner__four {
+        &::after {
+            left: 0;
+            width: 100%;
+        }
+        &-shape-three {
+            left: 70%;
+        }
+    }
+    .banner__three-content {
+        padding: 326px 0 130px 0;
+    }        
+    .banner__two {
+        &-right {
+            position: relative;
+            max-width: initial;
+            right: 0;
+            top: 0;
+            text-align: center;
+        }
+        &-content {
+            text-align: center;
+            padding-bottom: 50px;
+            p {
+                margin: 0 auto;
+                padding-bottom: 40px;
+            }
+            &-button {
+                justify-content: center;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .banner__one-content  {
+        padding: 140px 0 220px 0;
+        h1 {
+            font-size: 72px;
+            line-height: 82px;
+            max-width: 500px;
+        }        
+    }
+    .banner__two {
+        &-content {
+            padding: 150px 0;
+        }
+        &-right {
+            display: none;
+        }
+    }
+    .banner__two-shape-one {
+        left: -45px;
+    }
+    .banner__two-shape-four {
+        max-width: 150px;
+    }
+    .banner__two-shape-three {
+        right: -20px;
+        bottom: 80px;
+    }
+    .banner__two-content h1,
+    .banner__three-content h1 {
+        font-size: 68px;
+        line-height: 78px;
+    }
+    .banner__three-content p, .banner__one-content p {
+        margin-bottom: 40px;
+    }
+}
+@media (max-width: 640px) {
+    .banner__one-content  {
+        padding-top: 140px;
+    }
+    .banner__two-arrow, .banner__one-arrow {
+        display: none;
+    }
+    .banner__four-content-button {
+        display: inline-grid;
+        margin-top: 35px;
+    }
+}
+@media (max-width: 614px) {
+    .banner__three-content {
+        padding: 370px 0 130px 0;
+    }
+}
+@media (max-width: 575px) {
+    .banner__four {
+        &-content {
+            padding: 120px 0;
+        }
+        &-shape {
+            &-one {
+                max-width: 100px;
+            }
+            &-three {
+                left: 60%;
+            }
+            &-two {
+                left: 80px;
+                bottom: 35px;
+                max-width: 60px;
+            }
+        }
+    }
+    .banner__two {
+        &-content {
+            padding: 135px 0;
+        }
+        &-shape {
+            &-one {
+                left: 0;
+                bottom: 30px;
+                max-width: 90px;
+            }
+            &-two {
+                right: 30px;
+                max-width: 120px;
+            }
+            &-four {
+                left: 0;
+                max-width: 120px;
+            }
+        }
+    }
+    .banner__three-content {
+        padding: 340px 0 120px 0;
+    }
+}
+@media (max-width: 530px) {
+    .banner__one-content h1 {
+        font-size: 62px;
+        line-height: 72px;
+        max-width: 430px;
+    }
+    .banner__one-shape-two,
+    .banner__one-shape-three {
+        max-width: 40%;
+    }
+    .banner__one-shape-one,
+    .banner__one-shape-four {
+        max-width: 55px;
+    }
+    .banner__two-content h1 {
+        font-size: 54px;
+        line-height: 64px;
+    }
+    .banner__three-content h1 {
+        font-size: 56px;
+        line-height: 66px;
+    }
+    .banner__four-content h1 {
+        font-size: 72px;
+        line-height: 82px;
+    }
+}
+@media (max-width: 430px) {
+    .banner__two-content h1 {
+        font-size: 44px;
+        line-height: 54px;
+    }
+    .banner__one-content h1 {
+        font-size: 49px;
+        line-height: 59px;
+        max-width: 300px;
+    }
+    .banner__three-content h1 {        
+        font-size: 46px;
+        line-height: 56px;
+    }
+    .banner__four-content h1 {
+        font-size: 62px;
+        line-height: 72px;
+    }
+}
+@media (max-width: 355px) {
+    .banner__four-content-button, .banner__three-content-button, .banner__two-content-button, .banner__one-content-button {
+        gap: 20px;
+    }
+    .banner__two-content h1 {
+        font-size: 39px;
+        line-height: 49px;
+    }
+    .banner__three-content h1 {
+        font-size: 41px;
+        line-height: 51px;
+    }
+    .banner__four-content h1 {
+        font-size: 54px;
+        line-height: 64px;
+    }
+}

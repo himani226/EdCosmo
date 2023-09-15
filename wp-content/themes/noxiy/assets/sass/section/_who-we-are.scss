@@ -1,0 +1,94 @@
+/*==========================================================================
+* Who We CSS
+==========================================================================*/
+.who__area {
+    overflow: hidden;
+    background: var(--bg-white);
+    position: relative;
+    z-index: 1;
+    &-shape {
+        position: absolute;
+        right: 0;
+        top: -200px;
+        z-index: -1;
+    }
+    &-left {
+        &-title {
+            h2 {
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        &-list {
+            margin-top: 30px;
+            p {
+                color: var(--text-heading-color);
+                font-family: var(--heading-font);
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;
+                margin: 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                margin-bottom: 10px;
+                &:last-child {
+                    margin: 0;
+                }
+                i {
+                    color: var(--text-white);
+                    width: 20px;
+                    height: 20px;
+                    background: var(--primary-color-1);
+                    border-radius: 50%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 15px;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+        }
+        .btn-one {
+            background: var(--primary-color-1);
+            margin-top: 40px;
+        }
+    }
+    &-right {
+        &-image {
+            position: relative;
+            z-index: 1;
+            display: flex;
+            align-items: center;
+            gap: 25px;
+            justify-content: end;
+            &-shape {
+                position: absolute;
+                right: 10%;
+                top: 10px;
+                z-index: -1;
+                animation: rollIn 20s infinite linear;
+                max-width: 58%;
+                &-one {
+                    position: absolute;
+                    right: 0;
+                    top: 0;
+                    animation-duration: 3s;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .who__area-left {
+        margin-right: 65px;
+    }  
+}
+@media (max-width: 1199px) {
+    .who__area-left {
+        margin-right: 0;
+    }  
+}

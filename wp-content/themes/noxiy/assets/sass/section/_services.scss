@@ -1,0 +1,628 @@
+/*==========================================================================
+* Services One CSS
+==========================================================================*/
+.services__one {
+    background: var(--color-4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    padding-bottom: 245px;
+    position: relative;
+    z-index: 1;
+    &-item {
+        position: relative;
+        z-index: 1;
+        background: var(--bg-white);
+        border-radius: 6px;
+        margin-top: 30px;
+        &::before {
+            position: absolute;
+            content: '';
+            left: 0;
+            bottom: 0;
+            background: var(--primary-color-4);
+            width: 100%;
+            height: 0;
+            transition: all 400ms ease;
+            border-radius: 6px;
+            z-index: -1;
+        }
+        &-image {
+            position: relative;
+            padding: 10px 10px 0 10px;
+            z-index: 1;
+            overflow: hidden;
+            > img {
+                border-radius: 6px;
+            }
+            &::before {
+                position: absolute;
+                top: 50%;
+                left: 50%;
+                z-index: 2;
+                display: block;
+                content: '';
+                width: 0;
+                height: 0;
+                background: rgba(255, 255, 255, 0.113);
+                border-radius: 100%;
+                transform: translate(-50%, -50%);
+                opacity: 0;                
+            }
+            &:hover::before {
+                animation: circle .9s;
+            }
+        }
+        &-content {
+            padding: 22px 25px;
+            position: relative;
+            z-index: 1;
+            &-icon {
+                position: absolute;
+                right: 25px;
+                top: -40px;
+                background: var(--primary-color-4);
+                width: 60px;
+                height: 60px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 10px;
+                z-index: 1;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    height: 100%;
+                    width: 100%;
+                    transform: scale(0);
+                    border-radius: 10px;
+                    background-color: var(--text-white);
+                    z-index: -1;
+                    transition: all 300ms ease;
+                }
+                i {
+                    color: var(--text-white);
+                    font-size: 40px;
+                    transition: 0.4s;
+                }
+            }
+            p {
+                position: relative;
+                padding-bottom: 18px;
+                margin-bottom: 17px; 
+                &::before {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    bottom: 0;
+                    width: 100%;
+                    height: 1px;
+                    background: var(--text-heading-color);
+                    opacity: 0.1;
+                    transition: 0.4s;
+                }
+            }
+            p,
+            h4 {
+                transition: 0.4s;           
+            }
+            > a {
+                font-family: var(--heading-font);
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 26px;
+                color: var(--text-heading-color);
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                transition: all 500ms ease;
+                i {
+                    position: relative;
+                    top: 1px;
+                }
+            }
+        }
+        &:hover {
+            &::before {
+                height: 100%;
+            }
+            .services__one-item {
+                &-content {
+                    > a,
+                    p,
+                    h4 {
+                        color: var(--text-white);
+                    }
+                    p {
+                        border-color: var(--color-11);
+                        &::before {
+                            background: var(--text-white);
+                            opacity: 0.25;
+                        }
+                    }
+                    &-icon {
+                        i {
+                            color: var(--primary-color-4);
+                        }
+                        &::after {
+                            transform: scale(1);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-btn .btn-one {
+        background: var(--primary-color-4);
+    }
+}
+/*==========================================================================
+* Services Two CSS
+==========================================================================*/
+.services__two {
+    position: relative;
+    z-index: 1;
+    &-title {
+        text-align: center;
+    }
+    &-item {
+        background: var(--bg-white);
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+        padding: 0 30px 18px 30px;
+        text-align: center;
+        position: relative;
+        z-index: 9;
+        margin-top: 46px;
+        &::before {
+            content: '';
+            position: absolute;
+            left: 50%;
+            top: -16px;
+            width: 213px;
+            height: 100%;
+            background-image: url('https://html.themeori.com/noxiy/assets/img/shape/services-4.png');
+            background-repeat: no-repeat;
+            transform: translateX(-50%);
+            z-index: -1;
+        }
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 6px;
+            background: var(--bg-heading-color);
+            z-index: -2;
+            transition: all 400ms ease;
+            clip-path: polygon(0 0, 100% 0, 99% 100%, 1% 100%);
+        }
+        &-icon i::before {
+            font-size: 50px;
+            color: var(--text-white);
+        }
+        &-content {
+            margin-top: 37px;
+            h4 {
+                margin-bottom: 15px;
+                a {
+                    transition: 0.4s;
+                }
+            }
+            p {
+                transition: 0.4s;
+            }
+        }
+        &-btn {
+            margin-top: 26px;
+            padding-top: 18px;
+            position: relative;
+            z-index: 1;
+            &::before {
+                content: '';
+                position: absolute;
+                left: 0;
+                top: 0;
+                width: 100%;
+                height: 1px;
+                background: var(--text-heading-color);
+                opacity: 0.1;
+                transition: 0.4s;
+            }
+            a {
+                font-weight: 600;
+                transition: 0.4s;
+                font-family: var(--heading-font);
+                color: var(--text-heading-color);
+            }
+        }
+        &:hover {
+            &::after {
+                clip-path: initial;
+                height: 100%;
+            }
+            .services__two-item {
+                &-content {
+                    p {
+                        color: var(--text-white);
+                    }
+                    h4 a {
+                        color: var(--text-white);
+                        &:hover {
+                            color: var(--primary-color-2);
+                        }
+                    }
+                }
+                &-btn {
+                    &::before {
+                        background: var(--text-white);
+                        opacity: 0.2;
+                    }
+                    a {
+                        color: var(--text-white);
+                        &:hover {
+                            color: var(--primary-color-2);
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &-shape {
+        &-one {
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+        }
+        &-two {
+            position: absolute;
+            top: 0;
+            right: 0;
+            z-index: -1;
+        }
+    }
+}
+/*==========================================================================
+* Services Three CSS
+==========================================================================*/
+.services__three {
+    position: relative;
+    z-index: 0;
+    background: var(--bg-white);
+    &-title {
+        text-align: center;
+    }
+    &-items {
+        background: var(--bg-white);
+        position: relative;
+        overflow: hidden;
+        box-shadow: 0px 10px 50px rgba(0, 0, 0, 0.08);
+        border-top: 4px solid var(--primary-color-3);
+        border-radius: 0 0 6px 6px;
+        &:hover {
+            .services__three-item {
+                transform: translateY(100%);
+            }
+            .two {
+                bottom: 0;
+            }
+        }
+        .two {
+            background: var(--bg-heading-color);
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: absolute;
+            left: 0;
+            bottom: 100%;
+            width: 100%;
+            height: 100%;
+            transition: all 500ms ease;
+            padding: 35px 40px 40px 40px;
+            span {
+                position: absolute;
+                right: 40px;
+                top: 70px;
+                font-size: 80px;
+                color: var(--text-white);
+                opacity: 0.2;
+                -webkit-text-fill-color: transparent;
+                -webkit-text-stroke-width: 1px;
+                font-weight: 700;
+                font-family: var(--heading-font);
+                transform: rotate(-40deg);
+            }
+            .services__three-item {
+                &-content {
+                    p {
+                        color: var(--text-white);
+                    }
+                    h4 a {
+                        color: var(--text-white);
+                        transition: 0.4s;
+                        &:hover {
+                            color: var(--primary-color-3);
+                        }
+                    }
+                }
+                &-icon {
+                    margin-bottom: 30px;
+                    margin-left: 10px;
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        width: 120px;
+                        height: 120px;
+                        border: 1px dashed var(--primary-color-3);
+                        border-radius: 50%;
+                        display: block;
+                        top: -10px;
+                        left: -10px;
+                        animation: rollIn 10s infinite linear;                
+                    }                
+                }
+            }
+        }
+    }
+    &-item {
+        padding: 35px 40px 40px 40px;
+        position: relative;
+        z-index: 9;
+        transition: 0.5s;
+        span {
+            position: absolute;
+            right: 40px;
+            top: 70px;
+            font-size: 80px;
+            color: var(--text-heading-color);
+            opacity: 0.1;
+            -webkit-text-fill-color: transparent;
+            -webkit-text-stroke-width: 1px;
+            font-weight: 700;
+            font-family: var(--heading-font);
+            transform: rotate(-40deg);           
+        }            
+        &-icon {
+            position: relative;
+            i {
+                color: var(--text-white);
+                font-size: 60px;
+                background: var(--primary-color-3);
+                width: 100px;
+                height: 100px;
+                display: flex;
+                border-radius: 50%;
+                justify-content: center;
+                align-items: center;
+                margin-bottom: 20px;
+                position: relative;
+            }
+        }
+        &-content {
+            h4 {
+                margin-bottom: 15px;
+                a {
+                    transition: 0.4s;
+                }
+            }
+            p {
+                transition: 0.4s;
+                margin: 0;
+            }
+        }
+    }
+}
+/*==========================================================================
+* Services Four CSS
+==========================================================================*/
+.services__four {
+    background: var(--bg-heading-color);
+    &-title {
+        h2 {
+            color: var(--text-white);
+        }
+    }
+    &-item {
+        border-top: 2px solid var(--border-color-3);
+        padding: 55px 40px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        position: relative;
+        z-index: 1;
+        overflow: hidden;
+        &:last-child {
+            border-bottom: 2px solid var(--border-color-3);            
+        }
+        &:before {
+            content: "";
+            background: var(--bg-white);
+            height: 100%;
+            width: 0%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            z-index: -1;
+            transition: 0.5s;
+        }        
+        &-left {
+            display: flex;
+            align-items: center;
+            gap: 40px;
+            i {
+                font-size: 80px;
+                color: var(--primary-color-1);
+            }
+            h3 a {
+                color: var(--text-white);
+                max-width: 184px;
+                display: inline-block;
+                transition: 0.3s;
+            }
+            p {
+                max-width: 580px;
+                margin: 0;
+                padding-left: 70px;
+                position: relative;
+                &::after {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 0;
+                    background: var(--border-color-3);
+                    width: 1px;
+                    height: 100%;
+                    transition: 1s;
+                }
+            } 
+        }
+        &-right {         
+            a i {
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                border-radius: 50%;
+                width: 70px;
+                height: 70px;
+                font-size: 20px;
+                background: var(--primary-color-1);
+                color: var(--text-white);
+                transition: 0.4s;
+            }
+        }
+        &:hover {
+            .services__four-item {
+                &-left {
+                    h3 a {
+                        color: var(--text-heading-color);
+                        &:hover {
+                            color: var(--primary-color-1);
+                        }
+                    }
+                    p::after {
+                        background: var(--border-color-1);
+                    }
+                }
+                &-right a i {
+                    transform: rotate(45deg);
+                }
+            }
+            &::before {
+                animation: bounceRight 2s;
+                width: 100%;                
+            }
+        }
+    }
+    &-titles {
+        text-align: center;
+        max-width: 500px;
+        margin: 0 auto;
+        span {
+            display: inline-block;
+            font-size: 18px;
+            font-weight: 500;
+            a {
+                color: var(--primary-color-1);
+                background: linear-gradient(to right, currentcolor 0%, currentcolor 100%) 0px 95%/0px 1.7px no-repeat;
+                transition: all 600ms ease;
+                &:hover {
+                    background-size: 100% 1.7px;                
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+* Services Details CSS
+==========================================================================*/
+.services__details {
+    &-left {
+        &-content {
+            h2 {
+                margin-bottom: 15px;
+            }
+            &-box {
+                background: var(--color-4);
+                margin: 30px 0;
+                padding: 40px 30px;
+                border-left: 3px solid var(--primary-color-1);
+                display: block;
+                font-size: 18px;
+                line-height: 30px;
+                font-weight: 500;
+                color: var(--text-heading-color);
+            }
+            &-list {
+                margin-top: 30px;
+                p {
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    font-family: var(--heading-font);
+                    color: var(--text-heading-color);
+                    margin-bottom: 8px;
+                    i {
+                        width: 25px;
+                        height: 25px;
+                        font-size: 14px;
+                        border: 1px solid var(--border-color-1);
+                        display: inline-flex;
+                        align-items: center;
+                        justify-content: center;
+                        box-shadow: var(--box-shadow-1);
+                        border-radius: 50%;
+                        color: var(--primary-color-1);                        
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .services__three-items .two,
+    .services__three-item {
+        padding: 30px 26px 35px 26px;
+    }
+}
+@media (max-width: 1199px) { 
+    .services__four-item {
+        padding: 50px 30px;
+        &-left p {
+            padding-left: 45px;
+        }
+    }
+}
+@media (max-width: 991px) { 
+    .services__four-item {
+        display: block;
+        &-left {
+            display: block;
+            i {
+                margin-bottom: 25px;
+                display: block;
+            }
+            h3 a {
+                max-width: initial;
+            }            
+            p {
+                padding: 0;
+                margin-top: 20px;
+                margin-bottom: 35px;
+                &::after {
+                    display: none;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 575px) { 
+    .services__four-item {
+        padding: 32px 22px;
+    }
+}

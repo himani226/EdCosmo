@@ -1,0 +1,73 @@
+/*==========================================================================
+* Video Area CSS
+==========================================================================*/
+.video__area {
+	background-position: center;
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+	text-align: center;
+	padding: 180px 0 170px 0;
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    &::before {
+        content: '';
+        position: absolute;
+        background: var(--bg-heading-color);
+        width: 100%;
+        height: 100%;
+        left: 0;
+        top: 0;
+        z-index: -1;
+        opacity: 0.5;
+    }
+    &-play a {
+        color: var(--primary-color-3);
+    }
+    h2 {
+        max-width: 740px;
+        text-align: center;
+        margin: 0 auto;
+        margin-top: 60px;
+        color: var(--text-white);
+    }
+    &-shape {
+       &-one {
+            position: absolute;
+            left: 0;
+            top: -20%;
+            animation: upDown 5s linear infinite;        
+        }
+        &-two {
+            position: absolute;
+            right: 20px;
+            top: 70px;
+            max-width: 80px;        
+        }
+        &-three {
+            position: absolute;
+            right: 120px;
+            bottom: 70px;
+            max-width: 55px;     
+            animation: rollIn 3s infinite linear;   
+        }
+    }
+}
+@media (max-width: 991px) {
+    .video__area {
+        padding: 150px 0 140px 0;
+        &-shape-one {
+            left: -100px;
+            top: -80px;
+        }
+    }
+}
+@media (max-width: 575px) {
+    .video__area {
+        padding: 120px 0 110px 0;
+    }
+    .video__area-shape-three {
+        right: 80px;
+        bottom: 40px;
+    }
+}

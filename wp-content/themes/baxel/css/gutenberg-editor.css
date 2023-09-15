@@ -1,0 +1,466 @@
+/*///////////////////////////////
+////// TABLE OF CONTENTS ////////
+/////////////////////////////////
+
+1. General / #general
+
+2. Common Blocks / #common-blocks
+
+	2.1. Paragraph
+	2.2. Heading
+	2.3. Image
+	2.4. Gallery
+	2.5. Quote
+	2.6. File
+	2.7. List
+	2.8. Audio
+	2.9. Cover
+	2.10. Video
+
+3. Formatting / #formatting
+
+	3.1. Pullquote
+	3.2. Custom HTML
+	3.3. Preformatted
+	3.4. Table
+	3.5. Verse
+	3.6. Code
+
+4. Layout Elements / #layout-elements
+
+	4.1. Separator
+	4.2. Button
+	4.3. Columns
+	4.4. More
+	4.5. Media & Text
+	4.6. Page Break
+
+5. Widgets / #widgets
+
+	5.1. Archives
+	5.2. Categories
+	5.3. Latest Posts
+	5.4. Latest Comments
+
+6. Embeds / #embeds
+
+/////////////////////////////////
+/////////////////////////////////
+///////////////////////////////*/
+
+/* 1. General / #general */
+
+.editor-writing-flow {
+	font-size: 13px;
+	letter-spacing: 0.08em;
+}
+
+.editor-writing-flow a {
+	text-decoration: none;
+}
+
+.wp-block {
+  max-width: 630px;
+}
+
+.wp-block[data-align="wide"] {
+  max-width: 710px;
+}
+
+.wp-block[data-align="full"] {
+  max-width: none;
+}
+
+.editor-writing-flow .editor-post-title__input {
+	font-size: 20px;
+	text-transform: uppercase;
+	letter-spacing: 0.08em;
+	text-align: center;
+}
+
+/* 2. Common Blocks / #common-blocks */
+
+	/* 2.1. Paragraph */
+
+	.editor-writing-flow .wp-block-paragraph {
+		font-size: 13px;
+		letter-spacing: 0.08em;
+	}
+
+	.editor-writing-flow .wp-block-paragraph.has-background {
+
+	}
+
+	/* 2.2. Heading */
+
+	.editor-writing-flow .wp-block-heading {
+
+	}
+
+	.editor-writing-flow .wp-block-heading h1 {
+		font-size: 1.3em;
+	}
+
+	.editor-writing-flow .wp-block-heading h2 {
+		font-size: 1.2em;
+	}
+
+	.editor-writing-flow .wp-block-heading h3 {
+		font-size: 1.1em;
+	}
+
+	.editor-writing-flow .wp-block-heading h4 {
+		font-size: 1em;
+	}
+
+	.editor-writing-flow .wp-block-heading h5 {
+		font-size: 0.83em;
+	}
+
+	.editor-writing-flow .wp-block-heading h6 {
+		font-size: 0.67em;
+	}
+
+	/* 2.3. Image */
+
+	.editor-writing-flow .wp-block-image {
+
+	}
+
+	.editor-writing-flow .wp-block-image.alignleft {
+
+	}
+
+	.editor-writing-flow .wp-block-image.alignright {
+
+	}
+
+	.editor-writing-flow .wp-block-image figcaption {
+		font-size: 11px;
+	}
+
+	.editor-writing-flow .wp-block-image figcaption.editor-rich-text__tinymce.mce-content-body[data-is-placeholder-visible="false"] {
+
+	}
+
+	/* 2.4. Gallery */
+
+	.editor-writing-flow .wp-block-gallery {
+
+	}
+
+	.editor-writing-flow .wp-block-gallery figcaption {
+		font-size: 11px;
+	}
+
+	.editor-writing-flow .wp-block-gallery figure.is-selected figcaption {
+
+	}
+
+	/* 2.5. Quote */
+
+	.editor-writing-flow .wp-block-quote.is-style-default {
+		padding: 0 20px 0 0;
+		max-width: 300px;
+		border: 0;
+	}
+
+	.editor-writing-flow .wp-block-quote.is-style-default p {
+		font-size: 13px;
+	}
+
+	.editor-writing-flow .wp-block-quote .wp-block-quote__citation {
+		font-size: 12px;
+		font-style: italic;
+	}
+
+	.editor-writing-flow .wp-block-quote.is-style-large {
+		padding: 0;
+	}
+
+	.editor-writing-flow .wp-block-quote.is-style-large p {
+		font-size: 16px;
+		font-style: normal;
+	}
+
+	.editor-writing-flow .wp-block-quote.is-style-large .wp-block-quote__citation {
+
+	}
+
+	/* 2.6. File */
+
+	.editor-writing-flow .wp-block-file {
+
+	}
+
+	.editor-writing-flow .wp-block-file .wp-block-file__textlink {
+
+	}
+
+	.editor-writing-flow .wp-block-file .wp-block-file__button {
+
+	}
+
+	/* 2.7. List */
+
+	.editor-writing-flow .block-library-list {
+
+	}
+
+	.editor-writing-flow .block-library-list ul,
+	.editor-writing-flow .block-library-list ol {
+
+	}
+
+	/* 2.8. Audio */
+
+	.editor-writing-flow .wp-block-audio {
+
+	}
+
+	.editor-writing-flow .wp-block-audio audio {
+
+	}
+
+	.editor-writing-flow .wp-block-audio figcaption {
+		font-size: 11px;
+	}
+
+	/* 2.9. Cover */
+
+	.editor-writing-flow .wp-block-cover {
+
+	}
+
+	.editor-writing-flow .wp-block-cover .wp-block-cover-text {
+
+	}
+
+	/* 2.10. Video */
+
+	.editor-writing-flow .wp-block-video {
+
+	}
+
+	.editor-writing-flow .wp-block-video video {
+		width: 100%;
+	}
+
+	.editor-writing-flow .wp-block-video figcaption {
+		font-size: 11px;
+	}
+
+/* 3. Formatting / #formatting */
+
+	/* 3.1. Pullquote */
+
+	.editor-writing-flow .wp-block-pullquote {
+		border-top: 3px solid;
+		border-bottom: 3px solid;
+	}
+
+	.editor-writing-flow .wp-block-pullquote.is-style-solid-color {
+		border: 0;
+	}
+
+	.editor-writing-flow .wp-block-pullquote p {
+		font-size: 16px !important;
+	}
+
+	.editor-writing-flow .wp-block-pullquote .wp-block-pullquote__citation {
+		text-transform: none;
+		font-style: italic;
+		font-size: 12px;
+	}
+
+	/* 3.2. Custom HTML */
+
+	.editor-writing-flow .wp-block-html {
+
+	}
+
+	/* 3.3. Preformatted */
+
+	.editor-writing-flow .wp-block-preformatted {
+
+	}
+
+	.editor-writing-flow .wp-block-preformatted pre {
+		font-family: monospace !important;
+		font-size: 14px;
+		white-space: pre-wrap;
+		white-space: -moz-pre-wrap;
+		white-space: -pre-wrap;
+		white-space: -o-pre-wrap;
+		word-wrap: break-word;
+		padding: 20px;
+		line-height: 1.4em;
+	}
+
+	/* 3.4. Table */
+
+	.editor-writing-flow .wp-block-table {
+
+	}
+
+	.editor-writing-flow .wp-block-table table.editor-rich-text__tinymce tbody tr:first-child td {
+
+	}
+
+	/* 3.5. Verse */
+
+	.editor-writing-flow .wp-block-verse {
+		font-style: italic;
+	}
+
+	/* 3.6. Code */
+
+	.editor-writing-flow .wp-block-code {
+		border: 0;
+	}
+
+/* 4. Layout Elements / #layout-elements */
+
+	/* 4.1. Separator */
+
+	.editor-writing-flow .wp-block-separator {
+		border: 1px solid;
+		max-width: 100% !important;
+	}
+
+	/* 4.2. Button */
+
+	.editor-writing-flow .wp-block-button {
+
+	}
+
+	.editor-writing-flow .wp-block-button .wp-block-button__link {
+		font-size: 13px;
+	}
+
+	/* 4.3. Columns */
+
+	.editor-writing-flow .wp-block-columns {
+
+	}
+
+	/* 4.4. More */
+
+	.editor-writing-flow .wp-block-more {
+
+	}
+
+	.editor-writing-flow .wp-block-more input {
+
+	}
+
+	/* 4.5. Media & Text */
+
+	.editor-writing-flow .wp-block-media-text {
+
+	}
+
+	.editor-writing-flow .wp-block-media-text p {
+		line-height: 1.2em;
+	}
+
+	/* 4.6. Page Break */
+
+	.editor-writing-flow .wp-block-nextpage {
+
+	}
+
+/* 5. Widgets / #widgets */
+
+	/* 5.1. Archives */
+
+	.editor-writing-flow .wp-block-archives {
+
+	}
+
+	.editor-writing-flow .wp-block-archives.wp-block-archives-list {
+		padding-left: 0;
+		list-style: none;
+	}
+
+	.editor-writing-flow .wp-block-archives select {
+		font-size: 13px;
+		letter-spacing: 0.08em;
+		max-width: 300px;
+		width: 100%;
+		border: none;
+		padding: 0 10px;
+		height: 60px;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+		-webkit-border-radius: 0;
+		border: 2px solid;
+	}
+
+	/* 5.2. Categories */
+
+	.editor-writing-flow .wp-block-categories{
+
+	}
+
+	.editor-writing-flow .wp-block-categories ul {
+		padding-left: 0;
+		list-style: none;
+	}
+
+	.editor-writing-flow .wp-block-categories ul li {
+
+	}
+
+	.editor-writing-flow .wp-block-categories select {
+		font-size: 13px;
+		letter-spacing: 0.08em;
+		max-width: 300px;
+		width: 100%;
+		border: none;
+		padding: 0 10px;
+		height: 60px;
+		white-space: pre-wrap;
+		word-wrap: break-word;
+		-webkit-border-radius: 0;
+		border: 2px solid;
+	}
+
+	/* 5.3. Latest Posts */
+
+	.editor-writing-flow .wp-block-latest-posts {
+		padding-left: 0;
+		list-style: none;
+	}
+
+	.editor-writing-flow .wp-block-latest-posts li {
+
+	}
+
+	.editor-writing-flow .wp-block-latest-posts li a {
+
+	}
+
+	.editor-writing-flow .wp-block-latest-posts time {
+		font-size: 11px;
+	}
+
+	/* 5.4. Latest Comments */
+
+	.editor-writing-flow .wp-block-latest-comments {
+
+	}
+
+	.editor-writing-flow .wp-block-latest-comments__comment-excerpt p {
+
+	}
+
+/* 6. Embeds / #embeds */
+
+.editor-writing-flow .wp-block-embed {
+
+}
+
+.editor-writing-flow .wp-block-embed figcaption {
+	font-size: 11px;
+}

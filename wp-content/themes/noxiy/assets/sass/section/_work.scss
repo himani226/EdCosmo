@@ -1,0 +1,177 @@
+/*==========================================================================
+* Work Area CSS
+==========================================================================*/
+.work__area {
+    position: relative;
+    z-index: 1;
+    &-shape {
+        position: absolute;
+        left: 0;
+        top: 0;
+        z-index: -1;
+    }
+    &-item {
+        text-align: center;
+        padding: 0 30px;
+        position: relative;
+        z-index: 1;
+        margin-top: 30px;
+        &::after {
+            content: '';
+            position: absolute;
+            left: 85%;
+            top: 35px;
+            background-image: url('https://html.themeori.com/noxiy/assets/img/shape/work-2.png');
+            width: 120px;
+            height: 55px;
+            background-repeat: no-repeat;
+            opacity: 0.2;
+            z-index: -1;
+        }
+        &-icon {
+            display: inline-flex;
+            position: relative;
+            z-index: 1;
+            width: 120px;
+            height: 120px;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 15px;
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                width: 120px;
+                height: 120px;
+                left: 0;
+                border: 1px solid var(--primary-color-2);
+                border-radius: 50%;
+                opacity: 0.1;                
+            }
+            span {
+                position: absolute;
+                right: -30px;
+                top: 0;
+                background: var(--primary-color-2);
+                width: 30px;
+                height: 30px;
+                line-height: 30px;
+                color: var(--text-white);
+                font-family: var(--heading-font);
+                font-weight: 700;
+                font-size: 14px;    
+                border-radius: 50%;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 3px;
+                    bottom: -3px;
+                    display: block;
+                    z-index: -1;
+                    width: 0;
+                    height: 0;
+                    border-left: 24px solid var(--primary-color-2);
+                    border-top: 15px solid transparent;
+                    border-bottom: 12px solid transparent;
+                    transform: rotate(21deg);
+                }
+            }
+            i {
+                &::before {
+                    font-size: 50px;
+                    line-height: 50px;
+                    color: var(--primary-color-2);
+                    background: var(--color-5);
+                    width: 90px;
+                    height: 90px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    border-radius: 50%;
+                    transition: all 400ms ease;
+                }
+            }
+        }
+        &-content {
+            p {
+                margin: 0;
+                margin-top: 5px;
+            }
+        }
+        &:hover {
+            .work__area-item-icon i {
+                &::before {
+                    width: 120px;
+                    height: 120px;
+                    line-height: 120px;
+                    background: var(--primary-color-2);
+                    color: var(--text-white);
+                    font-size: 55px;
+                    line-height: 55px;
+                }
+            }
+        }
+    }
+    .row.work-n .col-xl-3 {
+        &:last-child .work__area-item {
+            margin: 0;
+            &::after {
+                display: none;
+            }
+        }
+        &:nth-child(2) .work__area-item {
+            margin: 0;
+        }
+    }   
+}
+@media (max-width: 1399px) {
+    .work__area-item {
+        padding: 0 25px;
+    }
+}
+@media (max-width: 1199px) {
+    .work__area {
+        .row.work-n .col-xl-3 {
+            &:nth-child(3) .work__area-item::after {
+                display: none;
+            }
+            &:first-child .work__area-item {
+                margin-bottom: 30px;
+            } 
+        } 
+    }
+}
+@media (max-width: 991px) {
+    .work__area {
+        .row.work-n .col-xl-3 {
+            &:nth-child(3) .work__area-item {
+                margin: 0;
+                &::after {
+                    display: block;
+                }
+            }
+            &:first-child .work__area-item {
+                margin: 0;
+            }
+            &:nth-child(2) .work__area-item {
+                margin-bottom: 30px;
+                &::after {
+                    display: none;
+                }
+            } 
+        } 
+    }
+}
+@media (max-width: 767px) {
+    .work__area {
+        .row.work-n .col-xl-3 {
+            &:first-child .work__area-item,
+            &:nth-child(3) .work__area-item {
+                margin-bottom: 30px;
+                &::after {
+                    display: none;
+                }
+            }
+        } 
+    }
+}

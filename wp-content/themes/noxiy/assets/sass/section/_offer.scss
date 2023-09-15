@@ -1,0 +1,158 @@
+/*==========================================================================
+* Offer Area CSS
+==========================================================================*/
+.offer__area {
+    position: relative;
+    z-index: 1;
+    background: var(--bg-white);
+    &-shape {
+        position: absolute;
+        top: 0 ;
+        left: 0;
+        z-index: -1;
+    }
+    &-left {
+        position: relative;
+        display: flex;
+        padding-bottom: 45px;
+        div:first-child {
+            padding-right: 30px;
+            border-right: 24px solid var(--primary-color-2);            
+        }
+        .image-overlay.two {
+            position: absolute;
+            right: 0;
+            bottom: 0;
+        }
+    }
+    &-right {
+        margin-left: 90px;
+        &-title {
+            h2 {
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        &-list {
+            &-item {
+                display: flex;
+                gap: 30px;
+                padding: 25px 35px;
+                border: 1px solid var(--border-color-1);
+                position: relative;
+                z-index: 1;
+                margin-top: 30px;
+                &::after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    top: 0;
+                    width: 100%;
+                    height: 100%;
+                    border: 1px solid var(--primary-color-2);
+                    opacity: 0;
+                    transition: 0.4s;
+                    z-index: -1;
+                }
+                i {
+                    font-size: 60px;
+                    margin-top: 8px;
+                    color: var(--primary-color-2);
+                    display: inline-block;
+                }
+                &-content {
+                    p {
+                        margin: 0;
+                        margin-top: 8px;
+                    }
+                }
+                &:hover {
+                    &::after {
+                        opacity: 1;
+                    }
+                    i {
+                        animation-name: wobble-vertical;
+                        animation-duration: 1s;
+                        animation-timing-function: ease-in-out;
+                        animation-iteration-count: 1;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .offer__area {
+        &-left {
+            padding-bottom: 163px;
+            &-one {
+                max-width: 400px;
+            }
+            .image-overlay.two {
+                max-width: 300px;
+            }
+        }
+        &-right {
+            margin-left: 0;
+            &-list-item {
+                padding: 25px 30px;
+                gap: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .offer__area {
+        &-left {
+            padding-bottom: 40px;
+            &-one,
+            .image-overlay.two {
+                max-width: 100%;
+            }
+        }
+    }
+}
+@media (max-width: 767px) {
+    .offer__area {
+        &-left {
+            &-one {
+                max-width: 400px;
+            }
+            .image-overlay.two {
+                max-width: 250px;
+            }
+        }
+    }
+}
+@media (max-width: 460px) {
+    .offer__area {
+        &-left {
+            &-one {
+                max-width: 260px;
+            }
+            .image-overlay.two {
+                max-width: 200px;
+            }
+        }
+        &-right-list-item {
+            display: inherit;
+            i {
+                margin: 0 0 15px 0;
+            }
+        }
+    }
+}
+@media (max-width: 359px) {
+    .offer__area {
+        &-left {
+            &-one {
+                max-width: 230px;
+            }
+            .image-overlay.two {
+                max-width: 160px;
+            }
+        }
+    }
+}

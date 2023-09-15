@@ -1,0 +1,83 @@
+/*==========================================================================
+* Switch Tab CSS
+==========================================================================*/
+.switch__tab {
+    &-icon {
+        position: fixed;
+        left: 0;
+        top: 50%;
+        transform: translateY(-50%);
+        z-index: 999;
+        transition: all 0.3s;
+        i {
+            background: var(--primary-color-1);
+            width: 50px;
+            color: var(--text-white);
+            height: 50px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 25px;
+            border-radius: 0 5px 5px 0;
+            cursor: pointer;            
+        }
+        &.two i {
+            background: var(--primary-color-2);
+        }
+        &.three i {
+            background: var(--primary-color-3);
+        }
+        &.four i {
+            background: var(--primary-color-4);
+        }
+    }  
+    &-area {
+        width: 260px;
+        padding: 35px 25px;
+        background: var(--bg-heading-color);
+        border: 1px solid var(--bg-heading-color);
+        position: fixed;
+        left: -260px;
+        top: 50%;
+        z-index: 99;
+        transform: translateY(-50%);
+        transition: all 0.3s;
+        direction: ltr;
+        &-item {
+            margin-bottom: 30px;
+            h5 {
+                color: var(--text-white);
+                margin-bottom: 10px;
+            }
+            &-buttons,
+            &-button {
+                display: grid;
+                grid-template-columns: 1fr 1fr;
+                gap: 10px;
+                button {
+                    display: inline-block;
+                    padding: 4px 10px;
+                    color: #DDD;
+                    background: #2B2B2F;
+                    border-radius: 4px;
+                    text-transform: capitalize;
+                    opacity: 0.44;
+                    font-size: 15px;
+                    font-weight: 500;
+                    &.active {
+                        opacity: 1;
+                    }
+                }              
+            }
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+    &-open i::before {
+        animation: rollIn 10s infinite linear;        
+    }
+    &-close {
+        display: none;
+    }
+}

@@ -1,0 +1,1356 @@
+#, fuzzy
+msgid ""
+msgstr ""
+"Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
+"Project-Id-Version: Baxel\n"
+"POT-Creation-Date: 2019-05-04 00:12+0300\n"
+"PO-Revision-Date: 2017-04-23 20:05+0300\n"
+"Last-Translator: \n"
+"Language-Team: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"X-Generator: Poedit 2.2\n"
+"X-Poedit-Basepath: ..\n"
+"X-Poedit-WPHeader: style.css\n"
+"X-Poedit-SourceCharset: UTF-8\n"
+"X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
+"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"X-Poedit-SearchPath-0: .\n"
+"X-Poedit-SearchPathExcluded-0: *.js\n"
+
+#: customizer.php:142
+msgid "1. Post & Page Settings"
+msgstr ""
+
+#: customizer.php:143
+msgid "2. Font Settings"
+msgstr ""
+
+#: customizer.php:144
+msgid "3. Colors"
+msgstr ""
+
+#: customizer.php:145
+msgid "4. Header"
+msgstr ""
+
+#: customizer.php:146
+msgid "5. Slider Settings"
+msgstr ""
+
+#: customizer.php:147
+msgid "6. Layout Options"
+msgstr ""
+
+#: customizer.php:148
+msgid "7. Footer"
+msgstr ""
+
+#: customizer.php:149
+msgid "8. Social Accounts"
+msgstr ""
+
+#: customizer.php:149
+msgid "Write the entire URL addresses.<br>Leave blank if not preferred."
+msgstr ""
+
+#: customizer.php:150
+msgid "9. Google Maps"
+msgstr ""
+
+#: customizer.php:151
+msgid "10. Translation"
+msgstr ""
+
+#: customizer.php:152
+msgid "11. WooCommerce"
+msgstr ""
+
+#: customizer.php:212
+msgid "3.1. General Colors"
+msgstr ""
+
+#: customizer.php:213
+msgid "3.2. Header Colors"
+msgstr ""
+
+#: customizer.php:214
+msgid "3.3. Slider Colors"
+msgstr ""
+
+#: customizer.php:215
+msgid "3.4. Post Colors"
+msgstr ""
+
+#: customizer.php:216
+msgid "3.5. Widget Colors"
+msgstr ""
+
+#: customizer.php:217
+msgid "3.6. Footer Colors"
+msgstr ""
+
+#: customizer.php:235
+msgid "Ignore Logo Background Color"
+msgstr ""
+
+#: customizer.php:346
+msgid "Ignore .pot file and use the translations below."
+msgstr ""
+
+#: customizer.php:357
+msgid "10.1. Site Language"
+msgstr ""
+
+#: customizer.php:358
+msgid "10.2. General"
+msgstr ""
+
+#: customizer.php:359
+msgid "10.3. Archive Titles"
+msgstr ""
+
+#: customizer.php:360
+msgid "10.4. Post Comments"
+msgstr ""
+
+#: customizer.php:366
+msgid "Original:"
+msgstr ""
+
+#: customizer.php:387
+msgid "1.1. Featured Images"
+msgstr ""
+
+#: customizer.php:388 customizer.php:860
+msgid "Width (Theme default: 1140)"
+msgstr ""
+
+#: customizer.php:397
+msgid "Height (Theme default: 760)"
+msgstr ""
+
+#: customizer.php:406
+msgid "1.2. Thumbnail Images"
+msgstr ""
+
+#: customizer.php:407
+msgid "Used in related posts, widgets etc.<br><br>Width (Theme default: 600)"
+msgstr ""
+
+#: customizer.php:416
+msgid "Height (Theme default: 400)"
+msgstr ""
+
+#: customizer.php:425 customizer.php:878
+msgid ""
+"Important Note:<br>When you upload an image into your media library, it gets "
+"the sizes above. If you change these settings AFTER you uploaded an image, "
+"the image will NOT change its sizes. So, you have to re-upload it or use a "
+"plugin like <a href=\"https://wordpress.org/plugins/regenerate-thumbnails/\" "
+"target=\"_blank\">Regenerate Thumbnails</a> which is a very good practice."
+msgstr ""
+
+#: customizer.php:433
+msgid "1.3. Standard Posts"
+msgstr ""
+
+#: customizer.php:441
+msgid "Show Featured Image on Post Page"
+msgstr ""
+
+#: customizer.php:447
+msgid "1.4. Gallery Posts"
+msgstr ""
+
+#: customizer.php:448 customizer.php:470
+msgid "Featured Image Options"
+msgstr ""
+
+#: customizer.php:453 customizer.php:475
+msgid "Show Featured Image"
+msgstr ""
+
+#: customizer.php:454
+msgid "Show Gallery"
+msgstr ""
+
+#: customizer.php:458
+msgid "Gallery Position on Post Page"
+msgstr ""
+
+#: customizer.php:463
+msgid "Only in Content"
+msgstr ""
+
+#: customizer.php:464
+msgid "Instead of Featured Image"
+msgstr ""
+
+#: customizer.php:465
+msgid "Both"
+msgstr ""
+
+#: customizer.php:469
+msgid "1.5. Video Posts"
+msgstr ""
+
+#: customizer.php:476
+msgid "Show Video"
+msgstr ""
+
+#: customizer.php:480
+msgid "1.6. Related Posts"
+msgstr ""
+
+#: customizer.php:481
+msgid "Related Post Term"
+msgstr ""
+
+#: customizer.php:486 functions.php:1570
+msgid "Author"
+msgstr ""
+
+#: customizer.php:487 functions.php:1568
+msgid "Tag"
+msgstr ""
+
+#: customizer.php:488 functions.php:1569
+msgid "Category"
+msgstr ""
+
+#: customizer.php:489
+msgid "Random"
+msgstr ""
+
+#: customizer.php:493
+msgid "Related Posts Count"
+msgstr ""
+
+#: customizer.php:505
+msgid "1.7. Hide Posts on Blog Homepage"
+msgstr ""
+
+#: customizer.php:506
+msgid "Write category IDs you want to hide."
+msgstr ""
+
+#: customizer.php:512
+msgid "Write post IDs you want to hide."
+msgstr ""
+
+#: customizer.php:518
+msgid "Important Note:<br>Use comma (,) between IDs.<br>Example: 2,5,8"
+msgstr ""
+
+#: customizer.php:526
+msgid "1.8. Show/Hide Elements"
+msgstr ""
+
+#: customizer.php:534 customizer.php:540
+msgid "Show Date"
+msgstr ""
+
+#: customizer.php:541 customizer.php:554 customizer.php:579
+msgid "For indexed views like blog homepage."
+msgstr ""
+
+#: customizer.php:547 customizer.php:553
+msgid "Show Author"
+msgstr ""
+
+#: customizer.php:560
+msgid "Show Excerpt"
+msgstr ""
+
+#: customizer.php:566
+msgid "Show \"Read More\" Button"
+msgstr ""
+
+#: customizer.php:572 customizer.php:578
+msgid "Show Tags & Categories"
+msgstr ""
+
+#: customizer.php:585
+msgid "Show Share Icons on Post Pages"
+msgstr ""
+
+#: customizer.php:591
+msgid "Show Author Box on Post Pages"
+msgstr ""
+
+#: customizer.php:597
+msgid "Show Related Posts"
+msgstr ""
+
+#: customizer.php:603
+msgid "Show Post Comments"
+msgstr ""
+
+#: customizer.php:609
+msgid "Show Share Icons on Pages"
+msgstr ""
+
+#: customizer.php:615
+msgid "Show Page Comments"
+msgstr ""
+
+#: customizer.php:621
+msgid "Show Filter Bar on Archive Pages"
+msgstr ""
+
+#: customizer.php:627
+msgid "Show \"Tag /\", \"Category /\", \"Author /\" etc. on Filter Bar"
+msgstr ""
+
+#: customizer.php:633
+msgid "Show Date in Widgets"
+msgstr ""
+
+#: customizer.php:642
+msgid ""
+"<a href=\"https://fonts.google.com/\" target=\"_blank\">See Google Fonts</a>"
+msgstr ""
+
+#: customizer.php:650
+msgid "2.1. Primary Font"
+msgstr ""
+
+#: customizer.php:652
+msgid "Menu items, titles etc.<br>(Theme default: Raleway)"
+msgstr ""
+
+#: customizer.php:656
+msgid "2.2. Secondary Font"
+msgstr ""
+
+#: customizer.php:658
+msgid "Content, dates, miscellaneous.<br>(Theme default: Raleway)"
+msgstr ""
+
+#: customizer.php:662
+msgid "2.3. Font Sizes"
+msgstr ""
+
+#: customizer.php:663
+msgid "Menu Items (Theme default: 13)"
+msgstr ""
+
+#: customizer.php:672
+msgid "Post Titles (Theme default: 20)"
+msgstr ""
+
+#: customizer.php:681
+msgid "Post Titles - Columned (Theme default: 20)"
+msgstr ""
+
+#: customizer.php:690
+msgid "Post Content (Theme default: 13)"
+msgstr ""
+
+#: customizer.php:699
+msgid "Widget Titles (Theme default: 13)"
+msgstr ""
+
+#: customizer.php:708
+msgid "Widget Post Titles (Theme default: 13)"
+msgstr ""
+
+#: customizer.php:724
+msgid "4.1. Header Style"
+msgstr ""
+
+#: customizer.php:749
+msgid "4.2. Logo Settings"
+msgstr ""
+
+#: customizer.php:751
+msgid "Logo Font (Theme default: Ubuntu Condensed)"
+msgstr ""
+
+#: customizer.php:755
+msgid "Logo Font Size (Theme default: 50)"
+msgstr ""
+
+#: customizer.php:764
+msgid "Logo Image"
+msgstr ""
+
+#: customizer.php:769
+msgid "Logo Image Size (Theme default: 100)"
+msgstr ""
+
+#: customizer.php:778
+msgid "Mobile Logo Image"
+msgstr ""
+
+#: customizer.php:783
+msgid "4.3. Menu Settings"
+msgstr ""
+
+#: customizer.php:784
+msgid "Menu Container Height<br>(Theme default: 70 - Min value: 70)"
+msgstr ""
+
+#: customizer.php:793
+msgid "Trigger mobile menu when window width is smaller than:"
+msgstr ""
+
+#: customizer.php:802
+msgid "Clickable Parent Menu Items in Mobile Menu"
+msgstr ""
+
+#: customizer.php:808 customizer.php:1128
+msgid "Show Social Account Icons"
+msgstr ""
+
+#: customizer.php:814
+msgid "Show Search"
+msgstr ""
+
+#: customizer.php:820
+msgid "Search Box Width<br>(Theme default: 240 - Min value: 240)"
+msgstr ""
+
+#: customizer.php:829
+msgid "4.4. Sticky Header"
+msgstr ""
+
+#: customizer.php:830
+msgid "Sticky Logo Image"
+msgstr ""
+
+#: customizer.php:835
+msgid "Trigger sticky header when scroll position is higher than:"
+msgstr ""
+
+#: customizer.php:844
+msgid "Sticky Header"
+msgstr ""
+
+#: customizer.php:850
+msgid "Show Sticky Logo"
+msgstr ""
+
+#: customizer.php:859
+msgid "5.1. Slide Images"
+msgstr ""
+
+#: customizer.php:869
+msgid "Height (Theme default: 570)"
+msgstr ""
+
+#: customizer.php:886
+msgid "5.2. Slider Shortcode"
+msgstr ""
+
+#: customizer.php:887
+msgid "Example usage:<br>[baxelslider group=\"your_group\"]"
+msgstr ""
+
+#: customizer.php:893
+msgid "5.3. Blog Posts in Slider"
+msgstr ""
+
+#: customizer.php:901
+msgid "Show Blog Posts in Slider"
+msgstr ""
+
+#: customizer.php:902
+msgid "Disables the shortcode if checked."
+msgstr ""
+
+#: customizer.php:908
+msgid ""
+"Write a category slug to show the category posts in slider. Leave blank to "
+"show all posts."
+msgstr ""
+
+#: customizer.php:914
+msgid "Number of the posts to show in slider"
+msgstr ""
+
+#: customizer.php:923
+msgid "5.4. Other Options"
+msgstr ""
+
+#: customizer.php:931
+msgid "Show Slider During the Pagination"
+msgstr ""
+
+#: customizer.php:937
+msgid "Show Slider on Archive Pages"
+msgstr ""
+
+#: customizer.php:943
+msgid "Show Slider on Post Pages"
+msgstr ""
+
+#: customizer.php:949
+msgid "Exclude the Slider Posts From Feed"
+msgstr ""
+
+#: customizer.php:955
+msgid "Show Prev/Next Arrows"
+msgstr ""
+
+#: customizer.php:961
+msgid "Show Navigation Bullets"
+msgstr ""
+
+#: customizer.php:967
+msgid "Infinite Loop"
+msgstr ""
+
+#: customizer.php:973
+msgid "Autoplay Slides"
+msgstr ""
+
+#: customizer.php:979
+msgid "Autoplay Duration (Theme default: 4000)"
+msgstr ""
+
+#: customizer.php:991
+msgid "6.1. Blog Homepage Layout"
+msgstr ""
+
+#: customizer.php:1005 customizer.php:1028
+msgid "Number of posts to show in \"Style Z\":"
+msgstr ""
+
+#: customizer.php:1014
+msgid "6.2. Archive Layout"
+msgstr ""
+
+#: customizer.php:1037
+msgid "6.3. Post Heights"
+msgstr ""
+
+#: customizer.php:1038
+msgid ""
+"While using 2 or 3 columned layouts for your blog homepage or archive pages, "
+"if you have problems about equalizing the heights of your posts, you can set "
+"a static size to make their heights equal.<br><br>Minimum Height (Theme "
+"default: 0)"
+msgstr ""
+
+#: customizer.php:1047
+msgid "6.4. Sidebars"
+msgstr ""
+
+#: customizer.php:1055
+msgid "Show Sidebar on Standard Posts"
+msgstr ""
+
+#: customizer.php:1061
+msgid "Show Sidebar on Gallery Posts"
+msgstr ""
+
+#: customizer.php:1067
+msgid "Show Sidebar on Video Posts"
+msgstr ""
+
+#: customizer.php:1073
+msgid "Show Sidebar on Pages"
+msgstr ""
+
+#: customizer.php:1079
+msgid "Show Sidebar on Static Front Page"
+msgstr ""
+
+#: customizer.php:1085
+msgid "Enable \"Sidebar - Post\""
+msgstr ""
+
+#: customizer.php:1086 customizer.php:1093 customizer.php:1100
+#: customizer.php:1107
+msgid "Uncheck to use the default sidebar."
+msgstr ""
+
+#: customizer.php:1092
+msgid "Enable \"Sidebar - Page\""
+msgstr ""
+
+#: customizer.php:1099
+msgid "Enable \"Sidebar - Static Front Page\""
+msgstr ""
+
+#: customizer.php:1106
+msgid "Enable \"Sidebar - Archive\""
+msgstr ""
+
+#: customizer.php:1116
+msgid "Copyright Text"
+msgstr ""
+
+#: customizer.php:1122
+msgid "Show Back to Top Button"
+msgstr ""
+
+#: customizer.php:1134
+msgid "7.1. Footer Widgets"
+msgstr ""
+
+#: customizer.php:1135
+msgid "Column Options"
+msgstr ""
+
+#: customizer.php:1140
+msgid "2 Columns"
+msgstr ""
+
+#: customizer.php:1141
+msgid "3 Columns"
+msgstr ""
+
+#: customizer.php:1142
+msgid "4 Columns"
+msgstr ""
+
+#: customizer.php:1146
+msgid "Show Footer Widgets"
+msgstr ""
+
+#: customizer.php:1152
+msgid "7.2. Instagram Slider Widget"
+msgstr ""
+
+#: customizer.php:1153
+msgid ""
+"Instagram Widget Shortcode<br><a href=\"https://burnhambox.ticksy.com/"
+"article/9859/\" target=\"_blank\">Where is my shortcode?</a>"
+msgstr ""
+
+#: customizer.php:1159
+msgid "Instagram Widget Title"
+msgstr ""
+
+#: customizer.php:1165
+msgid "Display Instagram Widget Above Footer Elements"
+msgstr ""
+
+#: customizer.php:1178
+msgid "Choose a Page"
+msgstr ""
+
+#: customizer.php:1184
+msgid "Coordinate N"
+msgstr ""
+
+#: customizer.php:1190
+msgid "Coordinate E"
+msgstr ""
+
+#: customizer.php:1198
+msgid "Zoom Level"
+msgstr ""
+
+#: customizer.php:1206
+msgid "Map Height"
+msgstr ""
+
+#: customizer.php:1215
+msgid ""
+"API Key<br><a href=\"https://developers.google.com/maps/documentation/"
+"javascript/get-api-key\" target=\"_blank\">Get your API Key</a>"
+msgstr ""
+
+#: customizer.php:1228
+msgid "Shop Layout Options"
+msgstr ""
+
+#: customizer.php:1239
+msgid "Show Sidebar on Product Pages"
+msgstr ""
+
+#: customizer.php:1245
+msgid "Products per Page"
+msgstr ""
+
+#: functions.php:115
+msgid "Primary Menu"
+msgstr ""
+
+#: functions.php:829
+msgid "Facebook"
+msgstr ""
+
+#: functions.php:830
+msgid "Twitter"
+msgstr ""
+
+#: functions.php:831
+msgid "Instagram"
+msgstr ""
+
+#: functions.php:832
+msgid "Pinterest"
+msgstr ""
+
+#: functions.php:833
+msgid "Google+"
+msgstr ""
+
+#: functions.php:834
+msgid "Tumblr"
+msgstr ""
+
+#: functions.php:835
+msgid "Flickr"
+msgstr ""
+
+#: functions.php:836
+msgid "Digg"
+msgstr ""
+
+#: functions.php:837
+msgid "LinkedIn"
+msgstr ""
+
+#: functions.php:838
+msgid "Vimeo"
+msgstr ""
+
+#: functions.php:839
+msgid "YouTube"
+msgstr ""
+
+#: functions.php:840
+msgid "Behance"
+msgstr ""
+
+#: functions.php:841
+msgid "Dribble"
+msgstr ""
+
+#: functions.php:842
+msgid "DeviantArt"
+msgstr ""
+
+#: functions.php:843
+msgid "Github"
+msgstr ""
+
+#: functions.php:844
+msgid "Bloglovin"
+msgstr ""
+
+#: functions.php:845
+msgid "Lastfm"
+msgstr ""
+
+#: functions.php:846
+msgid "SoundCloud"
+msgstr ""
+
+#: functions.php:847
+msgid "VK"
+msgstr ""
+
+#: functions.php:1197
+msgid "Sidebar - Default"
+msgstr ""
+
+#: functions.php:1206
+msgid "Sidebar - Post"
+msgstr ""
+
+#: functions.php:1215
+msgid "Sidebar - Page"
+msgstr ""
+
+#: functions.php:1224
+msgid "Sidebar - Static Front Page"
+msgstr ""
+
+#: functions.php:1233
+msgid "Sidebar - Archive"
+msgstr ""
+
+#: functions.php:1242
+msgid "Sidebar - WooCommerce"
+msgstr ""
+
+#: functions.php:1251
+msgid "Footer Widgets"
+msgstr ""
+
+#: functions.php:1409
+msgid "Please assign a Primary Menu."
+msgstr ""
+
+#: functions.php:1552
+msgid "CONTINUE READING"
+msgstr ""
+
+#: functions.php:1553
+msgid "PREVIOUS POST"
+msgstr ""
+
+#: functions.php:1554
+msgid "NEXT POST"
+msgstr ""
+
+#: functions.php:1555
+msgid "Type keyword to search"
+msgstr ""
+
+#: functions.php:1556
+msgid "Sticky"
+msgstr ""
+
+#: functions.php:1557
+msgid "ABOUT"
+msgstr ""
+
+#: functions.php:1558
+msgid "SEE ALL POSTS"
+msgstr ""
+
+#: functions.php:1559
+msgid "VISIT AUTHOR SITE"
+msgstr ""
+
+#: functions.php:1560
+msgid "by"
+msgstr ""
+
+#: functions.php:1561
+msgid "Share"
+msgstr ""
+
+#: functions.php:1562
+msgid "RELATED POSTS"
+msgstr ""
+
+#: functions.php:1563
+msgid "Page"
+msgstr ""
+
+#: functions.php:1564
+msgid "PAGE NOT FOUND"
+msgstr ""
+
+#: functions.php:1565
+msgid "NOTHING FOUND"
+msgstr ""
+
+#: functions.php:1566
+msgid "Back to Top"
+msgstr ""
+
+#: functions.php:1567
+msgid "Search Results"
+msgstr ""
+
+#: functions.php:1571
+msgid "Archives"
+msgstr ""
+
+#: functions.php:1572
+msgid "Comment"
+msgstr ""
+
+#: functions.php:1573
+msgid "Comments"
+msgstr ""
+
+#: functions.php:1574
+msgid "Name"
+msgstr ""
+
+#: functions.php:1575
+msgid "E-mail"
+msgstr ""
+
+#: functions.php:1576
+msgid "You must be logged in to post a comment."
+msgstr ""
+
+#: functions.php:1577
+msgid "Log in to Reply"
+msgstr ""
+
+#: functions.php:1578
+msgid "Logged In"
+msgstr ""
+
+#: functions.php:1579
+msgid "Log Out"
+msgstr ""
+
+#: functions.php:1580
+msgid "LEAVE A REPLY"
+msgstr ""
+
+#: functions.php:1581
+msgid "CANCEL REPLY"
+msgstr ""
+
+#: functions.php:1582
+msgid "POST COMMENT"
+msgstr ""
+
+#: functions.php:1583
+msgid "at"
+msgstr ""
+
+#: functions.php:1584
+msgid "REPLY"
+msgstr ""
+
+#: functions.php:1585
+msgid "EDIT"
+msgstr ""
+
+#: functions.php:1586
+msgid "Comment awaiting approval."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:334
+msgid "Install Required Plugins"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:335
+msgid "Install Plugins"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:337
+#, php-format
+msgid "Installing Plugin: %s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:339
+#, php-format
+msgid "Updating Plugin: %s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:340
+msgid "Something went wrong with the plugin API."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:343
+#, php-format
+msgid "This theme requires the following plugin: %1$s."
+msgid_plural "This theme requires the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:349
+#, php-format
+msgid "This theme recommends the following plugin: %1$s."
+msgid_plural "This theme recommends the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:355
+#, php-format
+msgid ""
+"The following plugin needs to be updated to its latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgid_plural ""
+"The following plugins need to be updated to their latest version to ensure "
+"maximum compatibility with this theme: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:361
+#, php-format
+msgid "There is an update available for: %1$s."
+msgid_plural "There are updates available for the following plugins: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:367
+#, php-format
+msgid "The following required plugin is currently inactive: %1$s."
+msgid_plural "The following required plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:373
+#, php-format
+msgid "The following recommended plugin is currently inactive: %1$s."
+msgid_plural "The following recommended plugins are currently inactive: %1$s."
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:378
+msgid "Begin installing plugin"
+msgid_plural "Begin installing plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:383
+msgid "Begin updating plugin"
+msgid_plural "Begin updating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:388
+msgid "Begin activating plugin"
+msgid_plural "Begin activating plugins"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:392
+msgid "Return to Required Plugins Installer"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:393
+#: lib/class-tgm-plugin-activation.php:912
+#: lib/class-tgm-plugin-activation.php:2618
+#: lib/class-tgm-plugin-activation.php:3665
+msgid "Return to the Dashboard"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:394
+#: lib/class-tgm-plugin-activation.php:3244
+msgid "Plugin activated successfully."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:395
+#: lib/class-tgm-plugin-activation.php:3037
+msgid "The following plugin was activated successfully:"
+msgid_plural "The following plugins were activated successfully:"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:397
+#, php-format
+msgid "No action taken. Plugin %1$s was already active."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:399
+#, php-format
+msgid ""
+"Plugin not activated. A higher version of %s is needed for this theme. "
+"Please update the plugin."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:401
+#, php-format
+msgid "All plugins installed and activated successfully. %1$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:402
+msgid "Dismiss this notice"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:403
+msgid ""
+"There are one or more required or recommended plugins to install, update or "
+"activate."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:404
+msgid "Please contact the administrator of this site for help."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:607
+msgid "This plugin needs to be updated to be compatible with your theme."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:608
+msgid "Update Required"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:1019
+msgid ""
+"The remote plugin package does not contain a folder with the desired slug "
+"and renaming did not work."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:1019
+#: lib/class-tgm-plugin-activation.php:1022
+msgid ""
+"Please contact the plugin provider and ask them to package their plugin "
+"according to the WordPress guidelines."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:1022
+msgid ""
+"The remote plugin package consists of more than one file, but the files are "
+"not packaged in a folder."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:1206
+#: lib/class-tgm-plugin-activation.php:3033
+msgctxt "plugin A *and* plugin B"
+msgid "and"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2067
+#, php-format
+msgid "TGMPA v%s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2358
+msgid "Required"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2361
+msgid "Recommended"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2377
+msgid "WordPress Repository"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2380
+msgid "External Source"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2383
+msgid "Pre-Packaged"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2400
+msgid "Not Installed"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2404
+msgid "Installed But Not Activated"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2406
+msgid "Active"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2412
+msgid "Required Update not Available"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2415
+msgid "Requires Update"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2418
+msgid "Update recommended"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2427
+#, php-format
+msgctxt "Install/Update Status"
+msgid "%1$s, %2$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2473
+#, php-format
+msgctxt "plugins"
+msgid "All <span class=\"count\">(%s)</span>"
+msgid_plural "All <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:2477
+#, php-format
+msgid "To Install <span class=\"count\">(%s)</span>"
+msgid_plural "To Install <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:2481
+#, php-format
+msgid "Update Available <span class=\"count\">(%s)</span>"
+msgid_plural "Update Available <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:2485
+#, php-format
+msgid "To Activate <span class=\"count\">(%s)</span>"
+msgid_plural "To Activate <span class=\"count\">(%s)</span>"
+msgstr[0] ""
+msgstr[1] ""
+
+#: lib/class-tgm-plugin-activation.php:2567
+msgctxt "as in: \"version nr unknown\""
+msgid "unknown"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2575
+msgid "Installed version:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2583
+msgid "Minimum required version:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2595
+msgid "Available version:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2618
+msgid "No plugins to install, update or activate."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2632
+msgid "Plugin"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2633
+msgid "Source"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2634
+msgid "Type"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2638
+msgid "Version"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2639
+msgid "Status"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2688
+#, php-format
+msgid "Install %2$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2693
+#, php-format
+msgid "Update %2$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2699
+#, php-format
+msgid "Activate %2$s"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2769
+msgid "Upgrade message from the plugin author:"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2802
+msgid "Install"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2808
+msgid "Update"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2811
+msgid "Activate"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2842
+msgid "No plugins were selected to be installed. No action taken."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2844
+msgid "No plugins were selected to be updated. No action taken."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2885
+msgid "No plugins are available to be installed at this time."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2887
+msgid "No plugins are available to be updated at this time."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:2993
+msgid "No plugins were selected to be activated. No action taken."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3019
+msgid "No plugins are available to be activated at this time."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3243
+msgid "Plugin activation failed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3583
+#, php-format
+msgid "Updating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3586
+#, php-format
+msgid "An error occurred while installing %1$s: <strong>%2$s</strong>."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3588
+#, php-format
+msgid "The installation of %1$s failed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3592
+msgid ""
+"The installation and activation process is starting. This process may take a "
+"while on some hosts, so please be patient."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3594
+#, php-format
+msgid "%1$s installed and activated successfully."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3594
+#: lib/class-tgm-plugin-activation.php:3602
+msgid "Show Details"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3594
+#: lib/class-tgm-plugin-activation.php:3602
+msgid "Hide Details"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3595
+msgid "All installations and activations have been completed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3597
+#, php-format
+msgid "Installing and Activating Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3600
+msgid ""
+"The installation process is starting. This process may take a while on some "
+"hosts, so please be patient."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3602
+#, php-format
+msgid "%1$s installed successfully."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3603
+msgid "All installations have been completed."
+msgstr ""
+
+#: lib/class-tgm-plugin-activation.php:3605
+#, php-format
+msgid "Installing Plugin %1$s (%2$d/%3$d)"
+msgstr ""
+
+#: woocommerce/product-searchform.php:25
+msgid "Search products&hellip;"
+msgstr ""
+
+#. Theme Name of the plugin/theme
+msgid "Baxel"
+msgstr ""
+
+#. Theme URI of the plugin/theme
+msgid "http://www.burnhambox.com/baxel"
+msgstr ""
+
+#. Description of the plugin/theme
+msgid "Minimal Blog Theme for WordPress"
+msgstr ""
+
+#. Author of the plugin/theme
+msgid "Burnhambox"
+msgstr ""
+
+#. Author URI of the plugin/theme
+msgid "http://www.burnhambox.com"
+msgstr ""

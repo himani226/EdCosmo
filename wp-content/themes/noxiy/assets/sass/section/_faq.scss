@@ -1,0 +1,147 @@
+/*==========================================================================
+* FAQ One CSS
+==========================================================================*/
+.faq__one {
+    background: var(--bg-white);
+    &-left {
+        margin-right: 70px;
+        &-image {
+            position: relative;
+            padding-bottom: 83px;
+            display: flex;
+            &-one {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+            }
+            &-question {
+                position: absolute;
+                top: 35px;
+                z-index: 1;
+                right: 70px;
+                background: var(--bg-heading-color);
+                padding: 30px;
+                border-radius: 6px;
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                h6 {
+                    color: var(--text-white);
+                    max-width: 150px;
+                    text-transform: none;
+                }
+                &-icon {
+                    i {
+                        background: var(--primary-color-3);
+                        width: 66px;
+                        height: 66px;
+                        display: inline-flex;
+                        justify-content: center;
+                        align-items: center;
+                        border-radius: 50%;
+                        color: var(--text-white);
+                        font-size: 35px;
+                        position: relative;
+                        margin-bottom: 7px;                        
+                        &::after {
+                            position: absolute;
+                            content: "";
+                            left: 50%;
+                            bottom: -12px;
+                            display: block;
+                            transform: translateX(-50%);
+                            clip-path: polygon(100% 0, 0 0, 50% 100%);
+                            width: 20px;
+                            height: 20px;
+                            z-index: 111;
+                            background: var(--primary-color-3);                  
+                        }
+                    }
+                    &.page {
+                        i {
+                            background: var(--primary-color-1);
+                            &::after {
+                                background: var(--primary-color-1); 
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+* FAQ Area CSS
+==========================================================================*/
+.faq__area {
+    margin-top: 40px;
+    &-item {
+        background: var(--color-4);
+        margin-bottom: 20px;        
+        border-radius: 5px;
+        padding: 0 30px;
+        &:last-child {
+            margin: 0;
+        }
+        h6 {
+            padding: 16px 0;
+            cursor: pointer;
+        }
+        .icon {
+            position: relative;
+            &::after {
+                content: "\f067";
+                font-family: 'Font Awesome 5 Pro';
+                font-weight: 300;
+                position: absolute;
+                color: var(--primary-color-3);
+                right: 0;
+            }
+            &:not(.collapsed)::after {
+                content: "\f068";
+            } 
+            &.page::after {
+                color: var(--primary-color-1);
+            }
+        }    
+        &-body {
+            p {
+                margin: 0;
+                border-top: 1px solid var(--border-color-1);
+                padding: 15px 0 30px 0;
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .faq__one {
+        &-left {
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 520px) {
+    .faq__one {
+        &-left {
+            &-image {
+                img {
+                    max-width: 280px;
+                }
+                &-question {
+                    right: 20px;
+                }
+            }
+        }
+    }
+    .faq__area-item {
+        padding: 0 20px;
+        h6 {
+            padding: 15px 0;
+        }
+        &-body {
+            p {
+                padding: 15px 0 20px 0;
+            }
+        }
+    }
+}

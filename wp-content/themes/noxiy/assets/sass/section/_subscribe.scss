@@ -1,0 +1,174 @@
+/*==========================================================================
+* Subscribe Area CSS
+==========================================================================*/
+.subscribe__area {
+    background: var(--color-18);
+    padding: 70px 0;
+    &-title {
+        h3 {
+            color: var(--text-white);
+            max-width: 430px;
+        }
+    }
+    &-form {
+            position: relative;
+            z-index: 1;
+            input {
+                background: var(--color-18);
+                border-color: var(--color-1);
+                color: var(--color-3);
+                border-radius: 35px;
+                height: 72px;
+                &:focus {
+                    color: var(--color-3);
+                    border-color: var(--primary-color-2);
+                }
+            }
+            .btn-two {
+                position: absolute;
+                right: 7px;
+                top: 7px;
+                &::after,
+                &::before {
+                    background: var(--bg-white);
+                }
+                &:hover {
+                    color: var(--text-heading-color);
+                }
+            }
+    }
+}
+/*==========================================================================
+* Subscribe Three CSS
+==========================================================================*/
+.subscribe__three {
+    position: relative;
+    z-index: 1;
+    margin-bottom: 70px;
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 30%;
+        background: var(--bg-white);        
+    }
+    &-bg {
+        position: relative;
+        z-index: 1;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 85px 70px;
+        overflow: hidden;
+        margin: 0;        
+        border-radius: 6px;
+        &::after,
+        &::before {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: var(--bg-heading-color);
+            opacity: 0.5;
+            z-index: -1;
+        }
+        &::after {
+            background: var(--primary-color-3);
+            mix-blend-mode: multiply;
+            z-index: -2;
+            opacity: 1;
+        }                
+    }    
+    &-left {
+        h2 {
+            color: var(--text-white);
+            max-width: 440px;
+        }
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+        justify-content: end;
+        gap: 30px;
+        .btn-one {
+            background: var(--bg-white);
+            color: var(--primary-color-3);
+            &:hover {
+                color: var(--text-white);
+                &::after,
+                &::before {
+                    background: var(--primary-color-3);
+                }
+            }
+        }
+        &-contact {
+            display: flex;
+            align-items: center;
+            gap: 20px;
+            i {
+                width: 58px;
+                height: 58px;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                background: var(--bg-white);
+                color: var(--primary-color-3);
+                border-radius: 50%;
+                animation: icon-animation 2s ease-in-out infinite;
+                font-size: 25px;
+            }
+            &-info {
+                span {
+                    font-weight: 600;
+                    font-size: 14px;
+                    line-height: 24px;
+                    font-family: var(--heading-font);
+                    color: var(--color-3);
+                }
+                h6 a {
+                    color: var(--text-white);
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .subscribe__three {
+        &-left h2 {
+            margin: 0 auto;
+            text-align: center;        
+        }
+        &-right {
+            margin-top: 30px;
+            justify-content: center;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .subscribe__area {
+        &-title h3 {
+            margin: 0 auto;
+            text-align: center;
+        }
+        &-form .btn-two {
+            padding: 16px 10px;
+        }
+    }
+    .subscribe__three-bg {
+        padding: 75px 30px;
+    }
+}
+@media (max-width: 540px) {
+    .subscribe__three {
+        &-bg {
+            padding: 50px 20px;
+        }
+        &-right {
+            flex-direction: column;
+        }
+    }
+} 

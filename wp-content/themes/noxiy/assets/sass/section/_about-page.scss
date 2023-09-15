@@ -1,0 +1,159 @@
+/*==========================================================================
+* About Page CSS
+==========================================================================*/
+.about__four {
+    position: relative;
+    z-index: 1;
+    &-left {
+        &-image {
+            position: relative;
+            padding-bottom: 80px;
+            display: flex;
+            z-index: 1;
+            &-shape {
+                position: absolute;
+                left: -50px;
+                top: 0;
+                z-index: -1;
+                opacity: 0.08;
+                max-width: 80%;
+                animation: upDown 5s linear infinite;
+                &-one {
+                    position: absolute;
+                    right: 40px;
+                    top: 15%;
+                }
+            }
+            &-two {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                img {
+                    border: 10px solid var(--color-5);
+                }
+            }
+        }
+    }
+    &-right {
+        margin-left: 65px;
+        &-title {
+            margin-bottom: 30px;
+            h2 {
+                margin-bottom: 20px;
+            }
+            p {
+                max-width: 510px;
+                margin: 0;
+            }
+        }
+        &-bottom {
+            margin-right: 50px;
+        }
+        &-btn {
+            display: flex;
+            gap: 30px;
+            margin-top: 40px;
+            &-founder {
+                display: flex;
+                gap: 20px;
+                align-items: center;
+                img {
+                    max-width: 100%;
+                    width: 60px;
+                    height: 60px;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+    }
+}
+.counter__three {
+    .counter__two-item-icon i {
+        color: var(--primary-color-1);
+    }
+}
+/*==========================================================================
+* About Company CSS
+==========================================================================*/
+.company__two {
+    position: relative;
+    z-index: 1;
+    &-left {
+        &-title {
+            h2 {
+                max-width: 500px;
+                margin-bottom: 20px;
+            }
+            p {
+                max-width: 510px;
+            }
+        }
+        &-skill {
+            margin-top: 35px;
+            margin-bottom: 45px;
+            display: flex;
+            align-items: center;
+            gap: 35px;
+            &-item {
+                display: flex;
+                align-items: center;
+                gap: 20px;
+                h6 {
+                    font-family: var(--body-font);
+                    font-weight: 600;
+                    font-size: 16px;
+                    line-height: 26px;
+                    max-width: 145px;    
+                    text-transform: capitalize;                
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .about__four-right {
+        margin: 0;
+    }
+    .about__four {
+        &-left {
+            margin: 0;
+        }
+    }
+}
+@media (max-width: 991px) {
+    .about__four {
+        &-left-image {
+            padding-bottom: 70px;
+        }
+        &-right-bottom {
+            margin-right: 0;
+        }
+    }
+}
+@media (max-width: 510px) {
+    .company__two-left-skill {
+        margin-top: 30px;
+        margin-bottom: 35px;
+        display: block;
+        &-item {
+            margin-bottom: 15px;
+            &:last-child {
+                margin: 0;
+            }
+        }
+    }
+    .about__four-left-image img {
+        max-width: 260px;
+    }
+}
+@media (max-width: 490px) {
+    .about__four-right {
+        &-btn {
+            display: block;
+            &-founder {
+                margin-top: 30px;
+            }
+        }
+    }
+}

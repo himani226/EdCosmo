@@ -1,0 +1,306 @@
+/*==========================================================================
+* Menu Demo CSS
+==========================================================================*/
+.header__area-menubar-center-menu {
+    ul {
+        li {
+            &.home {
+                position: static;
+                &::after {
+                    display: none;
+                }
+                > a {
+                    &::after {
+                        content: '';
+                        position: absolute;
+                        left: 0;
+                        width: 0;
+                        transition: width 0.5s cubic-bezier(0.35, 0.7, 0.35, 1);
+                        bottom: -38px;
+                        transform: skew(-35deg);                            
+                        height: 4px;
+                        background: var(--primary-color-1);
+                        z-index: 1;                
+                    }
+                }
+                &:hover {
+                    a {
+                        &::after {
+                            width: 130%;
+                        }
+                    }
+                }
+            }
+            &.menus {
+                display: none;
+            }
+            .sub-menu.home-area {
+                border-top: 1px solid var(--border-color-1);
+                left: 0;
+                right: 0;
+                top: 100px;
+                width: 100%;
+                padding: 40px 50px 30px 50px;
+                margin: 0 auto;    
+                z-index: 9;
+                li {
+                    padding: 0;
+                    .home-area-box {
+                        display: grid;
+                        grid-template-columns: repeat(4, 1fr);
+                        gap: 30px;
+                        margin: 0;
+                        &-item {
+                            position: relative;
+                            border-radius: 10px;
+                            overflow: hidden;
+                            &-thumb {
+                                position: relative;
+                                z-index: 1;
+                                border: 1px solid var(--border-color-1);
+                                border-bottom: 0;
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    top: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background: var(--bg-heading-color);
+                                    opacity: 0;
+                                    transition: 0.4s;
+                                }
+                                img {
+                                    width: 100%;
+                                }
+                                ul {
+                                    display: flex;
+                                    justify-content: center;
+                                    gap: 15px;
+                                    position: absolute;
+                                    z-index: 10;
+                                    bottom: 110px;
+                                    width: 100%;
+                                    transition: 0.4s;
+                                    opacity: 0;
+                                    li {
+                                        a {
+                                            background: var(--text-white);
+                                            color: var(--bg-heading-color);
+                                            padding: 3px 20px;
+                                            border-radius: 15px;
+                                            border: 0;
+                                            transition: 0.4s;
+                                            font-size: 14px;
+                                            line-height: 24px;
+                                            &::after {
+                                                display: none;
+                                            }
+                                            &:hover {
+                                                color: var(--text-white);
+                                                background: var(--primary-color-1);
+                                                opacity: 1;
+                                            }
+                                        }
+                                    }
+                                }
+                            }
+                            &-content {
+                                text-align: center;
+                                position: absolute;
+                                bottom: 0;
+                                left: 0;
+                                width: 100%;
+                                padding: 20px 15px 0 15px;
+                                z-index: 1;
+                                &::before {
+                                    content: '';
+                                    position: absolute;
+                                    top: 0;
+                                    left: 0;
+                                    width: 100%;
+                                    height: 1px;
+                                    background: var(--border-color-1);
+                                    transition: 0.3s;
+                                }
+                                &::after {
+                                    content: '';
+                                    position: absolute;
+                                    left: 0;
+                                    bottom: 0;
+                                    width: 100%;
+                                    height: 100%;
+                                    background: var(--bg-white);
+                                    transition: 0.4s;
+                                    z-index: -1;
+                                }
+                                & .one {
+                                    transition: 0.4s;
+                                    a {
+                                        background: transparent;
+                                    }
+                                }
+                                & .two {
+                                    opacity: 0;
+                                    transition: 0.33s;
+                                    position: absolute;
+                                    left: 50%;
+                                    transform: translateX(-50%);
+                                    width: 100%;
+                                    bottom: 0;
+                                    a {
+                                        display: inline-block;
+                                        transition: 0.4s;
+                                        background: var(--primary-color-1);
+                                        color: var(--text-white);
+                                        border-radius: 5px;
+                                    }
+                                }
+                            }
+                            &:hover {
+                                .home-area-box-item {
+                                    &-thumb {
+                                        &::after {
+                                            opacity: 0.5;
+                                        }
+                                        ul {
+                                            opacity: 1;
+                                            bottom: 93px;
+                                        }
+                                    }
+                                    &-content {
+                                        border-color: #8d8d8d13;
+                                        &::after {
+                                            height: 0;
+                                        }
+                                        &::before,
+                                        & .one {
+                                            opacity: 0;
+                                        }
+                                        & .two {
+                                            opacity: 1;
+                                            bottom: 25px;
+                                            a {
+                                                padding: 10px 20px;
+                                            }                                                
+                                        }
+                                    }
+                                }
+                            }
+                            &:nth-child(2) {
+                                .home-area-box-item {
+                                    &-thumb ul li a:hover {
+                                        background: var(--primary-color-2);
+                                    }
+                                    &-content .two a {
+                                        background: var(--primary-color-2);
+                                    }
+                                }
+                            }
+                            &:nth-child(3) {
+                                .home-area-box-item {
+                                    &-thumb ul li a:hover {
+                                        background: var(--primary-color-3);
+                                    }
+                                    &-content .two a {
+                                        background: var(--primary-color-3);
+                                    }
+                                }
+                            }
+                            &:nth-child(4) {
+                                .home-area-box-item {
+                                    &-thumb ul li a:hover {
+                                        background: var(--primary-color-4);
+                                    }
+                                    &-content .two a {
+                                        background: var(--primary-color-4);
+                                    }
+                                }
+                            }
+                            &:nth-child(6) {
+                                .home-area-box-item {
+                                    &-thumb ul li a:hover {
+                                        background: var(--primary-color-2);
+                                    }
+                                    &-content .two a {
+                                        background: var(--primary-color-2);
+                                    }
+                                }
+                            }
+                            &:nth-child(7) {
+                                .home-area-box-item {
+                                    &-thumb ul li a:hover {
+                                        background: var(--primary-color-3);
+                                    }
+                                    &-content .two a {
+                                        background: var(--primary-color-3);
+                                    }
+                                }
+                            }
+                            &:nth-child(8) {
+                                .home-area-box-item {
+                                    &-thumb ul li a:hover {
+                                        background: var(--primary-color-4);
+                                    }
+                                    &-content .two a {
+                                        background: var(--primary-color-4);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }                
+        }
+    }
+}
+@media (max-width: 1499px) {
+    .header__area-menubar-center-menu ul li {
+        .sub-menu.home-area {
+            padding: 30px;
+            li .home-area-box {
+                gap: 25px;
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .header__area-menubar-center-menu ul li {
+        .sub-menu.home-area {
+            padding: 30px 15px;
+            li {
+                padding: 0;
+                .home-area-box {
+                    gap: 15px;
+                    grid-row-gap: 30px;
+                    &-item {
+                        &-thumb ul {
+                            bottom: 85px;
+                        }
+                        &-content {
+                            padding: 15px 0 0 0;
+                            & .two a {
+                                font-size: 13px;
+                            }
+                        }
+                        &:hover {
+                            .home-area-box-item-content .two a {
+                                padding: 6px 9px;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1050px) {
+    li.menu-item-has-children {
+        &.home {
+            display: none;
+        }
+        &.menus {
+            display: block;
+        }
+    }
+}

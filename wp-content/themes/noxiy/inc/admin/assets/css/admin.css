@@ -1,0 +1,161 @@
+/*=============================================================
+# Admin Page
+==============================================================*/
+.to-wrap {
+  max-width: 800px;
+  margin: 20px 20px 0 0;
+  clear: both;
+}
+
+.to-wrap img {
+  border: 0;
+  outline: 0;
+  height: auto;
+  max-width: 100%;
+  vertical-align: middle;
+  -ms-interpolation-mode: bicubic;
+}
+
+.to-wrap p {
+  margin: 0 0 10px 0;
+}
+
+.to-wrap p:last-child {
+  margin-bottom: 0;
+}
+
+.to-tgmpa-notice .dashicons,
+.to-wrap .dashicons {
+  font-size: 14px;
+  width: 18px;
+  height: 18px;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.to-admin-page-header {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.to-admin-page-header-text {
+  flex: 1;
+}
+
+.to-admin-page-header-text p {
+  margin: 0;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.4em;
+}
+
+.to-admin-page-header-text h1 {
+  font-size: 42px;
+  margin: 0;
+  padding: 0 0 15px 0;
+}
+
+.to-admin-page-header-logo {
+  color: #fff;
+  min-width: 100px;
+  min-height: 100px;
+  margin-left: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #e4e4e4;
+  border-radius: 4px;
+  overflow: hidden;
+}
+.to-admin-page-header-logo strong {
+  margin: 5px 0;
+}
+
+.to-admin-box {
+  position: relative;
+  border: 1px solid #ccd0d4;
+  box-shadow: 0 2px 2px rgba(0, 0, 0, 0.075);
+  background: #fff;
+}
+
+.to-admin-box-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 1px solid #ccd0d4;
+}
+
+.to-admin-box-header h2 {
+  font-size: 14px;
+  padding: 10px 15px;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.to-admin-box-inside {
+  position: relative;
+  padding: 15px;
+  line-height: 1.4;
+  font-size: 13px;
+}
+
+.to-admin-form {
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.to-admin-form-text {
+  flex: 1;
+}
+
+.to-admin-form-text input {
+  width: 100%;
+  max-width: 100%;
+}
+
+.to-admin-form-button {
+  margin-left: 10px;
+}
+
+.to-admin-text-muted {
+  color: #999;
+}
+
+.to-admin-page-text-success {
+  color: #558a10;
+}
+
+.to-admin-page-text-error {
+  color: #a10000;
+}
+
+.to-admin-boxes {
+  display: flex;
+  margin-top: 20px;
+}
+
+.to-admin-boxes .to-admin-box {
+  flex: 1;
+  margin-right: 20px;
+}
+
+.to-admin-boxes .to-admin-box:last-child {
+  margin-right: 0;
+}
+
+.to-wrap .notice {
+  display: none;
+}
+
+/*=============================================================
+# Custom CSS
+==============================================================*/
+
+.ocdi__theme-about {
+  display: none;
+}
+#toplevel_page_noxiy img {
+	width: 20px;
+    padding: 7px 0 !important;
+}

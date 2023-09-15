@@ -1,0 +1,265 @@
+$flaticon-font: "flaticon";
+
+@font-face {
+    font-family: $flaticon-font;
+    src: url("./flaticon.ttf?89ad0380500a5e77b7a4cfafe65f20e0") format("truetype"),
+url("./flaticon.woff?89ad0380500a5e77b7a4cfafe65f20e0") format("woff"),
+url("./flaticon.woff2?89ad0380500a5e77b7a4cfafe65f20e0") format("woff2"),
+url("./flaticon.eot?89ad0380500a5e77b7a4cfafe65f20e0#iefix") format("embedded-opentype"),
+url("./flaticon.svg?89ad0380500a5e77b7a4cfafe65f20e0#flaticon") format("svg");
+}
+
+i[class^="flaticon-"]:before, i[class*=" flaticon-"]:before {
+    font-family: flaticon !important;
+    font-style: normal;
+    font-weight: normal !important;
+    font-variant: normal;
+    text-transform: none;
+    line-height: 1;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+$flaticon-map: (
+    "phone-call": "\f101",
+    "arrows": "\f102",
+    "family": "\f103",
+    "healthcare": "\f104",
+    "car-insurance": "\f105",
+    "home-insurance": "\f106",
+    "logistics-delivery": "\f107",
+    "conflagration": "\f108",
+    "farmhouse": "\f109",
+    "travel": "\f10a",
+    "check-mark": "\f10b",
+    "insurance": "\f10c",
+    "health": "\f10d",
+    "umbrella": "\f10e",
+    "flood": "\f10f",
+    "safe-flight": "\f110",
+    "earthquake": "\f111",
+    "protection": "\f112",
+    "protection-1": "\f113",
+    "download-to-storage-drive": "\f114",
+    "quote": "\f115",
+    "piggy-bank": "\f116",
+    "refund": "\f117",
+    "winner": "\f118",
+    "mission": "\f119",
+    "value": "\f11a",
+    "vision": "\f11b",
+    "meeting": "\f11c",
+    "house": "\f11d",
+    "select": "\f11e",
+    "pdf": "\f11f",
+    "pdf-file": "\f120",
+    "menu": "\f121",
+    "dots-menu": "\f122",
+    "quote-1": "\f123",
+    "travel-insurance": "\f124",
+    "customer-service": "\f125",
+    "businessman": "\f126",
+    "24-hours": "\f127",
+    "seller": "\f128",
+    "question-mark": "\f129",
+    "right-up": "\f12a",
+    "customer-support": "\f12b",
+    "umbrella-1": "\f12c",
+    "saving": "\f12d",
+    "trust": "\f12e",
+    "question-mark-1": "\f12f",
+    "success": "\f130",
+    "costumer": "\f131",
+    "project-management": "\f132",
+    "team": "\f133",
+    "medical-report": "\f134",
+    "social": "\f135",
+    "dental-insurance": "\f136",
+    "mental-health": "\f137",
+    "medical-records": "\f138",
+    "healthcare-1": "\f139",
+    "cost-saving": "\f13a",
+    "review": "\f13b",
+    "globe": "\f13c",
+);
+
+.flaticon-phone-call:before {
+    content: map-get($flaticon-map, "phone-call");
+}
+.flaticon-arrows:before {
+    content: map-get($flaticon-map, "arrows");
+}
+.flaticon-family:before {
+    content: map-get($flaticon-map, "family");
+}
+.flaticon-healthcare:before {
+    content: map-get($flaticon-map, "healthcare");
+}
+.flaticon-car-insurance:before {
+    content: map-get($flaticon-map, "car-insurance");
+}
+.flaticon-home-insurance:before {
+    content: map-get($flaticon-map, "home-insurance");
+}
+.flaticon-logistics-delivery:before {
+    content: map-get($flaticon-map, "logistics-delivery");
+}
+.flaticon-conflagration:before {
+    content: map-get($flaticon-map, "conflagration");
+}
+.flaticon-farmhouse:before {
+    content: map-get($flaticon-map, "farmhouse");
+}
+.flaticon-travel:before {
+    content: map-get($flaticon-map, "travel");
+}
+.flaticon-check-mark:before {
+    content: map-get($flaticon-map, "check-mark");
+}
+.flaticon-insurance:before {
+    content: map-get($flaticon-map, "insurance");
+}
+.flaticon-health:before {
+    content: map-get($flaticon-map, "health");
+}
+.flaticon-umbrella:before {
+    content: map-get($flaticon-map, "umbrella");
+}
+.flaticon-flood:before {
+    content: map-get($flaticon-map, "flood");
+}
+.flaticon-safe-flight:before {
+    content: map-get($flaticon-map, "safe-flight");
+}
+.flaticon-earthquake:before {
+    content: map-get($flaticon-map, "earthquake");
+}
+.flaticon-protection:before {
+    content: map-get($flaticon-map, "protection");
+}
+.flaticon-protection-1:before {
+    content: map-get($flaticon-map, "protection-1");
+}
+.flaticon-download-to-storage-drive:before {
+    content: map-get($flaticon-map, "download-to-storage-drive");
+}
+.flaticon-quote:before {
+    content: map-get($flaticon-map, "quote");
+}
+.flaticon-piggy-bank:before {
+    content: map-get($flaticon-map, "piggy-bank");
+}
+.flaticon-refund:before {
+    content: map-get($flaticon-map, "refund");
+}
+.flaticon-winner:before {
+    content: map-get($flaticon-map, "winner");
+}
+.flaticon-mission:before {
+    content: map-get($flaticon-map, "mission");
+}
+.flaticon-value:before {
+    content: map-get($flaticon-map, "value");
+}
+.flaticon-vision:before {
+    content: map-get($flaticon-map, "vision");
+}
+.flaticon-meeting:before {
+    content: map-get($flaticon-map, "meeting");
+}
+.flaticon-house:before {
+    content: map-get($flaticon-map, "house");
+}
+.flaticon-select:before {
+    content: map-get($flaticon-map, "select");
+}
+.flaticon-pdf:before {
+    content: map-get($flaticon-map, "pdf");
+}
+.flaticon-pdf-file:before {
+    content: map-get($flaticon-map, "pdf-file");
+}
+.flaticon-menu:before {
+    content: map-get($flaticon-map, "menu");
+}
+.flaticon-dots-menu:before {
+    content: map-get($flaticon-map, "dots-menu");
+}
+.flaticon-quote-1:before {
+    content: map-get($flaticon-map, "quote-1");
+}
+.flaticon-travel-insurance:before {
+    content: map-get($flaticon-map, "travel-insurance");
+}
+.flaticon-customer-service:before {
+    content: map-get($flaticon-map, "customer-service");
+}
+.flaticon-businessman:before {
+    content: map-get($flaticon-map, "businessman");
+}
+.flaticon-24-hours:before {
+    content: map-get($flaticon-map, "24-hours");
+}
+.flaticon-seller:before {
+    content: map-get($flaticon-map, "seller");
+}
+.flaticon-question-mark:before {
+    content: map-get($flaticon-map, "question-mark");
+}
+.flaticon-right-up:before {
+    content: map-get($flaticon-map, "right-up");
+}
+.flaticon-customer-support:before {
+    content: map-get($flaticon-map, "customer-support");
+}
+.flaticon-umbrella-1:before {
+    content: map-get($flaticon-map, "umbrella-1");
+}
+.flaticon-saving:before {
+    content: map-get($flaticon-map, "saving");
+}
+.flaticon-trust:before {
+    content: map-get($flaticon-map, "trust");
+}
+.flaticon-question-mark-1:before {
+    content: map-get($flaticon-map, "question-mark-1");
+}
+.flaticon-success:before {
+    content: map-get($flaticon-map, "success");
+}
+.flaticon-costumer:before {
+    content: map-get($flaticon-map, "costumer");
+}
+.flaticon-project-management:before {
+    content: map-get($flaticon-map, "project-management");
+}
+.flaticon-team:before {
+    content: map-get($flaticon-map, "team");
+}
+.flaticon-medical-report:before {
+    content: map-get($flaticon-map, "medical-report");
+}
+.flaticon-social:before {
+    content: map-get($flaticon-map, "social");
+}
+.flaticon-dental-insurance:before {
+    content: map-get($flaticon-map, "dental-insurance");
+}
+.flaticon-mental-health:before {
+    content: map-get($flaticon-map, "mental-health");
+}
+.flaticon-medical-records:before {
+    content: map-get($flaticon-map, "medical-records");
+}
+.flaticon-healthcare-1:before {
+    content: map-get($flaticon-map, "healthcare-1");
+}
+.flaticon-cost-saving:before {
+    content: map-get($flaticon-map, "cost-saving");
+}
+.flaticon-review:before {
+    content: map-get($flaticon-map, "review");
+}
+.flaticon-globe:before {
+    content: map-get($flaticon-map, "globe");
+}

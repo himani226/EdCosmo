@@ -1,0 +1,231 @@
+/*==========================================================================
+* Request Quote CSS
+==========================================================================*/
+.request__quote {
+    position: relative;
+    overflow: hidden;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 1;
+    padding: 160px 0;
+    &-shape {
+        &-two,
+        &-one {
+            mix-blend-mode: overlay;
+            position: absolute;
+            right: 0;
+            bottom: 0;            
+            z-index: 0;
+        }
+    }
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background: var(--bg-heading-color);
+        z-index: -1;
+        opacity: 0.75;
+    }  
+    &-title {
+        h2 {
+            color: var(--text-white);
+            max-width: 550px;
+            margin-bottom: 50px;
+        }
+        &-btn {
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            .btn-one {
+                background: var(--text-white);
+                color: var(--bg-heading-color);
+                &::after,
+                &::before {
+                    background: var(--primary-color-4);
+                }
+                &:hover {
+                    color: var(--text-white);
+                }
+            }
+        }
+    }  
+    &-right {
+        position: relative;
+        h6 {
+            color: var(--text-white);
+            margin-top: 30px;
+        }
+        &-video {
+            max-width: 160px;
+            text-align: center;
+            margin: 0 0 0 auto;            
+        }
+        &-icon a {
+            color: var(--primary-color-4);
+        }
+    }
+}
+/*==========================================================================
+* Request Quote Two CSS
+==========================================================================*/
+.request__quote-page {
+    &-left {
+        padding: 40px;
+        box-shadow: var(--box-shadow-1);
+        h2,
+        h3 {
+            margin-bottom: 25px;
+        }
+        > p {
+            margin-bottom: 50px;
+        }
+        .space {
+            input {
+                accent-color: var(--primary-color-1);
+            }
+            span {
+                margin: 0 8px;
+            }
+        }
+    }
+    p {
+        font-size: 16px;
+        line-height: 26px;
+    }
+    &-item {
+        position: relative;
+        z-index: 1;
+        &-label {
+            font-weight: 500;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            left: 0;
+			transition: 300ms ease;
+            z-index: -1;
+        }
+        span {
+            color: var(--primary-color-1);
+        }
+    }
+    &-services {
+        label {
+            font-size: 14px;
+            display: flex;
+            align-items: center;
+            font-weight: 500;
+            color: var(--text-heading-color);
+            background: var(--color-4);
+            padding: 12px 15px;
+            margin: 8px 0;
+        }
+    }
+    &-right {
+        background: #f7fcfc;
+        padding: 30px;
+        padding-bottom: 80px;
+        position: relative;
+        z-index: 1;
+        position: sticky;
+        top: 140px;
+        &-item {
+            background: #f7fcfc;
+            &-icon i {
+                color: var(--primary-color-1);
+                font-size: 60px;
+                line-height: 60px;
+                display: inline-block;
+                margin-bottom: 20px;
+            }
+            &-bottom {
+                display: flex;
+                align-items: center;
+                gap: 25px;
+                margin-top: 40px;
+                img {
+                    width: 70px;
+                    height: 70px;
+                    max-width: 100%;
+                    object-fit: cover;
+                    border-radius: 50%;
+                }
+            }
+        }
+        & .request-pagination {
+            position: absolute;
+            left: 30px;
+            bottom: 30px;
+            z-index: -1;
+            text-align: left;
+            span {
+                width: 8px;
+                height: 8px;
+                background: var(--primary-color-1);
+                opacity: 1;
+            }
+            .swiper-pagination-bullet {
+                margin: 5px;
+                position: relative;                
+                &-active {
+                    background: none;
+                    border: 1px solid var(--primary-color-1);
+                    width: 24px;
+                    height: 24px;
+                    margin-bottom: 0;
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 50%;
+                        transform: translate(-50%, -50%);
+                        left: 50%;
+                        width: 8px;
+                        height: 8px;
+                        background: var(--primary-color-1);
+                        border-radius: 50%;
+                    }
+                }
+            }
+        }
+    }
+    .description {
+        font-size: 16px;     
+        font-weight: 400;
+        margin-top: 10px;
+    }
+}
+@media (max-width: 767px) { 
+    .request__quote {
+        &-title {
+            text-align: center;
+            h2 {
+                margin-bottom: 40px;
+            }
+            &-btn {
+                justify-content: center;
+                margin-left: 110px;
+            }
+        }
+        &-right-video {
+            max-width: 160px;
+            text-align: center;
+            margin: 0 auto;
+        }
+    }
+}
+@media (max-width: 575px) { 
+    .request__quote {
+        &-title {
+            &-btn {
+                justify-content: center;
+                margin-left: 0;
+                img {
+                    display: none;
+                }
+            }
+        }
+    }
+}

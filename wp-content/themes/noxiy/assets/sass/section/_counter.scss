@@ -1,0 +1,140 @@
+/*==========================================================================
+* Counter CSS
+==========================================================================*/
+.counter__area {
+    background: var(--primary-color-4);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    z-index: 1;
+    padding: 80px 120px;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 10px;
+    margin-top: -125px;
+    &-item {
+        display: flex;
+        gap: 30px;
+        &-icon i {
+            color: var(--text-white);
+            font-size: 70px;
+        }
+        &-info {
+            margin-top: -10px;
+            h6,
+            h2 {
+                color: var(--text-white);
+            }
+        }
+    }
+}
+/*==========================================================================
+* Counter Two CSS
+==========================================================================*/
+.counter__two  {
+    background: var(--bg-white);
+    position: relative;
+    z-index: 1;
+    &-bg {
+        border-top: 1px solid var(--border-color-1);
+        padding-top: 120px;
+        display: flex;
+        justify-content: space-between;
+    }
+    &-item {
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        justify-content: center;
+        &-icon {
+            i {
+                color: var(--primary-color-1);
+                display: inline-flex;
+                align-items: center;
+                justify-content: center;
+                width: 100px;
+                height: 100px;
+                font-size: 45px;
+                border-radius: 50%;
+                background: var(--color-5);
+            }
+        }
+        &-content {
+            h6 {
+                font-weight: 400;
+                color: var(--color-2);
+            }
+        }
+    }
+}
+@media (max-width: 1350px) { 
+    .counter__area {
+        padding: 80px 60px;
+    }
+}
+@media (max-width: 1200px) { 
+    .counter__area {
+        grid-template-columns: repeat(2, 1fr);
+        display: grid;
+        gap: 35px;
+    }
+}
+@media (max-width: 1199px) { 
+    .counter__two-item {
+        display: grid;
+        text-align: center;
+    }
+}
+@media (max-width: 991px) { 
+    .counter__area {
+        &-item {
+            flex-direction: column;
+            text-align: center;
+            gap: 25px;
+        }
+    }
+    .counter__two {
+        &-bg {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 30px;
+        }
+        &-item {
+            display: flex;
+            justify-content: start;
+        }
+    }
+}
+@media (max-width: 670px) { 
+    .counter__area {
+        padding: 60px 25px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+@media (max-width: 575px) { 
+    .counter__two {
+        &-item {
+            display: block;
+            text-align: center;
+            &-icon {
+                margin-bottom: 10px;
+                i {
+                    width: 70px;
+                    height: 70px;
+                    font-size: 30px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 420px) { 
+    .counter__area {
+        grid-template-columns: repeat(1, 1fr);
+        &-item {
+            flex-direction: inherit;
+            text-align: left;
+            justify-content: center;
+        }
+    }
+}

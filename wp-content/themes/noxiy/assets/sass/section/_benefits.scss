@@ -1,0 +1,242 @@
+/*==========================================================================
+* Benefits CSS
+==========================================================================*/
+.benefits__area {
+    position: relative;
+    z-index: 2;
+    &-left {
+        &-image {
+            position: relative;
+            padding-left: 150px;
+            display: inline-flex;
+            &-from {
+                position: absolute;
+                left: -48px;
+                top: 50%;
+                background: var(--primary-color-4);
+                padding: 40px 60px;
+                border-radius: 10px;
+                transform: translateY(-50%) rotate(-90deg);
+                z-index: 1;
+                h6 {
+                    color: var(--text-white);
+                    font-size: 20px;
+                    line-height: 26px;
+                    display: inline-block;
+                    position: relative;
+                    font-weight: 400;
+                    z-index: 1;
+                    padding-right: 80px;                    
+                    &::before {
+                        content: '';
+                        position: absolute;
+                        top: 13px;
+                        right: 0;
+                        width: 65px;
+                        height: 1px;
+                        background: var(--text-white);                        
+                    }
+                }
+                h2 {
+                    color: var(--text-white);
+                    font-weight: 400;
+                    font-size: 80px;
+                    line-height: 80px;                    
+                }
+            }
+        }
+    }
+    &-right {
+        &-title {
+            margin-bottom: 30px;
+            h2 {
+                margin-bottom: 20px;
+            }
+            p {
+                margin: 0;
+            }
+        }
+        &-list {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 20px;
+            p {
+                color: var(--text-heading-color);
+                font-family: var(--heading-font);
+                font-weight: 500;
+                font-size: 18px;
+                line-height: 28px;   
+                margin: 0;
+                display: flex;
+                align-items: center;
+                gap: 10px;
+                i {
+                    color: var(--text-white);
+                    width: 20px;
+                    height: 20px;
+                    background: var(--primary-color-4);
+                    border-radius: 50%;
+                    display: inline-flex;
+                    justify-content: center;
+                    align-items: center;
+                    font-size: 15px;
+                    position: relative;
+                    top: 1px;
+                }
+            }
+        }
+        &-bottom {
+            border-top: 1px solid var(--border-color-1);
+            margin-top: 45px;
+            padding-top: 50px;
+            display: flex;
+            align-items: center;
+            gap: 50px;
+            &-btn {
+                .btn-one {
+                    background: var(--primary-color-4);
+                }
+            }
+            &-contact {
+                display: flex;
+                align-items: center;
+                gap: 23px;
+                &-icon {
+                    width: 56px;
+                    height: 56px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    background: var(--color-13);
+                    border-radius: 50%;
+                    font-size: 35px;
+                    color: var(--primary-color-4);
+                }
+                &-info {
+                    span {
+                        font-family: var(--heading-font);
+                        font-weight: 600;
+                        font-size: 14px;
+                        line-height: 24px;                        
+                    }
+                    h5 {
+                        a {
+                            transition: 0.4s;
+                            &:hover {
+                                color: var(--primary-color-4);
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+/*==========================================================================
+* Benefits Two CSS
+==========================================================================*/
+.benefits__two {
+    position: relative;
+    z-index: 1;
+    &-shape {
+        position: absolute;
+        right: 100px;
+        top: 100px;
+        z-index: -1;
+        animation: rollIn 15s linear infinite;  
+    }
+    &-left {
+        &-image {
+            position: relative;
+            padding-bottom: 90px;
+            z-index: 1;
+            display: flex;
+            &-shape {
+                position: absolute;
+                left: -50px;
+                top: 0;
+                z-index: -1;
+                opacity: 0.11;
+                max-width: 80%;
+                animation: upDown 5s linear infinite;                
+            }
+            &-two {
+                position: absolute;
+                right: 0;
+                bottom: 0;
+                border: 10px solid var(--color-5);
+            }
+        }
+    }
+    &-right {
+        margin-left: 65px;
+        &-title {
+            h2 {
+                margin-bottom: 20px;
+            }
+            p {
+                max-width: 400px;
+                margin: 0;
+            }
+        }        
+        .btn-one {
+            background: var(--primary-color-1);
+            margin-top: 40px;
+        }
+        &-bottom {
+            margin-top: 20px;
+            margin-right: 95px;
+            .skill__area-item-bar {
+                background: var(--primary-color-1);
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .benefits__two-right {
+        margin-left: 0;
+    }
+}
+@media (max-width: 555px) {
+    .benefits__area-left-image-from h2 {
+        font-size: 55px;
+        line-height: 65px;
+    }
+    .benefits__area-left-image {
+        padding-left: 30px;
+    }
+    .benefits__area-left-image-from {
+        left: -36px;
+        padding: 30px 50px;
+    }
+    .benefits__area-right {
+        &-list {
+            display: grid;
+            grid-template-columns: initial;
+            gap: 8px;
+        }
+        &-bottom {
+            border: 0;
+            margin-top: 0;
+            padding-top: 0;
+            display: inherit;
+            &-btn {
+                margin: 20px 0;
+            }
+        }
+    }
+    .benefits__two-right-bottom {
+        margin-right: 0;
+    }
+}
+@media (max-width: 450px) {
+    .benefits__two-left-image {
+        padding-bottom: 50px;
+        &-two {
+            max-width: 230px;
+        }
+        &-one {
+            max-width: 270px;
+        }
+    }
+}

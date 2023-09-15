@@ -1,0 +1,596 @@
+/*------------------------------------------------------------------------
+
+Template Name:  Noxiy - Insurance Company HTML Template
+Author:  ThemeOri
+Author URI: http://ThemeOri.com
+Version: 1.0.0
+Description: This Template is created for web template
+
+--------------------------------------------------------------------------
+TABLE OF CONTENTS
+--------------------------------------------------------------------------
+* Common CSS
+* Form CSS
+* Hedging  CSS
+* Button And Title Styles CSS
+* Scroll Top CSS
+* Preloader CSS
+* Color & Font CSS
+* Video Animation CSS
+* Shape & Image Animation CSS
+* Icon Animation CSS
+* Image Overlay Animation CSS
+* Shape & Text Slider CSS
+* Space And Container CSS
+* Top Bar CSS
+* Top Bar Two CSS
+* Top Bar Three CSS
+* Top Bar Four CSS
+* Menu Bar CSS
+* Menu Bar Sticky CSS
+* Menu Sidebar CSS
+* Responsive Main Menu Css
+* Responsive Menu Sidebar CSS
+* Menu Demo CSS
+* Banner One CSS
+* Banner Two CSS
+* Banner Three CSS
+* Banner Four CSS
+* Features One CSS
+* Features Two CSS
+* About One CSS
+* About Two CSS
+* About Three CSS
+* About Four CSS
+* Services One CSS
+* Services Two CSS
+* Services Three CSS
+* Services Four CSS
+* Services Details CSS
+* Counter CSS
+* Counter Two CSS
+* Benefits CSS
+* Benefits Two CSS
+* Quote Area CSS
+* Work Area CSS
+* Offer Area CSS
+* Solution CSS
+* Request Quote CSS
+* Request Quote Two CSS
+* Portfolio One CSS
+* Portfolio Two CSS
+* Portfolio Three CSS
+* Portfolio Four CSS
+* Noxiy Filter CSS
+* Project Filter CSS
+* Project Single CSS
+* Video Area CSS
+* Cta One CSS
+* Cta Two CSS
+* Cta Three CSS
+* Team One CSS
+* Team Two CSS
+* Team Three CSS
+* Team Four CSS
+* Team Five CSS
+* Team Six CSS
+* Team Single CSS
+* Testimonial One CSS
+* Testimonial Two CSS
+* Testimonial Page CSS
+* FAQ One CSS
+* FAQ Area CSS
+* Pricing One Css
+* Pricing Two CSS
+* Blog One CSS
+* Blog Two CSS
+* Blog Three CSS
+* Blog Four CSS
+* Blog Standard CSS
+* Blog Single CSS
+* About Page CSS
+* About Company CSS
+* Services Page CSS
+* Noxiy Contact CSS
+* Contact One CSS
+* Contact Two CSS
+* Contact Three CSS
+* Text Slider CSS
+* Who We CSS
+* All Side Bar CSS
+* Post CSS
+* Theme Pagination CSS
+* Subscribe Area CSS
+* Subscribe Three CSS
+* Page Banner CSS
+* Error CSS
+* Footer Top Css
+* Footer Menu Css
+* Footer One CSS
+* Footer Two CSS
+* Footer Three CSS
+* Footer Four CSS
+* Copyright One CSS
+* Copyright Two CSS
+* Copyright Three CSS
+* Copyright Four CSS
+* Switch Tab CSS
+* Dark CSS
+* RTL CSS
+
+/*==========================================================================
+* Common CSS
+==========================================================================*/
+body {
+	font-family: var(--body-font);
+	color: var(--body-color);
+	font-size: 16px;
+	line-height: 28.8px;
+  	font-weight: 400;
+}
+img {
+	max-width: 100%;
+	height: auto;
+	transition: 0.4s;
+}
+a {  
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+}
+a,
+button,
+i {
+	text-decoration: none;
+	color: inherit;
+}
+a:focus,
+a:hover {
+	text-decoration: none;
+	color: inherit;
+}
+.section-padding {
+	padding: 120px 0px;
+}
+@media (max-width: 575px) {
+	.section-padding {
+		padding: 85px 0px;
+	}
+}
+.display-none {
+	display: none;
+}
+.display-block {
+	display: block;
+}
+.img__full {
+	width: 100%;
+}
+/*==========================================================================
+* Form CSS
+==========================================================================*/
+button,
+input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+	border: 1px solid var(--border-color-2);
+	border-color: transparent;
+	border-radius: 6px;
+	background: var(--primary-color-1);
+	color: var(--text-white);
+	padding: 17px 40px;
+}
+button:hover,
+input[type="button"]:hover,
+input[type="reset"]:hover,
+input[type="submit"]:hover {
+  	border-color: transparent;
+}
+button:active,
+button:focus,
+input[type="button"]:active,
+input[type="button"]:focus,
+input[type="reset"]:active,
+input[type="reset"]:focus,
+input[type="submit"]:active,
+input[type="submit"]:focus {
+  	border-color: transparent;
+}
+input[type="text"],
+input[type="file"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="range"],
+input[type="date"],
+input[type="month"],
+input[type="week"],
+input[type="time"],
+input[type="datetime"],
+input[type="datetime-local"],
+input[type="color"],
+textarea {
+	color: var(--body-color);
+	border-radius: 6px;
+	width: 100%;
+	height: 60px;
+	border: 1px solid var(--border-color-2);
+	padding: 0 15px;
+	background: var(--bg-white);
+}
+input[type="text"]:focus,
+input[type="file"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+input[type="tel"]:focus,
+input[type="range"]:focus,
+input[type="date"]:focus,
+input[type="month"]:focus,
+input[type="week"]:focus,
+input[type="time"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="color"]:focus,
+textarea:focus {
+	color: var(--text-heading-color);
+	outline: none;
+	box-shadow: none;
+	border-color: var(--primary-color-1);
+}
+select {
+	border: 1px solid var(--border-color-2);
+}
+textarea {
+	width: 100%;
+	height: 150px;
+	padding-top: 15px;
+}
+button,
+button:hover,
+button:focus {
+	box-shadow: none;
+	border: none;
+	outline: none;
+}
+/*==========================================================================
+* Hedging CSS
+==========================================================================*/
+$list: (h1, 80px, 90px, 0, 0, var(--text-heading-color), var(--heading-font), 700),
+(h2, 50px, 60px, 0, 0, var(--text-heading-color), var(--heading-font), 600),
+(h3, 30px, 40px, 0, 0, var(--text-heading-color), var(--heading-font), 600),
+(h4, 24px, 34px, 0, 0, var(--text-heading-color), var(--heading-font), 600),
+(h5, 20px, 30px, 0, 0, var(--text-heading-color), var(--heading-font), 600),
+(h6, 18px, 28px, 0, 0, var(--text-heading-color), var(--heading-font), 600);
+@each $name, $size, $height, $p, $m, $color, $font, $weight in $list {
+    #{$name}{
+      font-size: $size;
+      line-height: $height;
+      padding: $p;
+      margin: $m;
+      color: $color;
+      font-family: $font;
+      font-weight: $weight;
+    }
+}
+@media (max-width: 1199px) {
+	h2 {
+		font-size: 42px;
+		line-height: 52px;
+	}
+}
+@media (max-width: 575px) {
+	h2 {
+		font-size: 38px;
+		line-height: 48px;
+	}
+}
+@media (max-width: 475px) {
+	h2 {
+		font-size: 28px;
+		line-height: 38px;
+	}
+	h3 {
+		font-size: 24px;
+		line-height: 34px;
+	}
+	h4 {
+		font-size: 21px;
+		line-height: 31px;
+	}
+	h5 {
+		font-size: 19px;
+		line-height: 29px;
+	}
+}
+@media (max-width: 359px) {
+	h4 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	h6 {
+		font-size: 16px;
+		line-height: 26px;
+	}	
+}
+/*==========================================================================
+* Button And Title Styles CSS
+==========================================================================*/
+.noxiy-core {
+	p {
+	  margin-bottom: 16px;
+	}
+	& .page p:last-child {
+	  margin-bottom: 0;
+	}
+  }
+  .noxiy-core a {
+	color: var(--bg-heading-color);
+	transition: 0.4s;
+	&:hover {
+	  color: var(--primary-color-1);
+	}
+  }
+.subtitle-one,
+.subtitle-two,
+.subtitle-three,
+.subtitle-four {
+	position: relative;
+	font-family: var(--heading-font);
+	color: var(--primary-color-4);	
+	font-weight: 600;
+	font-size: 16px;
+	line-height: 26px;	
+	padding-left: 30px;
+	display: inline-block;
+	margin-bottom: 14px;
+	&::before {
+		position: absolute;
+		content: '';
+		top: 2px;
+		left: 0;
+		background-image: url('https://html.themeori.com/noxiy/assets/img/icon/subtitle-4.png');
+		background-size: 19px;
+		height: 22px;
+		width: 20px;
+		background-repeat: no-repeat;	
+	}
+}
+.subtitle-two {
+	color: var(--primary-color-2);
+	&::before {
+		background-image: url('https://html.themeori.com/noxiy/assets/img/icon/subtitle-2.png');		
+	}
+}
+.subtitle-three {
+	color: var(--primary-color-3);
+	&::before {
+		background-image: url('https://html.themeori.com/noxiy/assets/img/icon/subtitle-3.png');		
+	}
+}
+.subtitle-four {
+	color: var(--primary-color-1);
+	&::before {
+		background-image: url('https://html.themeori.com/noxiy/assets/img/icon/subtitle-1.png');		
+	}
+}
+.noxiy__btn,
+.btn-one,
+.btn-two {
+	background: var(--primary-color-1);
+	color: var(--text-white);
+	display: inline-flex;
+	font-size: 16px;
+	line-height: 26px;
+	padding: 16px 42px;
+	font-weight: 600;
+	font-family: var(--body-font);
+	z-index: 3;
+	position: relative;
+	transition: 0.4s;
+	overflow: hidden;
+	text-transform: capitalize;
+	border-radius: 6px;
+	&::after,
+    &::before {
+		content: '';
+		position: absolute;
+		height: 100%;
+		width: 0;
+		top: 0;
+		left: 0;
+		background: var(--btn-heading-color);
+		border-radius: 6px 30px 30px 6px;
+		transition: all 0.4s ease-out;
+		z-index: -1;
+    }
+	&::after {
+		right: 0;
+		border-radius: 30px 6px 6px 30px;
+		left: auto;
+	}
+    &:hover {
+        color: var(--text-white);
+		&::after,
+        &::before {
+			width: 52%;
+			border-radius: 6px;
+        }
+    }
+	&:focus {
+		color: var(--text-white);
+	}
+}
+.btn-two {
+	background: var(--primary-color-2);
+	border-radius: 30px;
+	overflow: hidden;
+	display: inline-flex;
+	&::after,
+    &::before {
+		border-radius: 30px;
+    }
+    &:hover {
+        &::before {
+			border-radius: 30px 0 0 30px;
+        }
+		&::after {
+			border-radius: 0 30px 30px 0;
+		}
+    }
+}
+.simple-btn {
+	color: var(--btn-heading-color);
+	display: inline-block;
+	font-size: 14px;
+	line-height: 26px;
+	font-weight: 700;
+	font-family: var(--heading-font);
+	transition: 0.4s;
+	text-transform: uppercase;
+    &:hover {
+		color: var(--primary-color-1);
+    }
+	&:focus {
+		color: var(--primary-color-1);
+	}
+}
+@keyframes rotate {
+	100% {
+		transform: rotate(90deg);
+	}
+}
+/*==========================================================================
+* Scroll Top CSS
+==========================================================================*/
+.scroll-up {
+	cursor: pointer;
+	display: block;
+	border-radius: 50px;
+	box-shadow: inset  0 0 0 2px var(--color-8);
+	z-index: 10000;
+	opacity: 0;
+	visibility: hidden;
+	transform: translateY(15px);
+	position: fixed;
+	right: 20px;
+	bottom: 20px;
+	height: 50px;
+	width: 50px;
+    transition: all 200ms linear;
+	&::after {
+		position: absolute;
+		font-family: 'Font Awesome 5 Pro';
+		content: "\f176";
+		text-align: center;
+		line-height: 50px;
+		font-size: 24px;
+		color: var(--primary-color-1);
+		left: 0;
+		top: 0;
+		font-size: 20px;
+		height: 50px;
+		width: 50px;
+		cursor: pointer;
+		display: block;
+		z-index: 1;
+		transition: all 200ms linear;
+	}
+	&.active-scroll {
+		opacity: 1;
+		visibility: visible;
+		transform: translateY(0);
+	}
+	svg path { 
+		fill: none; 
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color-1);
+		stroke-width: 4;
+		box-sizing:border-box;
+		transition: all 200ms linear;
+	}
+}
+.scroll-two {
+	&::after {
+		color: var(--primary-color-2);
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color-2);
+	}
+}
+.scroll-three {
+	&::after {
+		color: var(--primary-color-3);
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color-3);
+	}
+}
+.scroll-four {
+	&::after {
+		color: var(--primary-color-4);
+	}
+	svg.scroll-circle path {
+		stroke: var(--primary-color-4);
+	}
+}
+/*==========================================================================
+* Preloader CSS
+==========================================================================*/
+.theme-loader {
+	position: fixed;
+	width: 100%;
+	height: 100%;
+	background: var(--bg-heading-color);
+	z-index: 9999999999;
+}
+.spinner {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translateX(-50%) translateY(-50%);
+	display: flex;
+}
+.spinner-bounce {
+	will-change: transform;
+	height: 45px;
+	width: 45px;
+	border-radius: 50%;
+	background: var(--primary-color-1);
+	display: inline-block;
+	animation: bounces 1s ease-in-out infinite alternate;
+	transform-origin: 50% 50%;
+	&.one {
+		margin-right: 15px;
+	}
+	&.two {
+		margin-right: 15px;
+		animation-delay: .4s;
+	}
+	&.three {
+		animation-delay: .8s;
+	}
+}
+@keyframes bounces {
+	0% {
+		transform: scale(1);
+		background: var(--primary-color-1);
+	}
+	50% {
+		background: var(--primary-color-2);
+	}
+	100% {
+		transform: scale(.2);
+		background: var(--primary-color-3);
+	}
+}  
+.swiper-button-next::after,
+.swiper-button-prev::after {
+	display: none;
+}

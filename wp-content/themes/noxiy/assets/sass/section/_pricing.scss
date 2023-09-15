@@ -1,0 +1,284 @@
+/*==========================================================================
+* Pricing One Css
+========================================================================== */
+.pricing__area {
+    background: var(--color-4);
+    &-item {
+        padding: 50px;
+        transition: 0.4s;
+        background: var(--bg-white);
+        border-radius: 5px;
+        &-top {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding-bottom: 20px;
+            margin-bottom: 20px;
+            position: relative;            
+            &::before {
+                position: absolute;
+                content: '';
+                left: 0;
+                bottom: 0;
+                width: 100%;
+                height: 1px;
+                background: var(--bg-heading-color);
+                transition: 0.4s;
+                opacity: 0.1;
+            }
+            &-price {
+                p {
+                    font-size: 14px;
+                    line-height: 24px;
+                    transition: 0.4s;
+                    font-weight: 500;
+                }
+                h2 {
+                    transition: 0.4s;
+                    span {
+                        font-size: 30px;
+                        line-height: 40px;
+                    }
+                }
+            }
+            &-icon {
+                i {
+                    color: var(--primary-color-1);
+                    font-size: 60px;
+                    transition: 0.4s;
+                    display: inherit;
+                }
+            }
+        }
+        &-content {
+            &-item {
+                position: relative;
+                padding-left: 35px;
+                margin-bottom: 5px;
+                &::before {
+                    position: absolute;
+                    content: '';
+                    left: 0;
+                    top: 26px;
+                    width: 20px;
+                    height: 2px;
+                    background: var(--primary-color-1);
+                    transition: 0.4s;
+                    opacity: 0.6;
+                }
+                span {
+                    font-size: 14px;
+                    line-height: 24px;
+                    transition: 0.4s;
+                    font-weight: 500;
+                }
+                h6 {
+                    transition: 0.4s;
+                }
+                &:last-child {
+                    margin: 0;
+                }
+            }
+        }
+        &-btn {
+            margin-top: 30px;
+            a {
+                display: block;
+                width: 100%;
+                line-height: 56px;
+                color: var(--text-heading-color);
+                text-align: center;
+                border: 1px solid var(--border-color-1);
+                border-radius: 3px;
+                transition: 0.4s;
+                font-weight: 600;
+                i {
+                    position: relative;
+                    top: 1px;
+                    margin-left: 8px;
+                }
+            }
+        }
+        &:hover {
+            background: var(--primary-color-1);
+            .pricing__area {
+                &-item {
+                    &-top {
+                        &::before {
+                            background: var(--text-white);
+                            opacity: 0.3;
+                        }
+                        &-price {
+                            p {
+                                color: var(--text-white);
+                            }
+                            h2 {
+                                color: var(--text-white);
+                            }
+                        }
+                        &-icon i {
+                            color: var(--text-white);
+                        }
+                    }
+                    &-content {
+                        &-item {
+                            &::before {
+                                background: var(--text-white);
+                            }
+                            span {
+                                color: var(--text-white);
+                            }
+                            h6 {
+                                color: var(--text-white);
+                            }
+                        }
+                    }
+                    &-btn {
+                        a {
+                            background: var(--bg-white);
+                            border-color: var(--bg-white);
+                        }
+                    } 
+                }               
+            }
+        }
+    }
+}
+/*==========================================================================
+* Pricing Two CSS
+==========================================================================*/
+.pricing__two {
+    &-title {
+        h2 {
+            margin-bottom: 30px;
+        }
+        p {
+            margin-bottom: 40px;
+        }
+    }
+    &-item {
+        background: var(--bg-white);
+        box-shadow: var(--box-shadow-1);
+        padding: 40px;
+        &-price {
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+            border-bottom: 1px solid var(--border-color-1);
+            > span {
+                font-weight: 500;
+                font-size: 16px;   
+                line-height: 26px;
+                font-family: var(--heading-font);
+                margin-bottom: 5px;
+                display: inline-block;
+            }
+            h2 {
+                span {
+                    font-weight: 500;
+                    font-size: 14px;   
+                    line-height: 24px; 
+                    margin: 0 10px;
+                    display: inline-block;                    
+                }
+            }
+        }
+        &-list {
+            ul {
+                padding: 0;
+                margin: 0;
+                li {
+                    list-style: none;
+                    color: var(--text-heading-color);
+                    margin-bottom: 16px;
+                    display: flex;
+                    align-items: center;
+                    gap: 10px;
+                    i {
+                        color: var(--primary-color-1);
+                        font-size: 20px;
+                    }
+                    &:last-child {
+                        margin: 0;
+                    }
+                }
+            }
+        }
+        &-btn {
+            margin-top: 30px;
+        }
+    } 
+    &-button {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 70px;
+        & .nav-item {
+            button {
+                background: transparent;
+                border: 1px solid var(--border-color-1);
+                font-weight: 600;
+                font-size: 14px;
+                line-height: 50px;
+                text-transform: capitalize;
+                font-family: var(--heading-font);
+                padding: 0 30px;
+                margin: 0 10px;
+                color: var(--text-heading-color);
+            }
+            & .active {
+                background: var(--primary-color-1);
+                border-color: var(--primary-color-1);
+                color: var(--text-white);
+            }
+        }
+    }
+}
+@media (max-width: 1399px) {
+    .pricing__two {
+        &-item {
+            padding: 30px 25px;
+            &.center {              
+                .pricing__two-item {
+                    &-btn {
+                        .theme-btn {
+                            padding: 12px 34px;
+                        }
+                    }
+                }
+            }
+            &-btn {
+                .btn-three {
+                    padding: 11px 34px;
+                }
+            }
+        }
+    }
+	.pricing__area {
+        &-item {
+            padding: 40px 30px;
+            &-content {
+                &-item {
+                    padding-left: 30px;
+                    &::before {
+                        width: 15px;
+                    }
+                    h6 {
+                        font-size: 14px;
+                        line-height: 24px;
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 1199px) {
+    .pricing__two {
+        &-title {
+            text-align: center;
+        }
+        &-button {
+            display: flex;
+            justify-content: center;
+            margin-bottom: 30px;
+        }
+    }
+}

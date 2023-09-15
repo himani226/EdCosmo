@@ -1,0 +1,296 @@
+/*==========================================================================
+* Noxiy Contact CSS
+==========================================================================*/
+.contact-item {
+    position: relative;
+    span {
+        position: absolute;
+        right: 16px;
+        top: 23px;
+        color: var(--primary-color-1);
+        font-weight: 400;
+    }
+}
+/*==========================================================================
+* Contact One CSS
+==========================================================================*/
+.contact__page {
+    &-item {
+        padding: 40px 30px;
+        box-shadow: var(--box-shadow-1);
+        text-align: center;
+        border-radius: 10px;
+        transition: 0.4s;
+        img {
+            max-width: 60px;
+        }
+        h4 {
+            margin-top: 25px;
+            margin-bottom: 5px;
+        }
+        p {
+            margin: 0 auto;
+            max-width: 235px;
+            a {
+                text-transform: lowercase;
+                display: block;
+                transition: 0.4s;
+                &:hover {
+                    color: var(--primary-color-1);
+                }
+            }
+        }
+        &:hover {
+            transform: translateY(-6px);
+        }
+    }
+    &-map {
+        z-index: 1;
+        position: relative;
+        margin-bottom: -190px;
+        iframe {
+            width: 100%;
+            height: 600px;
+            display: block;
+            filter: grayscale(1);        
+        }
+    }
+}
+/*==========================================================================
+* Contact Two CSS
+==========================================================================*/
+.contact__two {
+    position: relative;
+    z-index: 2;
+    &-form {
+        background: var(--color-4);
+        padding: 70px;
+        &-item {
+            textarea {
+                height: 180px;
+            }
+        }
+    }
+    &-info {
+        &-item {
+            display: flex;
+            margin-bottom: 40px;
+            gap: 40px;
+            &:last-child {
+                margin: 0;
+            }
+            h6 {
+                display: flex;
+                gap: 40px;
+            }
+            > span {
+                max-width: 290px;
+                margin-top: 1px;
+                a {
+                    text-transform: lowercase;
+                    display: block;
+                    transition: 0.4s;
+                    &:hover {
+                        color: var(--primary-color-1);
+                    }
+                }
+            }
+        }
+    }
+    &-map {
+        margin-top: -180px;
+        z-index: 1;
+        position: relative;
+        iframe {
+            width: 100%;
+            height: 500px;
+            display: block;
+            filter: grayscale(1);        
+        }
+    }
+}
+/*==========================================================================
+* Contact Three CSS
+==========================================================================*/
+.contact__three {
+    &-info {
+        padding: 35px 30px;
+        transition: 0.4s;
+        box-shadow: var(--box-shadow-1);
+        position: relative;
+        z-index: 1;
+        &-icon {            
+            width: 60px;                
+            height: 60px;
+            line-height: 60px;
+            display: inline-block;
+            border-radius: 50%;
+            background: var(--primary-color-1);
+            text-align: center;
+            transition: 0.4s;
+            position: relative;
+            margin: 10px;
+            margin-bottom: 30px;
+            &::after {
+                content: '';
+                position: absolute;
+                width: 80px;
+                height: 80px;
+                border: 1px dashed var(--primary-color-1);
+                border-radius: 50%;
+                display: block;
+                top: -10px;
+                left: -10px;
+                animation: rollIn 10s infinite linear;                
+            }
+            img {
+                max-width: 25px;
+                transform: rotateY(0);
+            }           
+        }
+        p {
+            text-transform: lowercase;
+            font-weight: 500;
+            transition: 0.4s;
+            color: var(--color-2);
+            margin: 0;
+            a {
+                transition: 0.4s;
+                &:hover {
+                    color: var(--primary-color-1);
+                }
+            }
+        }
+        h4 {
+            transition: 0.4s;
+        }
+        span {
+            transition: 0.4s;
+            margin-top: 5px;            
+            font-size: 15px;
+            line-height: 25px;
+            color: var(--color-2);
+            margin-bottom: 15px;
+            display: block;
+        }
+        &:hover {     
+            background: var(--bg-heading-color);
+            h4 {
+                color: var(--text-white);
+            }
+            p,
+            span {
+                color: #b0b0bd;
+            }
+            .contact__three-info {
+                &-icon img {
+                    animation: rotateY 0.6s;                    
+                }
+                &-icon::after {
+                    animation: initial;
+                }
+            }
+        }
+    }
+    &-form {
+        padding: 70px 50px;
+        box-shadow: var(--box-shadow-2);
+        background: var(--bg-white);
+        position: relative;
+        z-index: 2;
+        &-title {
+            max-width: 600px;
+            margin: 0 auto;
+            margin-bottom: 60px;
+        }
+    }
+    &.page {
+        .contact__three-form {
+            box-shadow: none;
+            background: var(--color-4);
+        }        
+    }
+}
+@media (max-width: 1399px) {
+    .contact__two {
+        &-form {
+            padding: 60px 50px;
+        }
+    }
+    .contact-box {
+        padding: 60px 40px;
+    }
+}
+@media (max-width: 1199px) {
+    .contact__two {
+        &-form {
+            padding: 60px 40px;
+        }
+        &-info {
+            &-item {
+                gap: 25px;
+                h6 {
+                    gap: 25px;
+                }
+            }
+        }
+    }
+}
+@media (max-width: 991px) {
+    .contact__two {
+        &-form {
+            padding: 60px 40px;
+        }
+        &-map {
+            margin-top: -160px;
+        }
+    }   
+    .request__quote-page-left {
+        padding: 0;
+        box-shadow: none;
+    }
+}
+@media (max-width: 767px) {  
+    .request__quote-page-right {
+        padding: 20px;
+        padding-bottom: 80px;
+        &-item {
+            h5 {
+                font-weight: 400;
+            }
+            & .swiper-pagination {
+                bottom: 20px;
+            }
+        }
+    }
+}
+@media (max-width: 530px) {
+    .contact__two {
+        &-info {
+            &-item {
+                gap: 15px;
+                h6 {
+                    gap: 15px;
+                }
+            }
+        }
+        &-form {
+            padding: 40px 20px;
+        }  
+    }
+    .contact__three-form {
+        padding: 40px 20px;
+    }
+}
+@media (max-width: 485px) {
+    .contact__two {      
+        &-info {
+            &-item {
+                display: block;
+            }
+        }
+        &-map {
+            margin-top: -140px;         
+        }
+    }
+}

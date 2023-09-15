@@ -1,0 +1,704 @@
+/*==========================================================================
+* Portfolio One CSS
+==========================================================================*/
+.portfolio__one {
+	&-item {
+		position: relative;
+		z-index: 1;
+		overflow: hidden;
+		&::before {
+			content: '';
+			position: absolute;
+			left: 0;
+			top: 0;
+			height: 20%;
+			width: 100%;
+			background: var(--bg-heading-color);
+            transition: all 400ms ease;
+			opacity: 0;		
+			z-index: 1;	
+		}
+		&-content {
+			position: absolute;
+			left: 0;
+			bottom: 0;
+			right: 40px;
+			display: flex;
+			align-items: center;
+			background: var(--bg-white);
+			transform: translateX(-30%);
+            transition: 0.5s;
+			opacity: 0;
+			z-index: 2;
+			&-left {
+				width: 110px;
+				height: 110px;
+				background: var(--primary-color-2);
+				display: inline-flex;
+				justify-content: center;
+				align-items: center;				
+				i {
+					background: var(--bg-white);
+					color: var(--primary-color-2);
+					width: 65px;
+					height: 65px;
+					border-radius: 50%;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					font-size: 30px;
+				}
+			}
+			&-right {
+				padding: 0 30px;
+				span {
+					font-family: var(--heading-font);
+					color: var(--primary-color-2);
+					font-weight: 600;		
+				}
+				h4 a {
+					transition: 0.4s;
+					&:hover {
+						color: var(--primary-color-2);
+					}
+				}
+			}
+		}
+		&:hover {
+			img {
+				transform: scale(1.06);
+			}
+			&::before {
+				height: 100%;
+				opacity: 0.5;
+			}
+			.portfolio__one-item-content {
+				transform: translateX(0);
+				opacity: 1;
+			}
+		}
+		&.page {
+			.portfolio__one-item-content {
+				&-left {
+					background: var(--primary-color-1);
+					i {
+						color: var(--primary-color-1);
+					}
+				}
+				&-right {
+					h4 a:hover,
+					span {
+						color: var(--primary-color-1);
+					}
+				}
+			}
+		}
+	}
+}
+/*==========================================================================
+* Portfolio Two CSS
+==========================================================================*/
+.portfolio__two {
+	position: relative;
+	z-index: 1;
+    &-shape {
+        position: absolute;
+        right: 0;
+        top: -300px;
+        z-index: -1;
+    }
+	&-item {
+		margin-top: 30px;
+		&-image {
+			position: relative;
+			z-index: 1;
+			border-radius: 8px;
+			overflow: hidden;
+			&::after {
+				content: '';
+				position: absolute;
+				left: 0;
+				bottom: 0;
+				height: 0;
+				width: 100%;
+				transition: all 300ms ease;
+				background: linear-gradient(180deg, rgba(249, 77, 29, 0) 0%, var(--primary-color-4) 85.11%);
+				opacity: 0.92;
+				border-radius: 8px;
+			}
+			&-content {
+				position: absolute;
+				width: 100%;
+				text-align: center;
+				bottom: 80px;
+				z-index: 1;
+				transition: 0.6s;
+				opacity: 0;
+				span {
+					font-weight: 500;
+					color: var(--text-white);	
+				}
+				> a {
+					display: block;
+					width: 70px;
+					height: 70px;
+					margin: 0 auto;
+					margin-bottom: 20px;
+					i {
+						display: inline-flex;
+						font-size: 30px;
+						width: 70px;
+						height: 70px;
+						align-items: center;
+						justify-content: center;
+						border-radius: 50%;
+						color: var(--primary-color-4);
+						background: var(--bg-white);
+					}
+				}
+				h4 {
+					color: var(--text-white);
+				}
+			}
+			&:hover {
+				&::after {
+					height: 100%;
+				}
+				.portfolio__two-item-image-content {
+					bottom: 50px;
+					opacity: 1;
+				}
+			}
+		}
+	}
+}
+/*==========================================================================
+* Portfolio Three CSS
+==========================================================================*/
+.portfolio__three {
+	.transition {
+		transition: 0.4s;
+	}
+	&-item {
+		min-height: 640px;
+		flex: 2;
+		transition: 0.5s;
+		will-change: transform;
+		position: relative;
+		overflow: hidden;
+		z-index: 1;
+		border-radius: 5px;
+		&::before {
+			content: '';
+			position: absolute;
+			width: 100%;
+			height: 100%;
+			background: var(--bg-heading-color);
+			opacity: 0.1;
+			transition: 0.4s;
+		}
+		img {
+			height: 100%;
+			object-fit: cover;
+			position: relative;
+			z-index: -1;
+		}
+		&:hover {
+			cursor: pointer;
+		}
+		&.active {
+			flex: 6;
+			scroll-snap-align: start;
+			.portfolio__three-item-content {
+				opacity: 1;
+				z-index: 1;
+				width: 50%;
+			}
+			.portfolio__three-item-content.vertical {
+				opacity: 0;
+				z-index: -1;
+			}
+		}
+		&-content {
+			background: var(--bg-white);
+			padding: 50px 30px;
+			position: absolute;
+			bottom: 30px;
+			left: 30px;
+			right: 30px;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			opacity: 0;
+			z-index: -1;
+			width: 450px;
+			border-radius: 5px;
+			span {
+				font-family: var(--heading-font);
+				color: var(--primary-color-3);
+				font-weight: 600;		
+			}
+			h4 a {
+				transition: 0.4s;
+				&:hover {
+					color: var(--primary-color-3);
+				}
+			}
+			&-icon {
+				position: absolute;
+				right: 30px;
+				top: 50%;
+				transform: translateY(-50%);
+				a i {
+					background: var(--primary-color-3);
+					color: var(--text-white);
+					width: 60px;
+					height: 60px;
+					border-radius: 50%;
+					font-size: 18px;
+					display: inline-flex;
+					justify-content: center;
+					align-items: center;
+				}
+				&.vertical {
+					position: initial;
+					transform: initial;
+				}
+			}
+			&.vertical {
+				padding: 30px;
+				bottom: 0;
+				left: -1px;
+				right: -1px;
+				z-index: 1;
+				transform: rotate(-180deg);
+				height: 100%;
+				writing-mode: vertical-rl;
+				transition: initial;
+				width: initial;
+				opacity: 1;
+				background: var(--color-4);
+				> a {
+					position: initial;
+				}
+			}
+		}
+	}
+	.portfolio {
+		display: flex;
+		overflow: auto;
+		gap: 25px;
+		scroll-snap-type: x mandatory;
+		overflow: hidden;
+	}
+	&-page {
+		.portfolio__two-item-image {
+			&-content > a i {
+				color: var(--primary-color-1);
+			}
+			&::after {
+				background: linear-gradient(180deg, rgba(249, 77, 29, 0) 0%, var(--primary-color-1) 85.11%);
+			}
+		}
+	}
+}
+/*==========================================================================
+* Portfolio Four CSS
+==========================================================================*/
+.portfolio__four {
+	position: relative;
+	display: grid;
+	grid-template-columns: repeat(4, 1fr);
+	overflow: hidden;
+	z-index: 1;
+	&-item {
+		height: 750px;
+		&:first-child {
+			border-left: 0;
+		}
+		&:last-child {
+			margin-right: 0;
+			border-right: 0;
+		}
+		&-image {
+			background-position: center;
+			background-repeat: no-repeat;
+			background-size: cover;
+			opacity: 0;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+			height: 100%;
+			transition: 1s;
+			width: 100%;
+			z-index: -1;
+		}
+		&-inner {
+			position: relative;
+			width: 100%;
+			height: 100%;
+			&-content {
+				position: absolute;
+				bottom: 0;
+				left: 0;
+				width: 100%;
+				transition: 0.6s;
+				&::after {
+					content: '';
+					position: absolute;
+					left: 0;
+					bottom: 0;
+					transition: 0.5s;
+					height: 0;
+					width: 100%;
+					background: var(--bg-white);
+					z-index: -1;
+				}
+				&-top {
+					position: relative;
+					padding: 30px 35px;
+					opacity: 0;
+					transition: 0.6s;
+					span {
+						position: absolute;
+						right: 30px;
+						top: 20px;
+						font-size: 80px;
+						line-height: 1;
+						font-weight: 500;
+						font-family: var(--heading-font);						
+						opacity: 0.1;
+						color: var(--primary-color-1);
+					}
+					i {
+						color: var(--primary-color-1);
+						font-size: 70px;
+						display: block;
+						margin-bottom: 20px;
+					}
+					h4 {
+						margin-bottom: 15px;
+						display: inline-block;
+						transition: 0.4s;
+						&:hover {
+							color: var(--primary-color-1);
+						}
+					}
+					p {
+						margin-bottom: 0
+					}
+				}
+				&-btn {
+					background: var(--bg-heading-color);
+					transition: 0.6s;
+					padding: 20px 35px;
+					h4 {
+						transition: 0.6s;
+						color: var(--text-white);
+					}
+					span {
+						margin-top: -30px;
+						display: block;	
+						opacity: 0;
+						z-index: -1;
+						position: relative;
+						transition: 1s;
+						font-size: 20px;
+						font-weight: 500;
+						text-transform: capitalize;
+						color: var(--text-white);
+						font-family: var(--heading-font);
+					}
+				}
+			}
+		}
+		&.active .portfolio__four-item {
+			&-image {
+				opacity: 1;
+			}
+			&-inner {
+				&-content {
+					&::after {
+						height: 100%;
+					}
+					&-top{
+						opacity: 1;
+					}
+					&-btn {
+						background: var(--primary-color-1);
+						h4 {
+							opacity: 0;
+						}
+						span {
+							opacity: 1;
+							z-index: 2;
+						}
+					}
+				}
+			}
+		}
+	}
+}
+/*==========================================================================
+* Noxiy Filter CSS
+==========================================================================*/
+.noxiy__filter {
+    &-button {
+        text-align: center;
+		margin-top: -5px;
+        button {
+            font-weight: 600;
+            padding: 0 25px;
+            line-height: 48px;
+			color: var(--text-heading-color);
+			border: 1px solid var(--border-color-4);
+			box-shadow: 0px 9px 18px rgba(24, 16, 16, 0.05);
+			background: none;
+			margin: 5px;
+			transition: 0.4s;
+			&:hover {
+				background: var(--primary-color-1);
+				color: var(--text-white);
+				border-color: var(--primary-color-1);
+			}
+        }
+        .active {
+            background: var(--primary-color-1);
+            color: var(--text-white);
+			border-color: var(--primary-color-1);
+        }
+    }
+}
+/*==========================================================================
+* Project Filter CSS
+==========================================================================*/
+.project__one {
+	&-item {
+		position: relative;
+		z-index: 1;
+		&::before {
+			content: '';
+			position: absolute;
+			top: 0;
+			bottom: 0;
+			left: 0;
+			right: 0;
+			background: var(--bg-heading-color);
+			visibility: hidden;
+			transform-origin: bottom center;
+			opacity: 0.5;
+			transform: scaleY(0) translateZ(100px);
+			transition: opacity 500ms ease, visibility 500ms ease, transform 700ms ease;
+		}
+		&-content {
+			position: absolute;
+			left: 30px;
+			right: 30px;
+			bottom: 30px;
+			padding: 40px 30px;
+			z-index: 1;
+			transform: translateY(-40px);
+			transition: opacity 500ms ease, visibility 500ms ease, transform 500ms ease;
+			background: var(--bg-white);
+			opacity: 0;
+			overflow: hidden;
+			border-radius: 8px;
+			&::before {
+				content: '';
+				position: absolute;
+				right: -55px;
+				bottom: -60px;
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				background: var(--primary-color-1);
+			}			
+			&::after {
+				content: '';
+				position: absolute;
+				right: -40px;
+				bottom: -60px;
+				height: 100px;
+				width: 100px;
+				border-radius: 50%;
+				background: var(--primary-color-1);
+				opacity: 0.2;
+			}			
+			span {
+				font-weight: 500;
+				font-family: var(--heading-font);
+				color: var(--primary-color-1);		
+				display: block;
+				margin-bottom: 5px;		
+			}
+			h4 a {
+				transition: 0.4s;
+				&:hover {
+					color: var(--primary-color-1);
+				}
+			}
+		}		
+		&:hover {
+			&::before {				
+				visibility: visible;
+				transform: scaleY(1) translateZ(0px);
+			}
+			.project__one-item {
+				&-content {
+					opacity: 1;
+					transform: translateY(0);
+				}	
+			}		
+		}
+	}
+}
+/*==========================================================================
+* Project Single CSS
+==========================================================================*/
+.project__single {
+	&-area {
+		position: sticky;
+		top: 0;
+		&-content {
+			h2 {
+				margin-bottom: 20px;
+			}
+			h3 {
+				margin-bottom: 20px;
+				margin-top: 30px;
+			}
+		}
+	}
+}
+@media (max-width: 1530px) {
+	.portfolio__one-item-content {
+		right: -1px;
+		&-left {
+			width: 0;
+			height: 100px;
+			padding: 0 50px;
+			i {
+				width: 55px;
+				height: 55px;
+				font-size: 24px;
+			}
+		}
+		&-right {
+			padding: 0 20px;
+		}
+	}
+	.portfolio__three-item {
+		flex: 1.3;
+	}
+}
+@media (max-width: 1420px) {
+	.project__one-item-content {
+		position: absolute;
+		left: 25px;
+		right: 25px;
+		bottom: 25px;
+		padding: 35px 25px;
+	}
+}
+@media (max-width: 1399px) {
+	.portfolio__four {
+		grid-template-columns: repeat(2, 1fr);
+		&-item {
+			height: 500px;
+		}
+	}
+}
+@media (max-width: 1299px) {
+	.portfolio__three-item {
+		min-height: 580px;
+		flex: 2;
+		&-content {
+			width: 380px;
+		}
+		&.active .portfolio__three-item-content {
+			width: 85%;
+		}
+	}
+}
+@media (max-width: 991px) {
+	.portfolio__three {
+		& .portfolio {
+			display: grid;
+		}
+		&-item {
+			min-height: inherit;
+			height: 163px;
+			&-content {
+				width: 100%;
+				&.vertical {
+					padding: 50px 30px;
+					bottom: 0;
+					left: 0;
+					right: 0;
+					transform: initial;
+					height: initial;
+					writing-mode: initial;
+					width: 100%;
+				}
+			}
+			img {
+				width: 100%;
+			}
+			&.active {
+				height: 500px;
+				.portfolio__three-item-content {
+					width: inherit;
+				}
+			}
+		}
+	}
+}
+@media (max-width: 767px) {	
+	.portfolio__four {
+		grid-template-columns: repeat(1, 1fr);
+		&-item {
+			height: 460px;
+		}
+	}
+}
+@media (max-width: 575px) {
+	.portfolio__three {
+		&-item {
+			height: 123px;
+			&-content {
+				padding: 30px 22px;
+				bottom: 22px;
+				left: 22px;
+				right: 22px;
+				a i {
+					width: 50px;
+					height: 50px;
+					font-size: 15px;
+				}
+				&.vertical {
+					padding: 32px 22px;
+				}
+				&-icon {
+					right: 22px;
+				}
+			}
+			&.active {
+				height: 400px;
+			}
+		}
+	}
+}
+@media (max-width: 359px) {
+	.portfolio__one-item-content {
+		right: -1px;
+		&-left {
+			padding: 0 40px;
+		}
+		&-right {
+			h4 {
+				font-size: 20px;
+				line-height: 30px;
+			}
+		}
+	}
+}

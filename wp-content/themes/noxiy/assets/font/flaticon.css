@@ -1,0 +1,254 @@
+@font-face {
+  font-family: "flaticon";
+  src: url("./flaticon.ttf?89ad0380500a5e77b7a4cfafe65f20e0") format("truetype"), url("./flaticon.woff?89ad0380500a5e77b7a4cfafe65f20e0") format("woff"), url("./flaticon.woff2?89ad0380500a5e77b7a4cfafe65f20e0") format("woff2"), url("./flaticon.eot?89ad0380500a5e77b7a4cfafe65f20e0#iefix") format("embedded-opentype"), url("./flaticon.svg?89ad0380500a5e77b7a4cfafe65f20e0#flaticon") format("svg");
+}
+i[class^=flaticon-]:before, i[class*=" flaticon-"]:before {
+  font-family: flaticon !important;
+  font-style: normal;
+  font-weight: normal !important;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.flaticon-phone-call:before {
+  content: "\f101";
+}
+
+.flaticon-arrows:before {
+  content: "\f102";
+}
+
+.flaticon-family:before {
+  content: "\f103";
+}
+
+.flaticon-healthcare:before {
+  content: "\f104";
+}
+
+.flaticon-car-insurance:before {
+  content: "\f105";
+}
+
+.flaticon-home-insurance:before {
+  content: "\f106";
+}
+
+.flaticon-logistics-delivery:before {
+  content: "\f107";
+}
+
+.flaticon-conflagration:before {
+  content: "\f108";
+}
+
+.flaticon-farmhouse:before {
+  content: "\f109";
+}
+
+.flaticon-travel:before {
+  content: "\f10a";
+}
+
+.flaticon-check-mark:before {
+  content: "\f10b";
+}
+
+.flaticon-insurance:before {
+  content: "\f10c";
+}
+
+.flaticon-health:before {
+  content: "\f10d";
+}
+
+.flaticon-umbrella:before {
+  content: "\f10e";
+}
+
+.flaticon-flood:before {
+  content: "\f10f";
+}
+
+.flaticon-safe-flight:before {
+  content: "\f110";
+}
+
+.flaticon-earthquake:before {
+  content: "\f111";
+}
+
+.flaticon-protection:before {
+  content: "\f112";
+}
+
+.flaticon-protection-1:before {
+  content: "\f113";
+}
+
+.flaticon-download-to-storage-drive:before {
+  content: "\f114";
+}
+
+.flaticon-quote:before {
+  content: "\f115";
+}
+
+.flaticon-piggy-bank:before {
+  content: "\f116";
+}
+
+.flaticon-refund:before {
+  content: "\f117";
+}
+
+.flaticon-winner:before {
+  content: "\f118";
+}
+
+.flaticon-mission:before {
+  content: "\f119";
+}
+
+.flaticon-value:before {
+  content: "\f11a";
+}
+
+.flaticon-vision:before {
+  content: "\f11b";
+}
+
+.flaticon-meeting:before {
+  content: "\f11c";
+}
+
+.flaticon-house:before {
+  content: "\f11d";
+}
+
+.flaticon-select:before {
+  content: "\f11e";
+}
+
+.flaticon-pdf:before {
+  content: "\f11f";
+}
+
+.flaticon-pdf-file:before {
+  content: "\f120";
+}
+
+.flaticon-menu:before {
+  content: "\f121";
+}
+
+.flaticon-dots-menu:before {
+  content: "\f122";
+}
+
+.flaticon-quote-1:before {
+  content: "\f123";
+}
+
+.flaticon-travel-insurance:before {
+  content: "\f124";
+}
+
+.flaticon-customer-service:before {
+  content: "\f125";
+}
+
+.flaticon-businessman:before {
+  content: "\f126";
+}
+
+.flaticon-24-hours:before {
+  content: "\f127";
+}
+
+.flaticon-seller:before {
+  content: "\f128";
+}
+
+.flaticon-question-mark:before {
+  content: "\f129";
+}
+
+.flaticon-right-up:before {
+  content: "\f12a";
+}
+
+.flaticon-customer-support:before {
+  content: "\f12b";
+}
+
+.flaticon-umbrella-1:before {
+  content: "\f12c";
+}
+
+.flaticon-saving:before {
+  content: "\f12d";
+}
+
+.flaticon-trust:before {
+  content: "\f12e";
+}
+
+.flaticon-question-mark-1:before {
+  content: "\f12f";
+}
+
+.flaticon-success:before {
+  content: "\f130";
+}
+
+.flaticon-costumer:before {
+  content: "\f131";
+}
+
+.flaticon-project-management:before {
+  content: "\f132";
+}
+
+.flaticon-team:before {
+  content: "\f133";
+}
+
+.flaticon-medical-report:before {
+  content: "\f134";
+}
+
+.flaticon-social:before {
+  content: "\f135";
+}
+
+.flaticon-dental-insurance:before {
+  content: "\f136";
+}
+
+.flaticon-mental-health:before {
+  content: "\f137";
+}
+
+.flaticon-medical-records:before {
+  content: "\f138";
+}
+
+.flaticon-healthcare-1:before {
+  content: "\f139";
+}
+
+.flaticon-cost-saving:before {
+  content: "\f13a";
+}
+
+.flaticon-review:before {
+  content: "\f13b";
+}
+
+.flaticon-globe:before {
+  content: "\f13c";
+}/*# sourceMappingURL=flaticon.css.map */
